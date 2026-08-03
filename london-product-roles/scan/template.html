@@ -131,8 +131,17 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .ev{font-size:12.5px;color:var(--ink-2);font-style:italic;margin-top:7px;line-height:1.45;
   border-left:2px solid var(--help);padding-left:10px;max-width:70ch}
 .ev b{font-style:normal;font-weight:600;color:var(--help-ink)}
-.go{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;text-decoration:none;
-  align-self:center}
+.rside{display:flex;flex-direction:column;align-items:flex-end;gap:8px;align-self:center}
+.save{font-family:var(--sans);font-size:16px;line-height:1;color:var(--ink-3);background:transparent;
+  border:1px solid var(--line-strong);border-radius:8px;width:30px;height:30px;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:color .12s,border-color .12s,background .12s;}
+.save:hover{color:var(--help);border-color:var(--help)}
+.save.on{color:var(--help);border-color:var(--help);background:var(--help-soft)}
+.save:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip.savedchip{color:var(--help)}
+.chip.savedchip[aria-pressed="true"]{background:var(--help);border-color:var(--help);color:#fff}
+.go{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;text-decoration:none}
 .go:hover{color:var(--accent)}
 .empty{display:none;text-align:center;color:var(--ink-3);font-family:var(--mono);font-size:13px;padding:60px 0}
 /* footer */
@@ -141,9 +150,9 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .foot b{color:var(--ink-2)}
 @media (max-width:640px){
   .stats{grid-template-columns:repeat(2,1fr)}
-  .role{grid-template-columns:1fr;gap:8px}
+  .role{grid-template-columns:auto 1fr;gap:8px 12px}
   .tag{justify-self:start}
-  .go{display:none}
+  .rside{flex-direction:row;align-self:start;grid-column:1 / -1;justify-content:flex-start;gap:14px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -176,8 +185,9 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
     </div>
     <div class="item">
       <span class="tag" style="background:var(--line);color:var(--ink-2)">date</span>
-      <span class="txt"><b>Every role is dated.</b> A colored dot flags freshness — green &lt;14d,
-        amber 45-120d, red 120d+ — so you can judge how stale a posting is before clicking.</span>
+      <span class="txt"><b>Every role is dated</b> and filterable by freshness — Fresh (≤14d),
+        Aging (15–120d), Stale (120d+). <b>Star a role</b> to save it; the ★ Saved filter shows
+        only your marks, and they persist in this browser across weekly refreshes.</span>
     </div>
   </div>
 
@@ -198,6 +208,15 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
         <button class="chip loc" data-loc="UK" aria-pressed="false">UK</button>
         <button class="chip loc" data-loc="Remote-EMEA" aria-pressed="false">Remote·EMEA</button>
       </div>
+      <div class="fgroup"><span class="lab">Freshness</span>
+        <button class="chip freshf" data-fresh="all" aria-pressed="true">All</button>
+        <button class="chip freshf" data-fresh="fresh" aria-pressed="false">Fresh</button>
+        <button class="chip freshf" data-fresh="aging" aria-pressed="false">Aging</button>
+        <button class="chip freshf" data-fresh="stale" aria-pressed="false">Stale</button>
+      </div>
+      <div class="fgroup"><span class="lab">Mine</span>
+        <button class="chip savedchip" id="savedToggle" aria-pressed="false">★ Saved <span id="savedN">(0)</span></button>
+      </div>
     </div>
   </div>
 
@@ -210,6 +229,14 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 <script>
 const DATA = __PAYLOAD__;
 const S=DATA.stats;
+
+// --- saved roles (persist in this browser, keyed by posting URL) ---
+const SKEY='lpr-saved-v1';
+let saved;
+try{ saved=new Set(JSON.parse(localStorage.getItem(SKEY)||'[]')); }catch(e){ saved=new Set(); }
+function isSaved(u){ return saved.has(u); }
+function persistSaved(){ try{ localStorage.setItem(SKEY, JSON.stringify([...saved])); }catch(e){} }
+function updateSavedN(){ const n=document.getElementById('savedN'); if(n) n.textContent='('+saved.size+')'; }
 document.getElementById('stats').innerHTML=[
   ['companies','Companies hiring'],['total','Roles total'],
   ['pm','PM roles','pm'],['helpful','PM-helpful roles','help']
@@ -222,28 +249,31 @@ function evHTML(t){ // bold the product-* phrase
 }
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function ageInfo(iso){
-  if(!iso) return {html:'<span class="age none">date n/a</span>', days:99999};
+  if(!iso) return {html:'<span class="age none">date n/a</span>', days:99999, cls:'none'};
   const d=new Date(iso+'T00:00:00Z');
   const days=Math.floor((Date.now()-d.getTime())/86400000);
-  let cls='recent';
-  if(days<=14)cls='fresh'; else if(days<=45)cls='recent'; else if(days<=120)cls='aging'; else cls='stale';
+  const cls = days<=14 ? 'fresh' : days<=120 ? 'aging' : 'stale';
   const lbl=days<=0?'today':days===1?'1 day ago':days<=90?days+' days ago':Math.floor(days/30)+' mo ago';
   const nice=d.getUTCDate()+' '+MON[d.getUTCMonth()];
-  return {html:`<span class="age ${cls}" title="posted ${iso}">Posted ${nice} · ${lbl}</span>`, days};
+  return {html:`<span class="age ${cls}" title="posted ${iso}">Posted ${nice} · ${lbl}</span>`, days, cls};
 }
 function roleHTML(r){
   const cls=r.category==='PM'?'PM':'helpful';
   const comp=r.comp?`<span class="comp">${esc(r.comp)}</span>`:'';
   const ev=r.category!=='PM'&&r.evidence?`<div class="ev">${evHTML(r.evidence)}</div>`:'';
-  const age=ageInfo(r.posted).html;
-  return `<div class="role" data-cat="${r.category}" data-loc="${r.tag}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
+  const ai=ageInfo(r.posted);
+  const on=isSaved(r.url);
+  return `<div class="role" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
     <span class="tag ${cls}">${TAGLABEL[r.category]}</span>
     <div class="rmain">
       <div class="rtitle"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></div>
-      <div class="rmeta"><span class="loc ${r.tag}">${esc(r.tag)}</span>${comp}${age}</div>
+      <div class="rmeta"><span class="loc ${r.tag}">${esc(r.tag)}</span>${comp}${ai.html}</div>
       ${ev}
     </div>
-    <a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open ↗</a>
+    <div class="rside">
+      <button class="save${on?' on':''}" data-url="${esc(r.url)}" aria-pressed="${on}" aria-label="${on?'Saved — click to remove':'Save this role'}" title="${on?'Saved':'Save'}">${on?'★':'☆'}</button>
+      <a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open ↗</a>
+    </div>
   </div>`;
 }
 function companyHTML(c){
@@ -266,12 +296,12 @@ document.getElementById('list').innerHTML=DATA.companies.map(companyHTML).join('
   const days=all.map(r=>ageInfo(r.posted).days).filter(d=>d<99999).sort((a,b)=>a-b);
   const med=days.length?days[Math.floor(days.length/2)]:0;
   const f=all.filter(r=>ageInfo(r.posted).days<=14).length;
-  const a=all.filter(r=>{const d=ageInfo(r.posted).days;return d>45&&d<=120;}).length;
-  const s=all.filter(r=>ageInfo(r.posted).days>120).length;
+  const a=all.filter(r=>{const d=ageInfo(r.posted).days;return d>14&&d<=120;}).length;
+  const s=all.filter(r=>{const d=ageInfo(r.posted).days;return d>120&&d<99999;}).length;
   document.getElementById('freshness').innerHTML=
     `<span>Each role shows when it was <b>posted</b> — sorted newest first.</span>`+
-    `<span class="dot fresh"><b>${f}</b> posted in last 14 days</span>`+
-    `<span class="dot aging"><b>${a}</b> aging (45–120d)</span>`+
+    `<span class="dot fresh"><b>${f}</b> fresh (≤14d)</span>`+
+    `<span class="dot aging"><b>${a}</b> aging (15–120d)</span>`+
     `<span class="dot stale"><b>${s}</b> stale (120d+)</span>`+
     `<span>median age <b>${med}d</b></span>`;
 })();
@@ -285,7 +315,7 @@ document.getElementById('foot').innerHTML=
    Always confirm details on the employer’s own posting.</p>`;
 
 // filtering
-let cat='all', loc='all', q='';
+let cat='all', loc='all', fresh='all', q='', savedOnly=false;
 const rolesEls=[...document.querySelectorAll('.role')];
 const comps=[...document.querySelectorAll('.company')];
 function apply(){
@@ -293,6 +323,8 @@ function apply(){
   rolesEls.forEach(el=>{
     const ok=(cat==='all'||el.dataset.cat===cat)&&
              (loc==='all'||el.dataset.loc===loc)&&
+             (fresh==='all'||el.dataset.fresh===fresh)&&
+             (!savedOnly||saved.has(el.dataset.url))&&
              (q===''||el.dataset.s.includes(q));
     el.style.display=ok?'':'none'; if(ok)shown++;
   });
@@ -311,6 +343,24 @@ function wire(sel,attr,set){
 }
 wire('.chip.cat','cat',v=>cat=v);
 wire('.chip.loc','loc',v=>loc=v);
+wire('.chip.freshf','fresh',v=>fresh=v);
 document.getElementById('q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();apply();});
+
+// saved toggle + per-role save buttons
+const savedToggle=document.getElementById('savedToggle');
+savedToggle.addEventListener('click',()=>{ savedOnly=!savedOnly; savedToggle.setAttribute('aria-pressed',savedOnly); apply(); });
+document.querySelectorAll('.save').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const u=btn.dataset.url, now=!saved.has(u);
+    if(now) saved.add(u); else saved.delete(u);
+    btn.classList.toggle('on',now);
+    btn.textContent=now?'★':'☆';
+    btn.setAttribute('aria-pressed',now);
+    btn.setAttribute('title',now?'Saved':'Save');
+    btn.setAttribute('aria-label',now?'Saved — click to remove':'Save this role');
+    persistSaved(); updateSavedN(); apply();
+  });
+});
+updateSavedN();
 apply();
 </script>

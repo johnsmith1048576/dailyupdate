@@ -7,7 +7,7 @@ output/index.html by injecting the role data into scan/template.html.
 The page is Artifact-ready: publish output/index.html with the Artifact tool
 (or open it directly in a browser).
 """
-import json, os
+import json, os, csv
 from datetime import date
 from collections import defaultdict
 
@@ -15,8 +15,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 ROLES = os.path.join(DATA, "roles.json")
 HITS = os.path.join(DATA, "ats_hits.json")
+SAVED = os.path.join(DATA, "saved.csv")   # durable, committed shortlist
 TEMPLATE = os.path.join(ROOT, "scan", "template.html")
 OUT = os.path.join(ROOT, "output", "index.html")
+
+def load_saved_urls():
+    urls = []
+    if os.path.exists(SAVED):
+        with open(SAVED, newline="") as f:
+            for row in csv.DictReader(f):
+                u = (row.get("url") or "").strip()
+                if u:
+                    urls.append(u)
+    return urls
 
 # Display-name overrides for slugs whose casing can't be inferred.
 DISP = {
@@ -72,7 +83,8 @@ def main():
     total = len(roles)
     pm = sum(c["pm"] for c in comps)
     data = {"companies": comps,
-            "stats": {"companies": len(comps), "total": total, "pm": pm, "helpful": total - pm}}
+            "stats": {"companies": len(comps), "total": total, "pm": pm, "helpful": total - pm},
+            "saved": load_saved_urls()}
 
     meta = json.load(open(HITS)).get("meta", {}) if os.path.exists(HITS) else {}
     swept = date.today().strftime("%-d %b %Y") if hasattr(date, "strftime") else date.today().isoformat()
@@ -87,7 +99,9 @@ def main():
             .replace("__PROBED__", probed))
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w").write(html)
-    print(f"wrote {OUT} — {total} roles ({pm} PM / {total - pm} helpful), {len(comps)} companies")
+    live_saved = sum(1 for c in comps for r in c["roles"] if r["url"] in set(data["saved"]))
+    print(f"wrote {OUT} — {total} roles ({pm} PM / {total - pm} helpful), {len(comps)} companies; "
+          f"{len(data['saved'])} saved in CSV ({live_saved} still live)")
 
 if __name__ == "__main__":
     main()

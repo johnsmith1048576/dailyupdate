@@ -58,6 +58,31 @@ python3 scan/build.py     # -> output/index.html
   Behind a proxy, `curl` inherits the usual `HTTPS_PROXY` / CA environment, so no extra
   config is needed. If a host is blocked by a network policy, that ATS is simply skipped.
 
+## Saving roles (durable shortlist)
+
+The rendered page lets you **star** roles; those marks live in the browser's
+`localStorage` — instant, but per-browser and wiped if you clear browsing data.
+
+For a **permanent** shortlist, the source of truth is [`data/saved.csv`](data/saved.csv),
+committed to the repo. `build.py` bakes it into every render, so saved roles show up
+**pre-starred on every weekly refresh** regardless of browser state. Three ways to write
+to it:
+
+```bash
+python3 scan/save.py add    "deliveroo payments"      # match by title/company text…
+python3 scan/save.py add    "https://jobs.ashbyhq…"   # …or by exact posting URL
+python3 scan/save.py remove "payments"
+python3 scan/save.py list                             # shows shortlist + which are still live
+python3 scan/save.py import saved-roles.csv           # merge a browser "Export CSV"
+```
+
+Round-trip from the page: click **Export CSV** to download your current stars, then
+`scan/save.py import <that file>` folds them into `data/saved.csv` permanently. Each of
+`add` / `remove` / `import` rebuilds the page automatically.
+
+> A published Artifact is a static page with no backend, so it can't write files itself —
+> `data/saved.csv` is the durable store, written from the CLI or via Export → import.
+
 ## Scheduling (for later)
 
 The pipeline is stateless and idempotent — just run `./run.sh` on a timer.

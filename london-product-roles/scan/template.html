@@ -216,6 +216,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
       </div>
       <div class="fgroup"><span class="lab">Mine</span>
         <button class="chip savedchip" id="savedToggle" aria-pressed="false">★ Saved <span id="savedN">(0)</span></button>
+        <button class="chip" id="exportBtn" title="Download your saved roles as CSV — fold this into the pipeline's data/saved.csv to make them permanent">Export CSV</button>
       </div>
     </div>
   </div>
@@ -234,6 +235,8 @@ const S=DATA.stats;
 const SKEY='lpr-saved-v1';
 let saved;
 try{ saved=new Set(JSON.parse(localStorage.getItem(SKEY)||'[]')); }catch(e){ saved=new Set(); }
+// durable saves baked in from data/saved.csv survive browser-data clears
+(DATA.saved||[]).forEach(u=>saved.add(u));
 function isSaved(u){ return saved.has(u); }
 function persistSaved(){ try{ localStorage.setItem(SKEY, JSON.stringify([...saved])); }catch(e){} }
 function updateSavedN(){ const n=document.getElementById('savedN'); if(n) n.textContent='('+saved.size+')'; }
@@ -349,6 +352,18 @@ document.getElementById('q').addEventListener('input',e=>{q=e.target.value.trim(
 // saved toggle + per-role save buttons
 const savedToggle=document.getElementById('savedToggle');
 savedToggle.addEventListener('click',()=>{ savedOnly=!savedOnly; savedToggle.setAttribute('aria-pressed',savedOnly); apply(); });
+
+// export saved roles as CSV (url,title,company,tag,posted) for data/saved.csv
+const META={}; DATA.companies.forEach(c=>c.roles.forEach(r=>META[r.url]={title:r.title,company:c.name,tag:r.tag,posted:r.posted||''}));
+document.getElementById('exportBtn').addEventListener('click',()=>{
+  const q=x=>'"'+String(x==null?'':x).replace(/"/g,'""')+'"';
+  const rows=[['url','title','company','tag','posted']];
+  saved.forEach(u=>{const m=META[u]||{};rows.push([u,m.title,m.company,m.tag,m.posted]);});
+  const csv=rows.map(r=>r.map(q).join(',')).join('\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));
+  a.download='saved-roles.csv'; document.body.appendChild(a); a.click(); a.remove();
+});
 document.querySelectorAll('.save').forEach(btn=>{
   btn.addEventListener('click',()=>{
     const u=btn.dataset.url, now=!saved.has(u);

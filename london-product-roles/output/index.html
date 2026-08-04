@@ -6,7 +6,7 @@
   --accent:#2F53C6; --accent-soft:#E7ECFB;
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
   --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700;
-  --lon:#2F53C6;
+  --lon:#2F53C6; --dismiss:#C0473B;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
   --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -19,7 +19,7 @@
     --accent:#8CA2F5; --accent-soft:#20273D;
     --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
     --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388;
-    --lon:#8CA2F5;
+    --lon:#8CA2F5; --dismiss:#E77A6E;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
   }
 }
@@ -28,7 +28,7 @@
   --ink:#1A1C24; --ink-2:#4C5060; --ink-3:#7A7F91;
   --accent:#2F53C6; --accent-soft:#E7ECFB;
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
-  --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700; --lon:#2F53C6;
+  --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700; --lon:#2F53C6; --dismiss:#C0473B;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
 }
 :root[data-theme="dark"]{
@@ -36,7 +36,7 @@
   --ink:#E8E9EF; --ink-2:#A7ACBB; --ink-3:#767C8D;
   --accent:#8CA2F5; --accent-soft:#20273D;
   --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
-  --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388; --lon:#8CA2F5;
+  --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388; --lon:#8CA2F5; --dismiss:#E77A6E;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
@@ -141,6 +141,17 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .save:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .chip.savedchip{color:var(--help)}
 .chip.savedchip[aria-pressed="true"]{background:var(--help);border-color:var(--help);color:#fff}
+.ract{display:flex;gap:6px}
+.dismiss{font-family:var(--sans);font-size:14px;line-height:1;color:var(--ink-3);background:transparent;
+  border:1px solid var(--line-strong);border-radius:8px;width:30px;height:30px;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:color .12s,border-color .12s,background .12s;}
+.dismiss:hover{color:var(--dismiss);border-color:var(--dismiss)}
+.dismiss.on{color:var(--dismiss);border-color:var(--dismiss);background:color-mix(in srgb,var(--dismiss) 12%,transparent)}
+.dismiss:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.role.dismissed{opacity:.6}
+.chip.dismisschip{color:var(--dismiss)}
+.chip.dismisschip[aria-pressed="true"]{background:var(--dismiss);border-color:var(--dismiss);color:#fff}
 .go{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;text-decoration:none}
 .go:hover{color:var(--accent)}
 .empty{display:none;text-align:center;color:var(--ink-3);font-family:var(--mono);font-size:13px;padding:60px 0}
@@ -187,7 +198,9 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
       <span class="tag" style="background:var(--line);color:var(--ink-2)">date</span>
       <span class="txt"><b>Every role is dated</b> and filterable by freshness — Fresh (≤14d),
         Aging (15–120d), Stale (120d+). <b>Star a role</b> to save it; the ★ Saved filter shows
-        only your marks, and they persist in this browser across weekly refreshes.</span>
+        only your marks. <b>Dismiss (✕) a role</b> to hide it from every view — the ✕ Dismissed
+        filter lists what you've hidden so you can restore it. Both persist in this browser across
+        weekly refreshes.</span>
     </div>
   </div>
 
@@ -216,6 +229,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
       </div>
       <div class="fgroup"><span class="lab">Mine</span>
         <button class="chip savedchip" id="savedToggle" aria-pressed="false">★ Saved <span id="savedN">(0)</span></button>
+        <button class="chip dismisschip" id="dismissToggle" aria-pressed="false" title="Show only the roles you've dismissed, so you can restore them">✕ Dismissed <span id="dismissedN">(0)</span></button>
         <button class="chip" id="exportBtn" title="Download your saved roles as CSV — fold this into the pipeline's data/saved.csv to make them permanent">Export CSV</button>
       </div>
     </div>
@@ -240,6 +254,14 @@ try{ saved=new Set(JSON.parse(localStorage.getItem(SKEY)||'[]')); }catch(e){ sav
 function isSaved(u){ return saved.has(u); }
 function persistSaved(){ try{ localStorage.setItem(SKEY, JSON.stringify([...saved])); }catch(e){} }
 function updateSavedN(){ const n=document.getElementById('savedN'); if(n) n.textContent='('+saved.size+')'; }
+
+// --- dismissed roles (hidden from every view, persist in this browser by URL) ---
+const DKEY='lpr-dismissed-v1';
+let dismissed;
+try{ dismissed=new Set(JSON.parse(localStorage.getItem(DKEY)||'[]')); }catch(e){ dismissed=new Set(); }
+function isDismissed(u){ return dismissed.has(u); }
+function persistDismissed(){ try{ localStorage.setItem(DKEY, JSON.stringify([...dismissed])); }catch(e){} }
+function updateDismissedN(){ const n=document.getElementById('dismissedN'); if(n) n.textContent='('+dismissed.size+')'; }
 document.getElementById('stats').innerHTML=[
   ['companies','Companies hiring'],['total','Roles total'],
   ['pm','PM roles','pm'],['helpful','PM-helpful roles','help']
@@ -266,7 +288,8 @@ function roleHTML(r){
   const ev=r.category!=='PM'&&r.evidence?`<div class="ev">${evHTML(r.evidence)}</div>`:'';
   const ai=ageInfo(r.posted);
   const on=isSaved(r.url);
-  return `<div class="role" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
+  const dis=isDismissed(r.url);
+  return `<div class="role${dis?' dismissed':''}" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
     <span class="tag ${cls}">${TAGLABEL[r.category]}</span>
     <div class="rmain">
       <div class="rtitle"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></div>
@@ -274,7 +297,10 @@ function roleHTML(r){
       ${ev}
     </div>
     <div class="rside">
-      <button class="save${on?' on':''}" data-url="${esc(r.url)}" aria-pressed="${on}" aria-label="${on?'Saved — click to remove':'Save this role'}" title="${on?'Saved':'Save'}">${on?'★':'☆'}</button>
+      <div class="ract">
+        <button class="save${on?' on':''}" data-url="${esc(r.url)}" aria-pressed="${on}" aria-label="${on?'Saved — click to remove':'Save this role'}" title="${on?'Saved':'Save'}">${on?'★':'☆'}</button>
+        <button class="dismiss${dis?' on':''}" data-url="${esc(r.url)}" aria-pressed="${dis}" aria-label="${dis?'Dismissed — click to restore':'Dismiss (hide) this role'}" title="${dis?'Dismissed — click to restore':'Dismiss (hide) this role'}">${dis?'↺':'✕'}</button>
+      </div>
       <a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open ↗</a>
     </div>
   </div>`;
@@ -318,25 +344,33 @@ document.getElementById('foot').innerHTML=
    Always confirm details on the employer’s own posting.</p>`;
 
 // filtering
-let cat='all', loc='all', fresh='all', q='', savedOnly=false;
+let cat='all', loc='all', fresh='all', q='', savedOnly=false, dismissedView=false;
 const rolesEls=[...document.querySelectorAll('.role')];
 const comps=[...document.querySelectorAll('.company')];
 function apply(){
   let shown=0;
   rolesEls.forEach(el=>{
-    const ok=(cat==='all'||el.dataset.cat===cat)&&
+    const dis=dismissed.has(el.dataset.url);
+    // Dismissed roles are hidden everywhere except the dedicated "Dismissed" view,
+    // which shows only them (so other filters stay free of that noise).
+    const base=(cat==='all'||el.dataset.cat===cat)&&
              (loc==='all'||el.dataset.loc===loc)&&
              (fresh==='all'||el.dataset.fresh===fresh)&&
              (!savedOnly||saved.has(el.dataset.url))&&
              (q===''||el.dataset.s.includes(q));
+    const ok = dismissedView ? (dis && base) : (!dis && base);
     el.style.display=ok?'':'none'; if(ok)shown++;
   });
   comps.forEach(c=>{
     const any=[...c.querySelectorAll('.role')].some(r=>r.style.display!=='none');
     c.style.display=any?'':'none';
   });
-  document.getElementById('count').textContent=`${shown} of ${S.total} roles`;
-  document.getElementById('empty').style.display=shown?'none':'block';
+  let label = dismissedView ? `${shown} dismissed role${shown===1?'':'s'}` : `${shown} of ${S.total} roles`;
+  if(!dismissedView && dismissed.size) label += ` · ${dismissed.size} dismissed hidden`;
+  document.getElementById('count').textContent=label;
+  const emptyEl=document.getElementById('empty');
+  emptyEl.textContent = dismissedView ? 'No dismissed roles yet — hit ✕ on a role to hide it.' : 'No roles match those filters.';
+  emptyEl.style.display=shown?'none':'block';
 }
 function wire(sel,attr,set){
   document.querySelectorAll(sel).forEach(b=>b.addEventListener('click',()=>{
@@ -352,6 +386,10 @@ document.getElementById('q').addEventListener('input',e=>{q=e.target.value.trim(
 // saved toggle + per-role save buttons
 const savedToggle=document.getElementById('savedToggle');
 savedToggle.addEventListener('click',()=>{ savedOnly=!savedOnly; savedToggle.setAttribute('aria-pressed',savedOnly); apply(); });
+
+// dismissed view toggle (shows only the roles you've hidden, to restore them)
+const dismissToggle=document.getElementById('dismissToggle');
+dismissToggle.addEventListener('click',()=>{ dismissedView=!dismissedView; dismissToggle.setAttribute('aria-pressed',dismissedView); apply(); });
 
 // export saved roles as CSV (url,title,company,tag,posted) for data/saved.csv
 const META={}; DATA.companies.forEach(c=>c.roles.forEach(r=>META[r.url]={title:r.title,company:c.name,tag:r.tag,posted:r.posted||''}));
@@ -376,6 +414,22 @@ document.querySelectorAll('.save').forEach(btn=>{
     persistSaved(); updateSavedN(); apply();
   });
 });
+
+// per-role dismiss buttons
+document.querySelectorAll('.dismiss').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const u=btn.dataset.url, now=!dismissed.has(u);
+    if(now) dismissed.add(u); else dismissed.delete(u);
+    btn.classList.toggle('on',now);
+    btn.textContent=now?'↺':'✕';
+    btn.setAttribute('aria-pressed',now);
+    const lbl=now?'Dismissed — click to restore':'Dismiss (hide) this role';
+    btn.setAttribute('title',lbl); btn.setAttribute('aria-label',lbl);
+    const row=btn.closest('.role'); if(row) row.classList.toggle('dismissed',now);
+    persistDismissed(); updateDismissedN(); apply();
+  });
+});
 updateSavedN();
+updateDismissedN();
 apply();
 </script>

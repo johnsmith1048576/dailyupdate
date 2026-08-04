@@ -58,10 +58,19 @@ python3 scan/build.py     # -> output/index.html
   Behind a proxy, `curl` inherits the usual `HTTPS_PROXY` / CA environment, so no extra
   config is needed. If a host is blocked by a network policy, that ATS is simply skipped.
 
-## Saving roles (durable shortlist)
+## Saving & dismissing roles
 
-The rendered page lets you **star** roles; those marks live in the browser's
-`localStorage` — instant, but per-browser and wiped if you clear browsing data.
+The rendered page lets you **star** roles you like and **dismiss** (✕) roles you don't.
+
+- **Dismiss (✕)** hides a role from every view, so the type / location / freshness filters stay
+  free of roles you've already ruled out. The **✕ Dismissed** filter lists what you've hidden so
+  you can restore any of them (the button flips to ↺). Dismissals live in the browser's
+  `localStorage` (keyed by posting URL), so they persist across weekly refreshes in that browser.
+
+### Saving roles (durable shortlist)
+
+Stars live in the browser's `localStorage` too — instant, but per-browser and wiped if you clear
+browsing data.
 
 For a **permanent** shortlist, the source of truth is [`data/saved.csv`](data/saved.csv),
 committed to the repo. `build.py` bakes it into every render, so saved roles show up

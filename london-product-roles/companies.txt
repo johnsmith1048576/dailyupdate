@@ -1,6 +1,7 @@
 # One company name per line. Edit freely — names are slugified and tried against
 # all four ATS APIs by scan/probe.py. Lines starting with # are ignored.
 15Five
+9fin
 Abnormal
 Abridge
 Ada
@@ -8,6 +9,7 @@ Adept
 Adyen
 Affirm
 Afterpay
+Agoda
 AI
 Airbase
 Airbnb
@@ -66,7 +68,9 @@ Bland
 Block
 Blockchain
 Bloom
+Bloomberg
 Bloomreach
+Boam
 Bold
 Bolt
 Bond
@@ -172,6 +176,7 @@ Dagster
 Darktrace
 Databricks
 Datadog
+Dataiku
 dbt
 Decagon
 Decodable
@@ -200,12 +205,14 @@ Elastic
 ElevenLabs
 Elevenlabs
 Elliptic
+Elsevier
 Emergent
 Encord
 Endor
 Estuary
 Etched
 Evisort
+Expedia
 Extend
 Factorial
 Faculty
@@ -297,6 +304,7 @@ Hippocratic
 HireVue
 Hometree
 Honeycomb
+Hopper
 Horizons
 HuggingFace
 Huma
@@ -479,6 +487,7 @@ Payhawk
 Payoneer
 Peakon
 Peloton
+Pencil
 Pendo
 Pennylane
 Peppy
@@ -491,6 +500,7 @@ Photoroom
 Pigment
 Pika
 Pinecone
+Ping Identity
 Pitch
 Pixxel
 Plaid
@@ -564,6 +574,7 @@ Sardine
 Saronic
 Scalable
 Scale
+ScaleAI
 Section
 Secureframe
 Segment

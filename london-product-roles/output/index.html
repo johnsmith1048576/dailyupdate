@@ -152,6 +152,22 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .role.dismissed{opacity:.6}
 .chip.dismisschip{color:var(--dismiss)}
 .chip.dismisschip[aria-pressed="true"]{background:var(--dismiss);border-color:var(--dismiss);color:#fff}
+.applied{font-family:var(--sans);font-size:14px;line-height:1;color:var(--ink-3);background:transparent;
+  border:1px solid var(--line-strong);border-radius:8px;width:30px;height:30px;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:color .12s,border-color .12s,background .12s;}
+.applied:hover{color:var(--pm);border-color:var(--pm)}
+.applied.on{color:#fff;border-color:var(--pm);background:var(--pm)}
+.applied:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip.appliedchip{color:var(--pm)}
+.chip.appliedchip[aria-pressed="true"]{background:var(--pm);border-color:var(--pm);color:#fff}
+.applied-badge{display:none;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--pm-ink);background:var(--pm-soft);padding:2px 7px;border-radius:5px}
+.role.applied-on .applied-badge{display:inline-flex}
+/* company name — hidden inside grouped view (it's in the section header), shown when the
+   list is flattened for date sorting */
+.rco{display:none;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink)}
+#flat .rco{display:inline-flex}
 .go{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap;text-decoration:none}
 .go:hover{color:var(--accent)}
 .empty{display:none;text-align:center;color:var(--ink-3);font-family:var(--mono);font-size:13px;padding:60px 0}
@@ -175,7 +191,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
     either a Product Management position or a non-PM role whose posting explicitly asks for
     product judgment. Swept live from Ashby, Greenhouse, Lever and Workable.</p>
   <div class="meta">
-    <span><b>Swept</b> 6 Aug 2026</span>
+    <span><b>Swept</b> 7 Aug 2026</span>
     <span><b>410</b> live company boards scanned</span>
     <span><b>4</b> ATS APIs · Ashby · Greenhouse · Lever · Workable</span>
   </div>
@@ -197,10 +213,10 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
     <div class="item">
       <span class="tag" style="background:var(--line);color:var(--ink-2)">date</span>
       <span class="txt"><b>Every role is dated</b> and filterable by freshness — Fresh (≤14d),
-        Aging (15–120d), Stale (120d+). <b>Star a role</b> to save it; the ★ Saved filter shows
-        only your marks. <b>Dismiss (✕) a role</b> to hide it from every view — the ✕ Dismissed
-        filter lists what you've hidden so you can restore it. Both persist in this browser across
-        weekly refreshes.</span>
+        Aging (15–120d), Stale (120d+) — pick any combination. <b>Star (★)</b> to save,
+        <b>tick (✓)</b> to mark applied, <b>dismiss (✕)</b> to hide from every view. Each has its
+        own filter, and <b>Sort</b> can flatten the list by publish date. Your marks persist in this
+        browser across weekly refreshes.</span>
     </div>
   </div>
 
@@ -221,14 +237,20 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
         <button class="chip loc" data-loc="UK" aria-pressed="false">UK</button>
         <button class="chip loc" data-loc="Remote-EMEA" aria-pressed="false">Remote·EMEA</button>
       </div>
-      <div class="fgroup"><span class="lab">Freshness</span>
+      <div class="fgroup"><span class="lab" title="Pick any combination — selecting more than one widens the results">Freshness</span>
         <button class="chip freshf" data-fresh="all" aria-pressed="true">All</button>
         <button class="chip freshf" data-fresh="fresh" aria-pressed="false">Fresh</button>
         <button class="chip freshf" data-fresh="aging" aria-pressed="false">Aging</button>
         <button class="chip freshf" data-fresh="stale" aria-pressed="false">Stale</button>
       </div>
+      <div class="fgroup"><span class="lab">Sort</span>
+        <button class="chip sortf" data-sort="grouped" aria-pressed="true">By company</button>
+        <button class="chip sortf" data-sort="date-desc" aria-pressed="false">Newest first</button>
+        <button class="chip sortf" data-sort="date-asc" aria-pressed="false">Oldest first</button>
+      </div>
       <div class="fgroup"><span class="lab">Mine</span>
         <button class="chip savedchip" id="savedToggle" aria-pressed="false">★ Saved <span id="savedN">(0)</span></button>
+        <button class="chip appliedchip" id="appliedToggle" aria-pressed="false" title="Show only the roles you've marked as applied">✓ Applied <span id="appliedN">(0)</span></button>
         <button class="chip dismisschip" id="dismissToggle" aria-pressed="false" title="Show only the roles you've dismissed, so you can restore them">✕ Dismissed <span id="dismissedN">(0)</span></button>
         <button class="chip" id="exportBtn" title="Download your saved roles as CSV — fold this into the pipeline's data/saved.csv to make them permanent">Export CSV</button>
       </div>
@@ -236,6 +258,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
   </div>
 
   <div id="list"></div>
+  <div id="flat" style="display:none"></div>
   <div class="empty" id="empty">No roles match those filters.</div>
 
   <div class="foot" id="foot"></div>
@@ -262,6 +285,14 @@ try{ dismissed=new Set(JSON.parse(localStorage.getItem(DKEY)||'[]')); }catch(e){
 function isDismissed(u){ return dismissed.has(u); }
 function persistDismissed(){ try{ localStorage.setItem(DKEY, JSON.stringify([...dismissed])); }catch(e){} }
 function updateDismissedN(){ const n=document.getElementById('dismissedN'); if(n) n.textContent='('+dismissed.size+')'; }
+
+// --- applied roles (mark that you've applied; persist in this browser by URL) ---
+const AKEY='lpr-applied-v1';
+let applied;
+try{ applied=new Set(JSON.parse(localStorage.getItem(AKEY)||'[]')); }catch(e){ applied=new Set(); }
+function isApplied(u){ return applied.has(u); }
+function persistApplied(){ try{ localStorage.setItem(AKEY, JSON.stringify([...applied])); }catch(e){} }
+function updateAppliedN(){ const n=document.getElementById('appliedN'); if(n) n.textContent='('+applied.size+')'; }
 document.getElementById('stats').innerHTML=[
   ['companies','Companies hiring'],['total','Roles total'],
   ['pm','PM roles','pm'],['helpful','PM-helpful roles','help']
@@ -289,16 +320,18 @@ function roleHTML(r){
   const ai=ageInfo(r.posted);
   const on=isSaved(r.url);
   const dis=isDismissed(r.url);
-  return `<div class="role${dis?' dismissed':''}" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
+  const app=isApplied(r.url);
+  return `<div class="role${dis?' dismissed':''}${app?' applied-on':''}" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-posted="${esc(r.posted||'')}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
     <span class="tag ${cls}">${TAGLABEL[r.category]}</span>
     <div class="rmain">
       <div class="rtitle"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></div>
-      <div class="rmeta"><span class="loc ${r.tag}">${esc(r.tag)}</span>${comp}${ai.html}</div>
+      <div class="rmeta"><span class="rco">${esc(r.companyName)}</span><span class="loc ${r.tag}">${esc(r.tag)}</span>${comp}${ai.html}<span class="applied-badge">✓ Applied</span></div>
       ${ev}
     </div>
     <div class="rside">
       <div class="ract">
         <button class="save${on?' on':''}" data-url="${esc(r.url)}" aria-pressed="${on}" aria-label="${on?'Saved — click to remove':'Save this role'}" title="${on?'Saved':'Save'}">${on?'★':'☆'}</button>
+        <button class="applied${app?' on':''}" data-url="${esc(r.url)}" aria-pressed="${app}" aria-label="${app?'Applied — click to unmark':'Mark as applied'}" title="${app?'Applied — click to unmark':'Mark as applied'}">✓</button>
         <button class="dismiss${dis?' on':''}" data-url="${esc(r.url)}" aria-pressed="${dis}" aria-label="${dis?'Dismissed — click to restore':'Dismiss (hide) this role'}" title="${dis?'Dismissed — click to restore':'Dismiss (hide) this role'}">${dis?'↺':'✕'}</button>
       </div>
       <a class="go" href="${esc(r.url)}" target="_blank" rel="noopener">Open ↗</a>
@@ -344,9 +377,17 @@ document.getElementById('foot').innerHTML=
    Always confirm details on the employer’s own posting.</p>`;
 
 // filtering
-let cat='all', loc='all', fresh='all', q='', savedOnly=false, dismissedView=false;
+let cat='all', loc='all', q='', savedOnly=false, appliedOnly=false, dismissedView=false;
+const freshSet=new Set();           // empty = no freshness restriction ("All")
+let sortMode='grouped';             // 'grouped' | 'date-desc' | 'date-asc'
 const rolesEls=[...document.querySelectorAll('.role')];
 const comps=[...document.querySelectorAll('.company')];
+const listEl=document.getElementById('list');
+const flatEl=document.getElementById('flat');
+// remember each role's home section + original order so we can restore grouped view
+rolesEls.forEach(el=>{ el._home=el.parentElement; });
+const roleOrder=rolesEls.slice();
+
 function apply(){
   let shown=0;
   rolesEls.forEach(el=>{
@@ -355,8 +396,9 @@ function apply(){
     // which shows only them (so other filters stay free of that noise).
     const base=(cat==='all'||el.dataset.cat===cat)&&
              (loc==='all'||el.dataset.loc===loc)&&
-             (fresh==='all'||el.dataset.fresh===fresh)&&
+             (freshSet.size===0||freshSet.has(el.dataset.fresh))&&
              (!savedOnly||saved.has(el.dataset.url))&&
+             (!appliedOnly||applied.has(el.dataset.url))&&
              (q===''||el.dataset.s.includes(q));
     const ok = dismissedView ? (dis && base) : (!dis && base);
     el.style.display=ok?'':'none'; if(ok)shown++;
@@ -372,6 +414,24 @@ function apply(){
   emptyEl.textContent = dismissedView ? 'No dismissed roles yet — hit ✕ on a role to hide it.' : 'No roles match those filters.';
   emptyEl.style.display=shown?'none':'block';
 }
+
+// grouped (by company) vs a single flat list sorted by publish date
+function applySort(){
+  if(sortMode==='grouped'){
+    roleOrder.forEach(el=>el._home.appendChild(el));   // restore into sections, original order
+    flatEl.style.display='none'; listEl.style.display='';
+  }else{
+    const dir = sortMode==='date-asc' ? 1 : -1;         // undated roles always sink to the bottom
+    roleOrder.slice().sort((a,b)=>{
+      const pa=a.dataset.posted, pb=b.dataset.posted;
+      if(pa&&!pb) return -1; if(!pa&&pb) return 1; if(!pa&&!pb) return 0;
+      return pa<pb ? -dir : pa>pb ? dir : 0;
+    }).forEach(el=>flatEl.appendChild(el));
+    listEl.style.display='none'; flatEl.style.display='';
+  }
+  apply();
+}
+
 function wire(sel,attr,set){
   document.querySelectorAll(sel).forEach(b=>b.addEventListener('click',()=>{
     document.querySelectorAll(sel).forEach(x=>x.setAttribute('aria-pressed','false'));
@@ -380,12 +440,35 @@ function wire(sel,attr,set){
 }
 wire('.chip.cat','cat',v=>cat=v);
 wire('.chip.loc','loc',v=>loc=v);
-wire('.chip.freshf','fresh',v=>fresh=v);
+
+// freshness is multi-select: toggle each level; "All" clears the set
+const freshChips=[...document.querySelectorAll('.chip.freshf')];
+function syncFreshUI(){
+  freshChips.forEach(ch=>ch.setAttribute('aria-pressed',
+    ch.dataset.fresh==='all' ? String(freshSet.size===0) : String(freshSet.has(ch.dataset.fresh))));
+}
+freshChips.forEach(ch=>ch.addEventListener('click',()=>{
+  const v=ch.dataset.fresh;
+  if(v==='all') freshSet.clear();
+  else freshSet.has(v) ? freshSet.delete(v) : freshSet.add(v);
+  syncFreshUI(); apply();
+}));
+
+// sort chips (single-select) drive grouped vs. date-flattened
+document.querySelectorAll('.chip.sortf').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.chip.sortf').forEach(x=>x.setAttribute('aria-pressed','false'));
+  b.setAttribute('aria-pressed','true'); sortMode=b.dataset.sort; applySort();
+}));
+
 document.getElementById('q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();apply();});
 
 // saved toggle + per-role save buttons
 const savedToggle=document.getElementById('savedToggle');
 savedToggle.addEventListener('click',()=>{ savedOnly=!savedOnly; savedToggle.setAttribute('aria-pressed',savedOnly); apply(); });
+
+// applied-only toggle
+const appliedToggle=document.getElementById('appliedToggle');
+appliedToggle.addEventListener('click',()=>{ appliedOnly=!appliedOnly; appliedToggle.setAttribute('aria-pressed',appliedOnly); apply(); });
 
 // dismissed view toggle (shows only the roles you've hidden, to restore them)
 const dismissToggle=document.getElementById('dismissToggle');
@@ -429,7 +512,22 @@ document.querySelectorAll('.dismiss').forEach(btn=>{
     persistDismissed(); updateDismissedN(); apply();
   });
 });
+
+// per-role applied buttons
+document.querySelectorAll('.applied').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const u=btn.dataset.url, now=!applied.has(u);
+    if(now) applied.add(u); else applied.delete(u);
+    btn.classList.toggle('on',now);
+    btn.setAttribute('aria-pressed',now);
+    const lbl=now?'Applied — click to unmark':'Mark as applied';
+    btn.setAttribute('title',lbl); btn.setAttribute('aria-label',lbl);
+    const row=btn.closest('.role'); if(row) row.classList.toggle('applied-on',now);
+    persistApplied(); updateAppliedN(); apply();
+  });
+});
 updateSavedN();
+updateAppliedN();
 updateDismissedN();
 apply();
 </script>

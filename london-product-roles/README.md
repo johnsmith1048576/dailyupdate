@@ -58,14 +58,25 @@ python3 scan/build.py     # -> output/index.html
   Behind a proxy, `curl` inherits the usual `HTTPS_PROXY` / CA environment, so no extra
   config is needed. If a host is blocked by a network policy, that ATS is simply skipped.
 
-## Saving & dismissing roles
+## Marking roles: save · applied · dismiss
 
-The rendered page lets you **star** roles you like and **dismiss** (✕) roles you don't.
+Each role row carries three one-click markers, plus matching filters:
 
-- **Dismiss (✕)** hides a role from every view, so the type / location / freshness filters stay
+- **Star (★)** — save a role; the **★ Saved** filter shows only your marks.
+- **Tick (✓)** — mark a role as *applied*; the row shows an "Applied" badge and the **✓ Applied**
+  filter narrows to those.
+- **Dismiss (✕)** — hide a role from every view, so the type / location / freshness filters stay
   free of roles you've already ruled out. The **✕ Dismissed** filter lists what you've hidden so
-  you can restore any of them (the button flips to ↺). Dismissals live in the browser's
-  `localStorage` (keyed by posting URL), so they persist across weekly refreshes in that browser.
+  you can restore any of them (the button flips to ↺).
+
+All three live in the browser's `localStorage` (keyed by posting URL), so they persist across
+weekly refreshes in that browser. Stars can additionally be made durable via `data/saved.csv`
+(below); applied/dismissed marks are browser-only for now.
+
+**Filtering & sorting.** Freshness is **multi-select** — pick any combination of Fresh / Aging /
+Stale to widen the results. **Sort** switches between the default *by company* grouping and a flat
+list ordered by publish date (*Newest first* / *Oldest first*), which shows each role's company
+inline.
 
 ### Saving roles (durable shortlist)
 

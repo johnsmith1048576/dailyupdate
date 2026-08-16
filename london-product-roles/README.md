@@ -18,7 +18,7 @@ Three stages, each a plain Python script (stdlib + `curl` only):
 |------|--------|-------|--------|
 | 1. Discover | `scan/probe.py` | `companies.txt` | `data/ats_hits.json` |
 | 2. Sweep & classify | `scan/sweep.py` | `data/ats_hits.json` | `data/roles.json` |
-| 3. Render | `scan/build.py` | `data/roles.json` + `scan/template.html` | `output/index.html` |
+| 3. Render | `scan/build.py` | `data/roles.json` + `scan/template.html` | `output/index.html` (+ `data/history.json`) |
 
 - **Discover** turns each name in `companies.txt` into candidate slugs and tries them
   against all four ATS APIs, keeping any board that returns live jobs. Slugs found on
@@ -32,7 +32,24 @@ Three stages, each a plain Python script (stdlib + `curl` only):
     management experience" are excluded). The matching sentence is quoted on the page.
   - Location tags: **London**, **UK**, **Remote-EMEA** (fully remote, open to UK/Europe).
 - **Render** dedupes, groups by company, sorts newest-first, and injects the data into the
-  HTML template.
+  HTML template. It also maintains **`data/history.json`** — a durable archive of every role URL
+  ever seen — and computes the **posting-cadence** chart from it (see below), so the chart is
+  regenerated automatically on every run with no extra step.
+
+### Posting-cadence chart
+
+The page has an expandable **Posting cadence** panel: a stacked bar chart of roles by the month
+their posting went up, for the current year. Each bar is split into live **PM** (green) and
+**PM-helpful** (amber) roles, plus **expired** roles in grey — URLs that appeared in an earlier
+sweep but are no longer live. `build.py` derives this from `data/history.json`:
+
+- every currently-live role is upserted into the archive (keyed by URL) on each run;
+- any archived URL not in the current sweep counts as *expired*;
+- the counts are bucketed by posting month and injected into the template as `__CHART__`.
+
+`data/history.json` is committed, so the expired history survives across refreshes and machines —
+without it, "expired" can't be known (a sweep only ever sees what's *currently* live). The current
+month's bar is partial (through today) and marked with a dashed cap.
 
 ## Run it
 

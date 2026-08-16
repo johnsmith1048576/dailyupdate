@@ -7,7 +7,7 @@
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
   --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700;
   --lon:#2F53C6; --dismiss:#C0473B;
-  --cpm:#1BAF7A; --chelp:#EDA100; --cexp:#AEB3C0; --cgrid:#E4E6EC; --caxis:#B9BCC8;
+  --cpm:#1BAF7A; --chelp:#EDA100; --cexp-pm:#7FC7AE; --cexp-help:#F2C877; --cgrid:#E4E6EC; --caxis:#B9BCC8;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
   --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -21,7 +21,7 @@
     --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
     --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388;
     --lon:#8CA2F5; --dismiss:#E77A6E;
-    --cpm:#199E70; --chelp:#C98500; --cexp:#667085; --cgrid:#242832; --caxis:#3A3F4C;
+    --cpm:#199E70; --chelp:#C98500; --cexp-pm:#63B89A; --cexp-help:#CC9A50; --cgrid:#242832; --caxis:#3A3F4C;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
   }
 }
@@ -31,7 +31,7 @@
   --accent:#2F53C6; --accent-soft:#E7ECFB;
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
   --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700; --lon:#2F53C6; --dismiss:#C0473B;
-  --cpm:#1BAF7A; --chelp:#EDA100; --cexp:#AEB3C0; --cgrid:#E4E6EC; --caxis:#B9BCC8;
+  --cpm:#1BAF7A; --chelp:#EDA100; --cexp-pm:#7FC7AE; --cexp-help:#F2C877; --cgrid:#E4E6EC; --caxis:#B9BCC8;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
 }
 :root[data-theme="dark"]{
@@ -40,7 +40,7 @@
   --accent:#8CA2F5; --accent-soft:#20273D;
   --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
   --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388; --lon:#8CA2F5; --dismiss:#E77A6E;
-  --cpm:#199E70; --chelp:#C98500; --cexp:#667085; --cgrid:#242832; --caxis:#3A3F4C;
+  --cpm:#199E70; --chelp:#C98500; --cexp-pm:#63B89A; --cexp-help:#CC9A50; --cgrid:#242832; --caxis:#3A3F4C;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
@@ -84,6 +84,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .cad-legend{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin:0 0 10px 2px}
 .cad-legend .item{display:inline-flex;gap:7px;align-items:center;font-size:12.5px;color:var(--ink-2)}
 .cad-legend .swatch{width:11px;height:11px;border-radius:3px;display:inline-block}
+.cad-legend .cad-expsep{margin-left:4px;padding-left:16px;border-left:1px solid var(--line)}
 .cad-chartbox{position:relative;overflow-x:auto}
 #cadchart{display:block;width:100%;height:auto;min-width:480px}
 .cad-gridline{stroke:var(--cgrid);stroke-width:1}
@@ -268,7 +269,8 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
       <div class="cad-legend">
         <span class="item"><span class="swatch" style="background:var(--cpm)"></span>PM role</span>
         <span class="item"><span class="swatch" style="background:var(--chelp)"></span>PM helpful</span>
-        <span class="item"><span class="swatch" style="background:var(--cexp)"></span>Expired</span>
+        <span class="item cad-expsep"><span class="swatch" style="background:var(--cexp-pm)"></span>Expired PM</span>
+        <span class="item"><span class="swatch" style="background:var(--cexp-help)"></span>Expired helpful</span>
       </div>
       <div class="cad-chartbox">
         <svg id="cadchart" role="img" aria-label="Stacked bar chart of roles by month"></svg>
@@ -438,7 +440,7 @@ document.getElementById('foot').innerHTML=
 // ---- posting-cadence chart (data injected by build.py; expired = archived roles no longer live) ----
 (function(){
   const months=CHART.months||[], cm=CHART.meta||{};
-  months.forEach(d=>d.total=(d.pm||0)+(d.help||0)+(d.expired||0));
+  months.forEach(d=>d.total=(d.pm||0)+(d.help||0)+(d.exp_pm||0)+(d.exp_help||0));
   const svg=document.getElementById('cadchart'), tip=document.getElementById('cadtip');
   if(!svg||!months.length) return;
   const NS='http://www.w3.org/2000/svg';
@@ -462,7 +464,8 @@ document.getElementById('foot').innerHTML=
   const box=svg.parentElement;
   function showTip(d){
     tip.innerHTML=`<div style="font-family:var(--mono);font-weight:600;margin-bottom:4px">${FULL[d.m]} ${CHART.year}${d.partial?' · to '+cm.throughDay+'th':''}</div>`+
-      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp)"></span>Expired</span><b>${d.expired||0}</b></div>`+
+      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp-help)"></span>Expired helpful</span><b>${d.exp_help||0}</b></div>`+
+      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp-pm)"></span>Expired PM</span><b>${d.exp_pm||0}</b></div>`+
       `<div class="row"><span class="k"><span class="dot" style="background:var(--chelp)"></span>PM helpful</span><b>${d.help||0}</b></div>`+
       `<div class="row"><span class="k"><span class="dot" style="background:var(--cpm)"></span>PM role</span><b>${d.pm||0}</b></div>`+
       `<div class="row" style="margin-top:3px;border-top:1px solid rgba(255,255,255,.18);padding-top:3px"><span class="k">Total ever</span><b>${d.total}</b></div>`;
@@ -476,9 +479,9 @@ document.getElementById('foot').innerHTML=
   months.forEach((d,i)=>{
     d._i=i; d.partial=(i===months.length-1);
     const bx=padL+i*band+(band-bw)/2;
-    const g=el('g',{class:'cad-barg',tabindex:'0','aria-label':`${FULL[d.m]}: ${d.total} roles — ${d.pm||0} PM, ${d.help||0} PM-helpful, ${d.expired||0} expired`});
-    // stack bottom->top: PM, helpful, expired; 2px surface gap between non-zero fills
-    let cursor=yBase; const segs=[['pm','--cpm'],['help','--chelp'],['expired','--cexp']];
+    const g=el('g',{class:'cad-barg',tabindex:'0','aria-label':`${FULL[d.m]}: ${d.total} roles — ${d.pm||0} live PM, ${d.help||0} live PM-helpful, ${d.exp_pm||0} expired PM, ${d.exp_help||0} expired PM-helpful`});
+    // stack bottom->top: live PM, live helpful, expired PM, expired helpful; 2px surface gap between fills
+    let cursor=yBase; const segs=[['pm','--cpm'],['help','--chelp'],['exp_pm','--cexp-pm'],['exp_help','--cexp-help']];
     const present=segs.filter(([k])=>(d[k]||0)>0);
     present.forEach(([k,varname],si)=>{
       const h=(d[k]/yMax)*plotH, top=cursor-h, isTop=(si===present.length-1);
@@ -496,12 +499,13 @@ document.getElementById('foot').innerHTML=
     svg.appendChild(g);
   });
   const liveY=months.reduce((a,d)=>a+(d.pm||0)+(d.help||0),0);
-  const expY=months.reduce((a,d)=>a+(d.expired||0),0);
+  const expY=months.reduce((a,d)=>a+(d.exp_pm||0)+(d.exp_help||0),0);
   const last=months[months.length-1];
   document.getElementById('cad-sub').textContent=`${CHART.year} · ${liveY} live + ${expY} expired by month`;
   document.getElementById('cad-note').innerHTML=
     `<b>Live</b> roles are split into PM (green) and PM-helpful (amber); <b>expired</b> roles — seen in an
-     earlier sweep but no longer posted — are grey. Bars are bucketed by each role's posting month for
+     earlier sweep but no longer posted — echo that split in lighter tints (pale green = expired PM,
+     pale orange = expired PM-helpful). Bars are bucketed by each role's posting month for
      ${CHART.year}, so the height is every role <em>ever seen</em> that month. <b>${FULL[last.m]} is partial</b>
      (through the ${cm.throughDay}${cm.throughDay==1?'st':cm.throughDay==2?'nd':cm.throughDay==3?'rd':'th'}, dashed cap).
      Archive: ${cm.archive} roles tracked, ${cm.expired} currently expired. Pre-${CHART.year} postings are omitted here.`;

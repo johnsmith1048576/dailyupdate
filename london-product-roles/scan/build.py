@@ -50,7 +50,7 @@ def build_chart(roles):
         }
     json.dump(archive, open(HISTORY, "w"), indent=0)
 
-    buckets = {m: {"pm": 0, "help": 0, "expired": 0} for m in range(1, 13)}
+    buckets = {m: {"pm": 0, "help": 0, "exp_pm": 0, "exp_help": 0} for m in range(1, 13)}
     for r in roles:
         p = r.get("posted") or ""
         if p[:4] == year and len(p) >= 7:
@@ -59,7 +59,7 @@ def build_chart(roles):
     for e in expired:
         p = e.get("posted") or ""
         if p[:4] == year and len(p) >= 7:
-            buckets[int(p[5:7])]["expired"] += 1
+            buckets[int(p[5:7])]["exp_pm" if e.get("category") == "PM" else "exp_help"] += 1
 
     months = [dict(m=MON[i - 1], **buckets[i]) for i in range(1, today.month + 1)]
     return {

@@ -1,17 +1,5 @@
 [
  {
-  "company": "openai",
-  "source": "Ashby",
-  "title": "AI Deployment Engineer - Startups",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London, UK",
-  "url": "https://jobs.ashbyhq.com/openai/980bc2ea-2c35-4546-bb48-5496a4e6847f",
-  "comp": "",
-  "evidence": "\u2026ality. We combine hands-on technical depth with strong product judgment, helping translate complex, high-value use cases into\u2026",
-  "posted": "2026-05-07"
- },
- {
   "company": "airwallex",
   "source": "Ashby",
   "title": "Engineering Director, Global Treasury and Payment Network (Relocate to Singapore)",
@@ -118,6 +106,18 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-07-24"
+ },
+ {
+  "company": "legora",
+  "source": "Ashby",
+  "title": "Staff Product Designer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/legora/92db5fb3-581b-4dcd-b6c1-84c8ba39bb9e",
+  "comp": "",
+  "evidence": "\u2026tween hands-on design and product strategy. - Strong product judgment and communication skills; you influence direction and\u2026",
+  "posted": "2026-08-20"
  },
  {
   "company": "elevenlabs",
@@ -242,18 +242,6 @@
  {
   "company": "deliveroo",
   "source": "Ashby",
-  "title": "Product Manager, Ads",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/528b7b55-628f-4748-9726-fe3797be01a8",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-04-29"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
   "title": "Group Product Manager, Regulatory Finance",
   "category": "PM",
   "tag": "London",
@@ -278,7 +266,7 @@
  {
   "company": "deliveroo",
   "source": "Ashby",
-  "title": "Senior Software Engineer, Android",
+  "title": "Senior Software Engineer, Android SDUI",
   "category": "PM-helpful",
   "tag": "London",
   "location": "London - The River Building HQ",
@@ -384,6 +372,18 @@
   "posted": "2026-06-19"
  },
  {
+  "company": "pennylane",
+  "source": "Ashby",
+  "title": "Senior Product Manager \ud83c\uddeb\ud83c\uddf7",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Paris | Portugal (remote) | Germany (remote) | Spain (remote) | Ireland (remote)",
+  "url": "https://jobs.ashbyhq.com/pennylane/a4555925-195a-4a59-9367-fcaf27f2113d",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-02-23"
+ },
+ {
   "company": "decagon",
   "source": "Ashby",
   "title": "Senior Agent Product Manager",
@@ -456,16 +456,52 @@
   "posted": "2026-07-21"
  },
  {
-  "company": "pennylane",
+  "company": "wayve",
   "source": "Ashby",
-  "title": "Senior Product Manager \ud83c\uddeb\ud83c\uddf7",
+  "title": "Technical Product Manager - Robotaxi",
   "category": "PM",
-  "tag": "UK",
-  "location": "Paris | Portugal (remote) | Germany (remote) | Spain (remote) | Ireland (remote)",
-  "url": "https://jobs.ashbyhq.com/pennylane/a4555925-195a-4a59-9367-fcaf27f2113d",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/wayve/0819a4a4-282e-4697-9254-feb400eda5eb",
   "comp": "",
   "evidence": "",
-  "posted": "2026-02-23"
+  "posted": "2025-12-05"
+ },
+ {
+  "company": "wayve",
+  "source": "Ashby",
+  "title": "Director of Platform Management for Simulation, Evaluation & Validation",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/wayve/362d94e3-6ed9-45a9-9d9a-060268ac40c0",
+  "comp": "",
+  "evidence": "\u2026g skills and experience. Essential - 8+ years of product management experience, with at least 3\u20135 years leading PM teams (PMs and/or\u2026",
+  "posted": "2026-06-11"
+ },
+ {
+  "company": "wayve",
+  "source": "Ashby",
+  "title": "Senior Software Engineer (Product,  AI Portal)",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/wayve/a5806de1-800a-4931-a69f-0c044e278c8a",
+  "comp": "",
+  "evidence": "\u2026This is a cloud-based software engineering role for a product-minded engineer who enjoys building fast with care, maintai\u2026",
+  "posted": "2026-06-30"
+ },
+ {
+  "company": "wayve",
+  "source": "Ashby",
+  "title": "Senior Software Engineer, Data",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/wayve/416f25d2-3c7e-4e46-94d1-3eb377ea93f8",
+  "comp": "",
+  "evidence": "\u2026ment, networking or cloud-to-cloud data transfer - A product mindset: you think about the customer and build solutions t\u2026",
+  "posted": "2026-08-25"
  },
  {
   "company": "cursor",
@@ -490,54 +526,6 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-04-28"
- },
- {
-  "company": "wayve",
-  "source": "Ashby",
-  "title": "Technical Product Manager - Robotaxi",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, United Kingdom",
-  "url": "https://jobs.ashbyhq.com/wayve/0819a4a4-282e-4697-9254-feb400eda5eb",
-  "comp": "",
-  "evidence": "",
-  "posted": "2025-12-05"
- },
- {
-  "company": "wayve",
-  "source": "Ashby",
-  "title": "Staff Data Platform Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London, United Kingdom",
-  "url": "https://jobs.ashbyhq.com/wayve/ebb3bb4a-24db-4831-b736-462e678aabe2",
-  "comp": "",
-  "evidence": "\u2026and storage at scale, cross-cloud data movement) - A product mindset: you think about the customer and build solutions t\u2026",
-  "posted": "2026-05-27"
- },
- {
-  "company": "wayve",
-  "source": "Ashby",
-  "title": "Director of Platform Management for Simulation, Evaluation & Validation",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London, United Kingdom",
-  "url": "https://jobs.ashbyhq.com/wayve/362d94e3-6ed9-45a9-9d9a-060268ac40c0",
-  "comp": "",
-  "evidence": "\u2026g skills and experience. Essential - 8+ years of product management experience, with at least 3\u20135 years leading PM teams (PMs and/or\u2026",
-  "posted": "2026-06-11"
- },
- {
-  "company": "wayve",
-  "source": "Ashby",
-  "title": "Software Engineer (Product,  AI Portal)",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London, United Kingdom",
-  "url": "https://jobs.ashbyhq.com/wayve/a5806de1-800a-4931-a69f-0c044e278c8a",
-  "comp": "",
-  "evidence": "\u2026This is a cloud-based software engineering role for a product-minded engineer who enjoys building fast with care, maintai\u2026",
-  "posted": "2026-06-30"
  },
  {
   "company": "perplexity",
@@ -686,18 +674,6 @@
  {
   "company": "lendable",
   "source": "Ashby",
-  "title": "Analytics Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/lendable/731c9247-b0e5-4678-b2f7-2979d40f681f",
-  "comp": "",
-  "evidence": "\u2026s - Cultural/behavioural questions - Product mindset and ability to collaborate and communicate LIFE\u2026",
-  "posted": "2026-07-21"
- },
- {
-  "company": "lendable",
-  "source": "Ashby",
   "title": "Product Manager (UK Loans)",
   "category": "PM",
   "tag": "London",
@@ -706,6 +682,18 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-08-04"
+ },
+ {
+  "company": "lendable",
+  "source": "Ashby",
+  "title": "Associate Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/lendable/d9effa9b-07c2-4075-a350-2f84fc580e8d",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-19"
  },
  {
   "company": "lendable",
@@ -732,6 +720,138 @@
   "posted": "2026-07-21"
  },
  {
+  "company": "deepl",
+  "source": "Ashby",
+  "title": "Head of Product Growth",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/deepl/236d8651-c4c9-4bb8-a9ea-57d535cb76fb",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-14"
+ },
+ {
+  "company": "deepl",
+  "source": "Ashby",
+  "title": "Senior Data Platform Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/deepl/4921cca4-576c-4d90-8742-8a90bbc0a6ea",
+  "comp": "",
+  "evidence": "\u2026rns incidents into durable improvements - A platform-product mindset \u2014 treats the engineers, analysts, and teams who bui\u2026",
+  "posted": "2026-08-19"
+ },
+ {
+  "company": "deepl",
+  "source": "Ashby",
+  "title": "Senior Site Reliability Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/deepl/fd837484-2f16-4ffd-b2f1-6920f0f906c5",
+  "comp": "",
+  "evidence": "\u2026scalable. - Focus on Customer Experience: You have a product mindset and recognise the customer experience is paramount.\u2026",
+  "posted": "2026-08-06"
+ },
+ {
+  "company": "supabase",
+  "source": "Ashby",
+  "title": "Product Manager - Marketplace",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote, Anywhere",
+  "url": "https://jobs.ashbyhq.com/supabase/23c9ce7e-6b7b-4316-8f00-8f318e902441",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-07-24"
+ },
+ {
+  "company": "supabase",
+  "source": "Ashby",
+  "title": "Product Manager - Security & Trust (EMEA/AMER)",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote, Anywhere",
+  "url": "https://jobs.ashbyhq.com/supabase/b8010a28-109c-46a9-b8b7-c7f9b24077fa",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-04-29"
+ },
+ {
+  "company": "supabase",
+  "source": "Ashby",
+  "title": "Product Manager - Infrastructure",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote, Anywhere",
+  "url": "https://jobs.ashbyhq.com/supabase/47bcfdb8-b954-423e-8a9e-85256434575c",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-06-01"
+ },
+ {
+  "company": "supabase",
+  "source": "Ashby",
+  "title": "Product Manager - Branching",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote, Anywhere",
+  "url": "https://jobs.ashbyhq.com/supabase/9773ea1b-e25b-437c-bdbd-3fce0c69101e",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "supabase",
+  "source": "Ashby",
+  "title": "Product Manager - Strategic Partner Integrations (Bay Area based)",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote, Anywhere",
+  "url": "https://jobs.ashbyhq.com/supabase/68a397e7-8a1a-4566-ae41-e8c61dd6ed93",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "docker",
+  "source": "Ashby",
+  "title": "Senior Software Engineer, Secure Build",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "England | United States",
+  "url": "https://jobs.ashbyhq.com/docker/9c8d86d4-b90e-4429-bb87-6ecdfd4abd43",
+  "comp": "",
+  "evidence": "\u2026s and common software supply-chain risks. - A strong product mindset and care for developer workflows, including experie\u2026",
+  "posted": "2026-08-14"
+ },
+ {
+  "company": "docker",
+  "source": "Ashby",
+  "title": "Staff Software Engineer, Developer Experience",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "England | United States",
+  "url": "https://jobs.ashbyhq.com/docker/f7beef23-87b7-4bfa-8946-93e9dc02d805",
+  "comp": "\u20ac110.5K \u2013 \u20ac181.5K \u2022 Offers Equity \u2022 Multiple Ranges",
+  "evidence": "\u2026or organisational boundaries. - Strong technical and product judgement, including the ability to explain constraints, alterna\u2026",
+  "posted": "2026-08-14"
+ },
+ {
+  "company": "docker",
+  "source": "Ashby",
+  "title": "Senior Software Engineer, Sandboxes (London or East Coast Preferred)",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London, UK | United States",
+  "url": "https://jobs.ashbyhq.com/docker/aa9dac2f-ad93-4aa8-ab07-851685725806",
+  "comp": "",
+  "evidence": "\u2026's finished. The successful candidate is a technical, product-minded engineer with deep experience building secure, isola\u2026",
+  "posted": "2026-08-12"
+ },
+ {
   "company": "synthesia",
   "source": "Ashby",
   "title": "Product Manager, New Product Bet (Staff/Principal)",
@@ -756,76 +876,16 @@
   "posted": "2026-08-05"
  },
  {
-  "company": "docker",
+  "company": "synthesia",
   "source": "Ashby",
-  "title": "Senior Software Engineer, Secure Build",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "England | United States",
-  "url": "https://jobs.ashbyhq.com/docker/9c8d86d4-b90e-4429-bb87-6ecdfd4abd43",
-  "comp": "\u20ac94,040 \u2013 \u20ac155,650 \u2022 Offers Equity \u2022 Multiple Ranges",
-  "evidence": "\u2026s and common software supply-chain risks. - A strong product mindset and care for developer workflows, including experie\u2026",
-  "posted": "2026-08-14"
- },
- {
-  "company": "docker",
-  "source": "Ashby",
-  "title": "Staff Software Engineer, Developer Experience",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "England | United States",
-  "url": "https://jobs.ashbyhq.com/docker/f7beef23-87b7-4bfa-8946-93e9dc02d805",
-  "comp": "\u20ac110.5K \u2013 \u20ac181.5K \u2022 Offers Equity \u2022 Multiple Ranges",
-  "evidence": "\u2026or organisational boundaries. - Strong technical and product judgement, including the ability to explain constraints, alterna\u2026",
-  "posted": "2026-08-14"
- },
- {
-  "company": "docker",
-  "source": "Ashby",
-  "title": "Senior Software Engineer, Sandboxes (EU or East Coast Preferred)",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "England | Portugal | Spain | Italy | Germany | United States",
-  "url": "https://jobs.ashbyhq.com/docker/aa9dac2f-ad93-4aa8-ab07-851685725806",
-  "comp": "",
-  "evidence": "\u2026's finished. The successful candidate is a technical, product-minded engineer with deep experience building secure, isola\u2026",
-  "posted": "2026-08-12"
- },
- {
-  "company": "deepl",
-  "source": "Ashby",
-  "title": "Head of Product Growth",
+  "title": "Product Manager, Growth (Senior/Staff-level)",
   "category": "PM",
   "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/deepl/236d8651-c4c9-4bb8-a9ea-57d535cb76fb",
+  "location": "Europe | London",
+  "url": "https://jobs.ashbyhq.com/synthesia/85e7b0df-f603-416b-a7bd-3331b6576186",
   "comp": "",
   "evidence": "",
-  "posted": "2026-08-14"
- },
- {
-  "company": "deepl",
-  "source": "Ashby",
-  "title": "Senior Data Platform Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/deepl/4921cca4-576c-4d90-8742-8a90bbc0a6ea",
-  "comp": "",
-  "evidence": "\u2026rns incidents into durable improvements - A platform-product mindset \u2014 treats the engineers, analysts, and teams who bui\u2026",
-  "posted": "2026-07-30"
- },
- {
-  "company": "deepl",
-  "source": "Ashby",
-  "title": "Senior Site Reliability Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/deepl/fd837484-2f16-4ffd-b2f1-6920f0f906c5",
-  "comp": "",
-  "evidence": "\u2026scalable. - Focus on Customer Experience: You have a product mindset and recognise the customer experience is paramount.\u2026",
-  "posted": "2026-08-06"
+  "posted": "2026-08-17"
  },
  {
   "company": "constructor",
@@ -852,54 +912,6 @@
   "posted": "2026-07-28"
  },
  {
-  "company": "trainline",
-  "source": "Ashby",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/trainline/d7c691e6-819c-4134-b915-1a3ac65959f6",
-  "comp": "\u00a390K \u2022 Offers Bonus",
-  "evidence": "",
-  "posted": "2026-08-14"
- },
- {
-  "company": "pleo",
-  "source": "Ashby",
-  "title": "Staff Applied AI Engineer",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "United Kingdom | Denmark | Portugal | Spain",
-  "url": "https://jobs.ashbyhq.com/pleo/3f30df79-b7b7-4dd2-8ebd-4c1f2bba15e2",
-  "comp": "",
-  "evidence": "\u2026his role is a good fit for you if: - You have strong product instincts and build with the user in mind. You understand that\u2026",
-  "posted": "2026-06-29"
- },
- {
-  "company": "pleo",
-  "source": "Ashby",
-  "title": "Staff Applied AI Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London | Lisbon | Copenhagen | Madrid",
-  "url": "https://jobs.ashbyhq.com/pleo/faf9b3ab-99a3-463a-8fca-32bfcc97f000",
-  "comp": "",
-  "evidence": "\u2026his role is a good fit for you if: - You have strong product instincts and build with the user in mind. You understand that\u2026",
-  "posted": "2026-06-29"
- },
- {
-  "company": "thought-machine",
-  "source": "Ashby",
-  "title": "Senior Technical Product Manager - Vault Core",
-  "category": "PM",
-  "tag": "London",
-  "location": "United Kingdom, London",
-  "url": "https://jobs.ashbyhq.com/thought-machine/f42784b4-3b76-4ee8-91b7-b674ca90c437",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-03-10"
- },
- {
   "company": "attio",
   "source": "Ashby",
   "title": "Product Lead",
@@ -916,36 +928,12 @@
   "source": "Ashby",
   "title": "Senior Design Engineer",
   "category": "PM-helpful",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/attio/98e8228d-661f-4795-8c6b-a4caedb03c2c",
-  "comp": "",
-  "evidence": "\u2026sistently delivering high-quality outcomes. Excellent Product Judgement: Strong instincts for user experience, interaction des\u2026",
-  "posted": "2026-08-04"
- },
- {
-  "company": "attio",
-  "source": "Ashby",
-  "title": "Senior Design Engineer",
-  "category": "PM-helpful",
   "tag": "Remote-EMEA",
   "location": "Europe",
   "url": "https://jobs.ashbyhq.com/attio/22a3d38e-69f1-44a8-a7b5-10f109820518",
   "comp": "",
   "evidence": "\u2026sistently delivering high-quality outcomes. Excellent Product Judgement: Strong instincts for user experience, interaction des\u2026",
   "posted": "2026-08-04"
- },
- {
-  "company": "hopper",
-  "source": "Ashby",
-  "title": "Principal Product Manager - Pricing and Personalization",
-  "category": "PM",
-  "tag": "London",
-  "location": "United Kingdom - Remote | London - Remote",
-  "url": "https://jobs.ashbyhq.com/hopper/0482ca59-d815-42cb-850d-2d229cb9d9a0",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-03-20"
  },
  {
   "company": "9fin",
@@ -982,6 +970,90 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-06-30"
+ },
+ {
+  "company": "9fin",
+  "source": "Ashby",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/9fin/3ee82e36-2e5f-4437-b2e4-4cb74f33385a",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-18"
+ },
+ {
+  "company": "thought-machine",
+  "source": "Ashby",
+  "title": "Senior Technical Product Manager - Vault Core",
+  "category": "PM",
+  "tag": "London",
+  "location": "United Kingdom, London",
+  "url": "https://jobs.ashbyhq.com/thought-machine/f42784b4-3b76-4ee8-91b7-b674ca90c437",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-03-10"
+ },
+ {
+  "company": "pleo",
+  "source": "Ashby",
+  "title": "Senior Applied AI Engineer",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "United Kingdom | Denmark | Portugal | Spain",
+  "url": "https://jobs.ashbyhq.com/pleo/7d2f446b-bfba-4859-bf30-ce64301b4f9b",
+  "comp": "",
+  "evidence": "\u2026his role is a good fit for you if: - You have strong product instincts and build with the user in mind. You understand that\u2026",
+  "posted": "2026-08-14"
+ },
+ {
+  "company": "pleo",
+  "source": "Ashby",
+  "title": "Senior Applied AI Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London | Lisbon | Copenhagen | Madrid",
+  "url": "https://jobs.ashbyhq.com/pleo/728ae224-f443-46b9-86d5-61772503c254",
+  "comp": "",
+  "evidence": "\u2026his role is a good fit for you if: - You have strong product instincts and build with the user in mind. You understand that\u2026",
+  "posted": "2026-08-14"
+ },
+ {
+  "company": "pleo",
+  "source": "Ashby",
+  "title": "Staff Applied AI Engineer",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "United Kingdom | Denmark | Portugal | Spain",
+  "url": "https://jobs.ashbyhq.com/pleo/3f30df79-b7b7-4dd2-8ebd-4c1f2bba15e2",
+  "comp": "",
+  "evidence": "\u2026his role is a good fit for you if: - You have strong product instincts and build with the user in mind. You understand that\u2026",
+  "posted": "2026-08-18"
+ },
+ {
+  "company": "hopper",
+  "source": "Ashby",
+  "title": "Principal Product Manager - Pricing and Personalization",
+  "category": "PM",
+  "tag": "London",
+  "location": "United Kingdom - Remote | London - Remote",
+  "url": "https://jobs.ashbyhq.com/hopper/0482ca59-d815-42cb-850d-2d229cb9d9a0",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-03-20"
+ },
+ {
+  "company": "hopper",
+  "source": "Ashby",
+  "title": "Principal Product Manager- Conversational AI",
+  "category": "PM",
+  "tag": "London",
+  "location": "England - Remote | London - Remote",
+  "url": "https://jobs.ashbyhq.com/hopper/8e179874-df96-4fd0-aa72-8e38586db6aa",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-14"
  },
  {
   "company": "metaview",
@@ -1032,42 +1104,6 @@
   "posted": "2026-07-09"
  },
  {
-  "company": "moss",
-  "source": "Ashby",
-  "title": "Senior Product Manager (m/f/d)",
-  "category": "PM",
-  "tag": "London",
-  "location": "Munich | Berlin | Remote - Europe | London",
-  "url": "https://jobs.ashbyhq.com/moss/4f998822-03f1-4b31-ac48-928b5e2122a7",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-24"
- },
- {
-  "company": "encord",
-  "source": "Ashby",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/encord/b8cfae81-6e9f-4f3e-a03a-2d03e7d115f3",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-06-01"
- },
- {
-  "company": "encord",
-  "source": "Ashby",
-  "title": "Principal Engineer - Backend",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/encord/e8289feb-d6f6-46c4-a890-de8ebc3b7bc9",
-  "comp": "",
-  "evidence": "\u2026deep in distributed and data intensive systems. The product mindset on this team is different from most of the company:\u2026",
-  "posted": "2026-08-10"
- },
- {
   "company": "linear",
   "source": "Ashby",
   "title": "Product Manager",
@@ -1108,8 +1144,8 @@
   "source": "Ashby",
   "title": "Product Marketing Manager",
   "category": "PM-helpful",
-  "tag": "Remote-EMEA",
-  "location": "Europe",
+  "tag": "London",
+  "location": "London",
   "url": "https://jobs.ashbyhq.com/linear/b3346acf-44be-4565-b1c0-10d482d3ad4e",
   "comp": "",
   "evidence": "\u2026ions. This is a hands-on role for someone who combines product judgment, excellent writing, and strong cross-functional leader\u2026",
@@ -1140,6 +1176,42 @@
   "posted": "2026-08-06"
  },
  {
+  "company": "encord",
+  "source": "Ashby",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/encord/b8cfae81-6e9f-4f3e-a03a-2d03e7d115f3",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-06-01"
+ },
+ {
+  "company": "encord",
+  "source": "Ashby",
+  "title": "Principal Engineer - Backend",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/encord/e8289feb-d6f6-46c4-a890-de8ebc3b7bc9",
+  "comp": "",
+  "evidence": "\u2026deep in distributed and data intensive systems. The product mindset on this team is different from most of the company:\u2026",
+  "posted": "2026-08-10"
+ },
+ {
+  "company": "encord",
+  "source": "Ashby",
+  "title": "Senior Software Engineer - Backend",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/encord/70ff84bd-9cb5-47a9-856f-5110f5b25d61",
+  "comp": "",
+  "evidence": "\u2026t deep in distributed and data-intensive systems. The product mindset on this team is different from most of the company:\u2026",
+  "posted": "2026-08-21"
+ },
+ {
   "company": "sanity",
   "source": "Ashby",
   "title": "Software Engineering Manager, Web",
@@ -1150,18 +1222,6 @@
   "comp": "",
   "evidence": "\u2026uting to high-impact marketing or product websites - Product mindset: comfortable defining problems, prioritizing work,\u2026",
   "posted": "2026-07-01"
- },
- {
-  "company": "paddle",
-  "source": "Ashby",
-  "title": "Staff Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/paddle/cde17e70-5be2-4b2f-86c0-26591c168cec",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-05-14"
  },
  {
   "company": "oyster",
@@ -1198,6 +1258,30 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-07-17"
+ },
+ {
+  "company": "hyperexponential",
+  "source": "Ashby",
+  "title": "People & Talent Product Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London (hybrid)",
+  "url": "https://jobs.ashbyhq.com/hyperexponential/decb04ff-754c-40b3-ab8c-d5dfbf605b2d",
+  "comp": "",
+  "evidence": "\u2026eople functions will operate in the AI era: technical, product-minded, building rather than configuring. If that excites y\u2026",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "paddle",
+  "source": "Ashby",
+  "title": "Staff Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/paddle/cde17e70-5be2-4b2f-86c0-26591c168cec",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-05-14"
  },
  {
   "company": "granola",
@@ -1260,30 +1344,6 @@
   "posted": "2025-05-01"
  },
  {
-  "company": "resend",
-  "source": "Ashby",
-  "title": "Product Engineer",
-  "category": "PM-helpful",
-  "tag": "Remote-EMEA",
-  "location": "Europe / Remote / Full-time",
-  "url": "https://jobs.ashbyhq.com/resend/61dbb0e7-95a6-4cd9-ab2d-1a5471fe0dd8",
-  "comp": "",
-  "evidence": "\u2026n it into a clear, shippable solution. - Have strong product judgment - Love helping developers and care about developer e\u2026",
-  "posted": "2026-06-03"
- },
- {
-  "company": "clearbank",
-  "source": "Ashby",
-  "title": "Director of Product - Cards",
-  "category": "PM",
-  "tag": "London",
-  "location": "London Office - Hybrid",
-  "url": "https://jobs.ashbyhq.com/clearbank/9c59b540-13af-4b1d-9ea6-0576f9abae5e",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-08-03"
- },
- {
   "company": "pencil",
   "source": "Ashby",
   "title": "Senior Product Manager - EMEA - Remote",
@@ -1305,31 +1365,43 @@
   "url": "https://jobs.ashbyhq.com/pencil/765370fa-a2b2-487f-af2e-73a53cd1bad6",
   "comp": "",
   "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "zilch",
+  "source": "Ashby",
+  "title": "Director of Product",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Zilch UK",
+  "url": "https://jobs.ashbyhq.com/zilch/5b436621-870c-42eb-960e-3f8821b86c7b",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-20"
+ },
+ {
+  "company": "resend",
+  "source": "Ashby",
+  "title": "Product Engineer",
+  "category": "PM-helpful",
+  "tag": "Remote-EMEA",
+  "location": "Europe",
+  "url": "https://jobs.ashbyhq.com/resend/61dbb0e7-95a6-4cd9-ab2d-1a5471fe0dd8",
+  "comp": "",
+  "evidence": "\u2026n it into a clear, shippable solution. - Have strong product judgment - Love helping developers and care about developer e\u2026",
   "posted": "2026-06-03"
  },
  {
-  "company": "skyscanner",
+  "company": "clearbank",
   "source": "Ashby",
-  "title": "Product Management - Test Sameer",
+  "title": "Director of Product - Cards",
   "category": "PM",
   "tag": "London",
-  "location": "London | Barcelona | Glasgow | Edinburgh",
-  "url": "https://jobs.ashbyhq.com/skyscanner/edc101b4-6a0a-41c1-9edd-f4552260e05f",
+  "location": "London Office - Hybrid",
+  "url": "https://jobs.ashbyhq.com/clearbank/9c59b540-13af-4b1d-9ea6-0576f9abae5e",
   "comp": "",
   "evidence": "",
-  "posted": "2026-08-06"
- },
- {
-  "company": "kustomer",
-  "source": "Ashby",
-  "title": "Customer Success Manager (UK- London)",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "UK - Remote",
-  "url": "https://jobs.ashbyhq.com/kustomer/3529bd5f-ddcf-41fb-b4a5-e877628db054",
-  "comp": "",
-  "evidence": "\u2026zed, with strong project management instincts \u2013 formal PM experience is a plus - A natural ability to build rapport quick\u2026",
-  "posted": "2026-07-09"
+  "posted": "2026-08-03"
  },
  {
   "company": "beamery",
@@ -1344,16 +1416,28 @@
   "posted": "2026-07-15"
  },
  {
-  "company": "zego",
+  "company": "kustomer",
   "source": "Ashby",
-  "title": "Lead AI Product Manager",
+  "title": "Customer Success Manager (UK- London)",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "UK - Remote",
+  "url": "https://jobs.ashbyhq.com/kustomer/3529bd5f-ddcf-41fb-b4a5-e877628db054",
+  "comp": "",
+  "evidence": "\u2026zed, with strong project management instincts \u2013 formal PM experience is a plus - A natural ability to build rapport quick\u2026",
+  "posted": "2026-07-09"
+ },
+ {
+  "company": "rasa",
+  "source": "Ashby",
+  "title": "Director of Product Management",
   "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/zego/211aec3a-78d0-4651-878f-20e07222b611",
+  "tag": "UK",
+  "location": "Remote - Germany | Remote - United Kingdom",
+  "url": "https://jobs.ashbyhq.com/rasa/4d17796c-be9e-45e0-91fc-b101e4156039",
   "comp": "",
   "evidence": "",
-  "posted": "2026-07-30"
+  "posted": "2026-08-21"
  },
  {
   "company": "stripe",
@@ -1382,18 +1466,6 @@
  {
   "company": "stripe",
   "source": "Greenhouse",
-  "title": "Product Manager, Capital",
-  "category": "PM",
-  "tag": "London",
-  "location": "London United Kingdom Locations",
-  "url": "https://stripe.com/jobs/search?gh_jid=7721834",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-03-24"
- },
- {
-  "company": "stripe",
-  "source": "Greenhouse",
   "title": "Product Manager, Global Marketplaces",
   "category": "PM",
   "tag": "London",
@@ -1402,6 +1474,18 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-06-19"
+ },
+ {
+  "company": "stripe",
+  "source": "Greenhouse",
+  "title": "Product Manager, Professional Services",
+  "category": "PM",
+  "tag": "London",
+  "location": "Dublin, London Ireland Locations",
+  "url": "https://stripe.com/jobs/search?gh_jid=8007692",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-20"
  },
  {
   "company": "stripe",
@@ -1428,6 +1512,42 @@
   "posted": "2026-07-10"
  },
  {
+  "company": "stripe",
+  "source": "Greenhouse",
+  "title": "Staff Product Manager, Local Payment Methods Growth",
+  "category": "PM",
+  "tag": "London",
+  "location": "London Ireland Locations",
+  "url": "https://stripe.com/jobs/search?gh_jid=8142649",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-19"
+ },
+ {
+  "company": "anthropic",
+  "source": "Greenhouse",
+  "title": "Product Manager, Business Technology",
+  "category": "PM",
+  "tag": "London",
+  "location": "London, UK London, UK",
+  "url": "https://job-boards.greenhouse.io/anthropic/jobs/5397741008",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "datadog",
+  "source": "Greenhouse",
+  "title": "Staff Software Engineer - Security Agent",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "Portugal, Remote Dublin Lisbon London Madrid Paris Remote - France Remote - Germ",
+  "url": "https://careers.datadoghq.com/detail/8007606/?gh_jid=8007606",
+  "comp": "",
+  "evidence": "\u2026ux distributions and kernel versions.</li> <li>You are product-minded and customer-focused, balancing technical excellence\u2026",
+  "posted": "2026-06-15"
+ },
+ {
   "company": "datadog",
   "source": "Greenhouse",
   "title": "Staff Software Engineer - Security Agent",
@@ -1452,28 +1572,76 @@
   "posted": "2026-06-15"
  },
  {
-  "company": "datadog",
+  "company": "cloudflare",
   "source": "Greenhouse",
-  "title": "Staff Software Engineer - Security Agent",
+  "title": "Senior Director of Engineering, Billing Platform",
   "category": "PM-helpful",
   "tag": "London",
-  "location": "Portugal, Remote Dublin Lisbon London Madrid Paris Remote - France Remote - Germ",
-  "url": "https://careers.datadoghq.com/detail/8007606/?gh_jid=8007606",
+  "location": "Hybrid Austin, TX Lisbon, Portugal London, United Kingdom New York, NY San Franc",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8152825?gh_jid=8152825",
   "comp": "",
-  "evidence": "\u2026ux distributions and kernel versions.</li> <li>You are product-minded and customer-focused, balancing technical excellence\u2026",
-  "posted": "2026-06-15"
+  "evidence": "\u2026erations or customer billing.</p> </li> <li> <p>Strong product sense around pricing flexibility, customer transparency, bil\u2026",
+  "posted": "2026-08-24"
  },
  {
-  "company": "samsara",
+  "company": "cloudflare",
   "source": "Greenhouse",
-  "title": "Senior Product Manager",
+  "title": "VoidZero Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "Hybrid Lisbon, Portugal London, United Kingdom Seoul, South Korea Singapore Sydn",
+  "url": "https://boards.greenhouse.io/cloudflare/jobs/8114069?gh_jid=8114069",
+  "comp": "",
+  "evidence": "\u2026per tooling, or product infrastructure</li> <li>Strong product sense and care for developer experience</li> <li>Ability to\u2026",
+  "posted": "2026-08-10"
+ },
+ {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager Agents and Context - Elasticsearch",
   "category": "PM",
   "tag": "UK",
-  "location": "Remote - US Remote - NYC Remote - UK",
-  "url": "https://www.samsara.com/company/careers/roles/8035756?gh_jid=8035756",
+  "location": "Canada United Kingdom",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=8070011&gh_jid=8070011",
   "comp": "",
   "evidence": "",
-  "posted": "2026-06-30"
+  "posted": "2026-07-16"
+ },
+ {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager Agents and Context - Elasticsearch",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United States United Kingdom",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=7602101&gh_jid=7602101",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-02-10"
+ },
+ {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager II, AI/Vectors",
+  "category": "PM",
+  "tag": "London",
+  "location": "United States London, United Kingdom",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=8121962&gh_jid=8121962",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-20"
+ },
+ {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager (Strategic Account Interactions) - Security Solutions",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United Kingdom United States",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=8155427&gh_jid=8155427",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-24"
  },
  {
   "company": "samsara",
@@ -1500,28 +1668,16 @@
   "posted": "2026-06-30"
  },
  {
-  "company": "elastic",
+  "company": "samsara",
   "source": "Greenhouse",
-  "title": "Principal Product Manager Agents and Context - Elasticsearch",
+  "title": "Senior Product Manager",
   "category": "PM",
   "tag": "UK",
-  "location": "United States United Kingdom",
-  "url": "https://jobs.elastic.co/jobs?gh_jid=7602101&gh_jid=7602101",
+  "location": "Remote - US Remote - NYC Remote - UK",
+  "url": "https://www.samsara.com/company/careers/roles/8035756?gh_jid=8035756",
   "comp": "",
   "evidence": "",
-  "posted": "2026-02-10"
- },
- {
-  "company": "elastic",
-  "source": "Greenhouse",
-  "title": "Principal Product Manager Agents and Context - Elasticsearch",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Canada United Kingdom",
-  "url": "https://jobs.elastic.co/jobs?gh_jid=8070011&gh_jid=8070011",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-16"
+  "posted": "2026-06-30"
  },
  {
   "company": "adyen",
@@ -1534,18 +1690,6 @@
   "comp": "",
   "evidence": "\u2026/strong></p> <ul> <li>You have a minimum of 5 years of experience in a client-facing or product management role, ideally B2B dealing with complex enterprise\u2026",
   "posted": "2026-01-15"
- },
- {
-  "company": "graphcore",
-  "source": "Greenhouse",
-  "title": "Technical Product Owner",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Bristol, UK Bristol",
-  "url": "https://job-boards.greenhouse.io/graphcore/jobs/8545002002",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-14"
  },
  {
   "company": "scaleai",
@@ -1608,6 +1752,42 @@
   "posted": "2026-07-17"
  },
  {
+  "company": "gitlab",
+  "source": "Greenhouse",
+  "title": "Senior Backend Engineer (Ruby), Plan: Spec-Driven Development",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "Remote, Poland; Remote, United Kingdom",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8682860002",
+  "comp": "",
+  "evidence": "\u2026nths, with clear user or business outcomes.</li> <li>A product mindset and experience owning features end to end, includin\u2026",
+  "posted": "2026-08-12"
+ },
+ {
+  "company": "gitlab",
+  "source": "Greenhouse",
+  "title": "Staff Backend Engineer, Developer Experience",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "Remote, Canada; Remote, United Kingdom; Remote, US",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8490477002",
+  "comp": "",
+  "evidence": "\u2026cation skills in a remote-first environment</li> <li>A product mindset with a passion for empowering developers</li> <li>A\u2026",
+  "posted": "2026-04-07"
+ },
+ {
+  "company": "graphcore",
+  "source": "Greenhouse",
+  "title": "Technical Product Owner",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Bristol, UK Bristol",
+  "url": "https://job-boards.greenhouse.io/graphcore/jobs/8545002002",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-07-14"
+ },
+ {
   "company": "airbnb",
   "source": "Greenhouse",
   "title": "Engineering Manager, Guest & Host",
@@ -1656,6 +1836,90 @@
   "posted": "2026-07-23"
  },
  {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Director of Platform Management for Simulation, Evaluation & Validation",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "Sunnyvale London, United Kingdom Sunnyvale, California USA",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8585026002",
+  "comp": "",
+  "evidence": "\u2026ential&nbsp;</strong></p> <ul> <li><strong>8+ years of product management experience</strong>, with at least 3\u20135 years leading PM teams (PM\u2026",
+  "posted": "2026-06-11"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Senior Software Engineer, Data",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London London, United Kingdom",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8745289002",
+  "comp": "",
+  "evidence": "\u2026networking or cloud-to-cloud data transfer</li> <li>A product mindset: you think about the customer and build solutions t\u2026",
+  "posted": "2026-08-25"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Senior Software Engineer (Product,  AI Portal)",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London London, United Kingdom",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8610265002",
+  "comp": "",
+  "evidence": "\u2026>This is a cloud-based software engineering role for a product-minded engineer who enjoys building fast with care, maintai\u2026",
+  "posted": "2026-06-30"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Technical Product Manager - Development Vehicles",
+  "category": "PM",
+  "tag": "London",
+  "location": "London; Sunnyvale London, United Kingdom Sunnyvale, California USA",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8735092002",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Technical Product Manager - Robotaxi",
+  "category": "PM",
+  "tag": "London",
+  "location": "Sunnyvale London, United Kingdom Sunnyvale, California USA",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8325451002",
+  "comp": "",
+  "evidence": "",
+  "posted": "2025-12-05"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Technical Program Manager",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London Sunnyvale, California USA",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8739398002",
+  "comp": "",
+  "evidence": "\u2026ressure, and find creative solutions.</li> <li><strong>Product-minded:</strong> You focus on outcomes and the people your\u2026",
+  "posted": "2026-08-21"
+ },
+ {
+  "company": "wayve",
+  "source": "Greenhouse",
+  "title": "Technical Program Manager, Evaluation & Validation",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London Sunnyvale, California USA",
+  "url": "https://wayve.firststage.co/jobs?gh_jid=8602889002",
+  "comp": "",
+  "evidence": "\u2026ange in one area ripples into others.</li> <li><strong>Product-minded:</strong> You focus on outcomes and the people your\u2026",
+  "posted": "2026-07-24"
+ },
+ {
   "company": "intercom",
   "source": "Greenhouse",
   "title": "Senior Data Scientist",
@@ -1702,114 +1966,6 @@
   "comp": "",
   "evidence": "",
   "posted": "2024-04-18"
- },
- {
-  "company": "intercom",
-  "source": "Greenhouse",
-  "title": "Staff AI Designer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "Dublin, Ireland Dublin, Ireland London, England",
-  "url": "https://job-boards.greenhouse.io/intercom/jobs/7917235",
-  "comp": "",
-  "evidence": "\u2026</ul> <h2>What We\u2019re Looking For</h2> <ul> <li>Strong product judgment\u2014you consistently make high-quality calls on what to bu\u2026",
-  "posted": "2026-05-13"
- },
- {
-  "company": "intercom",
-  "source": "Greenhouse",
-  "title": "Staff AI Designer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London, England Dublin, Ireland London, England",
-  "url": "https://job-boards.greenhouse.io/intercom/jobs/7920710",
-  "comp": "",
-  "evidence": "\u2026</ul> <h2>What We\u2019re Looking For</h2> <ul> <li>Strong product judgment\u2014you consistently make high-quality calls on what to bu\u2026",
-  "posted": "2026-05-13"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Director of Platform Management for Simulation, Evaluation & Validation",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London; Sunnyvale London, United Kingdom Sunnyvale, California USA",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8585026002",
-  "comp": "",
-  "evidence": "\u2026ential&nbsp;</strong></p> <ul> <li><strong>8+ years of product management experience</strong>, with at least 3\u20135 years leading PM teams (PM\u2026",
-  "posted": "2026-06-11"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Senior Platform Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London London, United Kingdom",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8564314002",
-  "comp": "",
-  "evidence": "\u2026lopers, not just build in isolation</li> <li>A <strong>product mindset</strong>: you think about the developer experience\u2026",
-  "posted": "2026-05-27"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Software Engineer (Product,  AI Portal)",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London London, United Kingdom",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8610265002",
-  "comp": "",
-  "evidence": "\u2026>This is a cloud-based software engineering role for a product-minded engineer who enjoys building fast with care, maintai\u2026",
-  "posted": "2026-06-30"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Staff Data Platform Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London London, United Kingdom",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8564304002",
-  "comp": "",
-  "evidence": "\u2026t scale, cross-cloud data movement)</li> <li>A <strong>product mindset</strong>: you think about the customer and build so\u2026",
-  "posted": "2026-05-27"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Technical Product Manager - Robotaxi",
-  "category": "PM",
-  "tag": "London",
-  "location": "Sunnyvale London, United Kingdom Sunnyvale, California USA",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8325451002",
-  "comp": "",
-  "evidence": "",
-  "posted": "2025-12-05"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Technical Program Manager",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London Sunnyvale, California USA",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8638825002",
-  "comp": "",
-  "evidence": "\u2026ressure, and find creative solutions.</li> <li><strong>Product-minded:</strong> You focus on outcomes and the people your\u2026",
-  "posted": "2026-07-17"
- },
- {
-  "company": "wayve",
-  "source": "Greenhouse",
-  "title": "Technical Program Manager, Evaluation & Validation",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London Sunnyvale, California USA",
-  "url": "https://wayve.firststage.co/jobs?gh_jid=8602889002",
-  "comp": "",
-  "evidence": "\u2026ange in one area ripples into others.</li> <li><strong>Product-minded:</strong> You focus on outcomes and the people your\u2026",
-  "posted": "2026-07-24"
  },
  {
   "company": "justworks",
@@ -1894,6 +2050,78 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-08-13"
+ },
+ {
+  "company": "fireblocks",
+  "source": "Greenhouse",
+  "title": "Full Stack Engineer, Blockchain",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "London United Kingdom",
+  "url": "https://www.fireblocks.com/careers/position?gh_jid=4695814006",
+  "comp": "",
+  "evidence": "\u2026with world-class engineers, protocol researchers, and product minds in a fast-growing global company.</li> <li>Competitiv\u2026",
+  "posted": "2026-07-09"
+ },
+ {
+  "company": "fireblocks",
+  "source": "Greenhouse",
+  "title": "Senior QA Engineer (Financial Apps)",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "Belgrade, Belgrade, Serbia; Berlin, Berlin, Germany; Georgia; Praha, Prague, Cze",
+  "url": "https://www.fireblocks.com/careers/position?gh_jid=4682157006",
+  "comp": "",
+  "evidence": "\u2026ourself as \"just a tester.\" You are an engineer with a product mindset who actively works to improve the systems you are c\u2026",
+  "posted": "2026-05-19"
+ },
+ {
+  "company": "bloomreach",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Slovakia United Kingdom",
+  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893318",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-07-31"
+ },
+ {
+  "company": "bloomreach",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Czechia United Kingdom",
+  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893319",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-07-31"
+ },
+ {
+  "company": "bloomreach",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United Kingdom United Kingdom",
+  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893321",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-07-31"
+ },
+ {
+  "company": "bloomreach",
+  "source": "Greenhouse",
+  "title": "Technical Product Marketing Manager",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "United Kingdom US_Region",
+  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/8154483",
+  "comp": "",
+  "evidence": "\u2026and Qualifications:</strong></h3> <ul> <li>5+ years of experience in Product Management, Engineering, Solutions Consulting/Architecture, T\u2026",
+  "posted": "2026-08-24"
  },
  {
   "company": "monzo",
@@ -1994,14 +2222,14 @@
  {
   "company": "monzo",
   "source": "Greenhouse",
-  "title": "Senior Product Manager, Business Banking",
-  "category": "PM",
+  "title": "Senior Pricing Analyst, Savings",
+  "category": "PM-helpful",
   "tag": "London",
-  "location": "London London",
-  "url": "https://job-boards.greenhouse.io/monzo/jobs/7995037",
+  "location": "Cardiff, London or Remote (UK) Cardiff, London or Remote (UK)",
+  "url": "https://job-boards.greenhouse.io/monzo/jobs/8152756",
   "comp": "",
-  "evidence": "",
-  "posted": "2026-06-10"
+  "evidence": "\u2026i>You have pricing, portfolio management or commercial product management experience within UK retail banking, fintech, or a highly fast-pa\u2026",
+  "posted": "2026-08-25"
  },
  {
   "company": "monzo",
@@ -2018,30 +2246,6 @@
  {
   "company": "monzo",
   "source": "Greenhouse",
-  "title": "Senior Product Manager - Growth",
-  "category": "PM",
-  "tag": "London",
-  "location": "London London",
-  "url": "https://job-boards.greenhouse.io/monzo/jobs/8127822",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-08-13"
- },
- {
-  "company": "monzo",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager, Subscriptions",
-  "category": "PM",
-  "tag": "London",
-  "location": "London London",
-  "url": "https://job-boards.greenhouse.io/monzo/jobs/8108738",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-08-07"
- },
- {
-  "company": "monzo",
-  "source": "Greenhouse",
   "title": "Staff Backend Engineer",
   "category": "PM-helpful",
   "tag": "London",
@@ -2050,66 +2254,6 @@
   "comp": "",
   "evidence": "\u2026ight: 400;\"><span style=\"font-weight: 400;\">you have a product mindset: you care about customer outcomes and you want to m\u2026",
   "posted": "2025-02-14"
- },
- {
-  "company": "bloomreach",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom United Kingdom",
-  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893321",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-31"
- },
- {
-  "company": "bloomreach",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Slovakia United Kingdom",
-  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893318",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-31"
- },
- {
-  "company": "bloomreach",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Czechia United Kingdom",
-  "url": "https://job-boards.greenhouse.io/bloomreach/jobs/7893319",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-31"
- },
- {
-  "company": "fireblocks",
-  "source": "Greenhouse",
-  "title": "Full Stack Engineer, Blockchain",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "London United Kingdom",
-  "url": "https://www.fireblocks.com/careers/position?gh_jid=4695814006",
-  "comp": "",
-  "evidence": "\u2026with world-class engineers, protocol researchers, and product minds in a fast-growing global company.</li> <li>Competitiv\u2026",
-  "posted": "2026-07-09"
- },
- {
-  "company": "fireblocks",
-  "source": "Greenhouse",
-  "title": "Senior QA Engineer (Financial Apps)",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "Belgrade, Belgrade, Serbia; Berlin, Berlin, Germany; Georgia; Praha, Prague, Cze",
-  "url": "https://www.fireblocks.com/careers/position?gh_jid=4682157006",
-  "comp": "",
-  "evidence": "\u2026ourself as \"just a tester.\" You are an engineer with a product mindset who actively works to improve the systems you are c\u2026",
-  "posted": "2026-05-19"
  },
  {
   "company": "pingidentity",
@@ -2129,18 +2273,6 @@
   "title": "Product Manager (Global Accounts)",
   "category": "PM",
   "tag": "London",
-  "location": "Barcelona, Barcelona, Spain Barcelona London",
-  "url": "https://www.thunes.com/jobs/7797425003?gh_jid=7797425003",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-15"
- },
- {
-  "company": "thunes",
-  "source": "Greenhouse",
-  "title": "Product Manager (Global Accounts)",
-  "category": "PM",
-  "tag": "London",
   "location": "London, England, United Kingdom Barcelona London",
   "url": "https://www.thunes.com/jobs/7825866003?gh_jid=7825866003",
   "comp": "",
@@ -2148,40 +2280,16 @@
   "posted": "2026-08-04"
  },
  {
-  "company": "forter",
+  "company": "thunes",
   "source": "Greenhouse",
-  "title": "Senior Applied AI Engineer",
-  "category": "PM-helpful",
+  "title": "Product Manager (Global Accounts)",
+  "category": "PM",
   "tag": "London",
-  "location": "Israel - Tel Aviv United Kingdom - London",
-  "url": "https://job-boards.greenhouse.io/forter/jobs/8486825002",
+  "location": "Barcelona, Barcelona, Spain Barcelona London",
+  "url": "https://www.thunes.com/jobs/7797425003?gh_jid=7797425003",
   "comp": "",
-  "evidence": "\u2026ont-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong product instincts and critical thinking. You naturally think in terms o\u2026",
-  "posted": "2026-04-09"
- },
- {
-  "company": "forter",
-  "source": "Greenhouse",
-  "title": "Senior Applied AI Engineer",
-  "category": "PM-helpful",
-  "tag": "London",
-  "location": "United Kingdom - London United Kingdom - London",
-  "url": "https://job-boards.greenhouse.io/forter/jobs/8486828002",
-  "comp": "",
-  "evidence": "\u2026ont-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong product instincts. You naturally think in terms of user problems, adopt\u2026",
-  "posted": "2026-04-09"
- },
- {
-  "company": "pendo",
-  "source": "Greenhouse",
-  "title": "Sr Software Engineer",
-  "category": "PM-helpful",
-  "tag": "UK",
-  "location": "Sheffield, England, UK Sheffield, UK",
-  "url": "https://job-boards.greenhouse.io/pendo/jobs/8670913002",
-  "comp": "",
-  "evidence": "\u2026ures on a small, fast-moving team. This role also owns product judgment: validating problems with customers, sizing opportunit\u2026",
-  "posted": "2026-08-13"
+  "evidence": "",
+  "posted": "2026-07-15"
  },
  {
   "company": "blockchain",
@@ -2232,6 +2340,54 @@
   "posted": "2026-08-03"
  },
  {
+  "company": "forter",
+  "source": "Greenhouse",
+  "title": "Senior Applied AI Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "Israel - Tel Aviv Israel - Tel Aviv United Kingdom - London",
+  "url": "https://job-boards.greenhouse.io/forter/jobs/8729463002",
+  "comp": "",
+  "evidence": "\u2026ont-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong product instincts and critical thinking. You naturally think in terms o\u2026",
+  "posted": "2026-08-19"
+ },
+ {
+  "company": "forter",
+  "source": "Greenhouse",
+  "title": "Senior Applied AI Engineer",
+  "category": "PM-helpful",
+  "tag": "London",
+  "location": "United Kingdom - London Israel - Tel Aviv United Kingdom - London",
+  "url": "https://job-boards.greenhouse.io/forter/jobs/8729464002",
+  "comp": "",
+  "evidence": "\u2026ont-size: 12pt;\"><span style=\"font-size: 12pt;\">Strong product instincts. You naturally think in terms of user problems, adopt\u2026",
+  "posted": "2026-08-19"
+ },
+ {
+  "company": "pendo",
+  "source": "Greenhouse",
+  "title": "Sr. Software Engineer",
+  "category": "PM-helpful",
+  "tag": "UK",
+  "location": "Sheffield, England, UK Sheffield, UK",
+  "url": "https://job-boards.greenhouse.io/pendo/jobs/8670913002",
+  "comp": "",
+  "evidence": "\u2026ures on a small, fast-moving team. This role also owns product judgment: validating problems with customers, sizing opportunit\u2026",
+  "posted": "2026-08-13"
+ },
+ {
+  "company": "dataiku",
+  "source": "Greenhouse",
+  "title": "Sr Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "Europe, Middle East, and Africa; France, Paris; France, Remote; Germany, Berlin ",
+  "url": "https://job-boards.greenhouse.io/dataiku/jobs/5812604004",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-03-25"
+ },
+ {
   "company": "gocardless",
   "source": "Greenhouse",
   "title": "Senior Product Manager",
@@ -2242,18 +2398,6 @@
   "comp": "",
   "evidence": "",
   "posted": "2026-07-20"
- },
- {
-  "company": "prolific",
-  "source": "Greenhouse",
-  "title": "Product Manager (FTC)",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Remote, UK Prolific - Remote UK",
-  "url": "https://job-boards.eu.greenhouse.io/prolific/jobs/4952774101",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-08-14"
  },
  {
   "company": "prolific",
@@ -2280,78 +2424,6 @@
   "posted": "2026-08-04"
  },
  {
-  "company": "commercetools",
-  "source": "Greenhouse",
-  "title": "Head of Product \u2013 Agentic Offerings",
-  "category": "PM",
-  "tag": "London",
-  "location": "Berlin, Germany (Hybrid) Berlin, Germany (Hybrid) London, England, United Kingdo",
-  "url": "https://job-boards.greenhouse.io/commercetools/jobs/7774530003",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-06-16"
- },
- {
-  "company": "commercetools",
-  "source": "Greenhouse",
-  "title": "Head of Product \u2013 Agentic Offerings",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, England, United Kingdom (Hybrid) Berlin, Germany (Hybrid) London, Englan",
-  "url": "https://job-boards.greenhouse.io/commercetools/jobs/7774522003",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-06-16"
- },
- {
-  "company": "commercetools",
-  "source": "Greenhouse",
-  "title": "Head of Product \u2013 Agentic Offerings",
-  "category": "PM",
-  "tag": "London",
-  "location": "Valencia, Spain (Hybrid) Berlin, Germany (Hybrid) London, England, United Kingdo",
-  "url": "https://job-boards.greenhouse.io/commercetools/jobs/7774531003",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-06-16"
- },
- {
-  "company": "dataiku",
-  "source": "Greenhouse",
-  "title": "Sr Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "Europe, Middle East, and Africa; France, Paris; France, Remote; Germany, Berlin ",
-  "url": "https://job-boards.greenhouse.io/dataiku/jobs/5812604004",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-03-25"
- },
- {
-  "company": "speechmatics",
-  "source": "Greenhouse",
-  "title": "Technical Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, England, United Kingdom Speechmatics London",
-  "url": "https://job-boards.eu.greenhouse.io/speechmatics/jobs/4673941101",
-  "comp": "",
-  "evidence": "",
-  "posted": "2025-09-16"
- },
- {
-  "company": "speechmatics",
-  "source": "Greenhouse",
-  "title": "Technical Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "Cambridge, England, United Kingdom Speechmatics London",
-  "url": "https://job-boards.eu.greenhouse.io/speechmatics/jobs/4675075101",
-  "comp": "",
-  "evidence": "",
-  "posted": "2025-09-16"
- },
- {
   "company": "typeform",
   "source": "Greenhouse",
   "title": "Senior Product Manager",
@@ -2366,18 +2438,6 @@
  {
   "company": "typeform",
   "source": "Greenhouse",
-  "title": "Senior Product Manager - Analytics",
-  "category": "PM",
-  "tag": "UK",
-  "location": "Germany (Remote) ; Ireland (Remote); Netherlands (Remote) ; Portugal (Remote) ; ",
-  "url": "https://job-boards.greenhouse.io/typeform/jobs/7090089",
-  "comp": "",
-  "evidence": "",
-  "posted": "2025-07-23"
- },
- {
-  "company": "typeform",
-  "source": "Greenhouse",
   "title": "Senior Product Manager - Create",
   "category": "PM",
   "tag": "UK",
@@ -2388,52 +2448,28 @@
   "posted": "2026-07-15"
  },
  {
-  "company": "skyscanner",
+  "company": "speechmatics",
   "source": "Greenhouse",
-  "title": "Principal  Product Manager, Loyalty",
+  "title": "Technical Product Manager",
   "category": "PM",
   "tag": "London",
-  "location": "London Barcelona Edinburgh Glasgow London",
-  "url": "http://www.skyscanner.net/jobs/job/7660511?gh_jid=7660511",
+  "location": "Cambridge, England, United Kingdom Speechmatics London",
+  "url": "https://job-boards.eu.greenhouse.io/speechmatics/jobs/4675075101",
   "comp": "",
   "evidence": "",
-  "posted": "2026-02-27"
+  "posted": "2025-09-16"
  },
  {
-  "company": "skyscanner",
+  "company": "speechmatics",
   "source": "Greenhouse",
-  "title": "Principal  Product Manager, Loyalty",
+  "title": "Technical Product Manager",
   "category": "PM",
   "tag": "London",
-  "location": "Glasgow Barcelona Edinburgh Glasgow London",
-  "url": "http://www.skyscanner.net/jobs/job/7660538?gh_jid=7660538",
+  "location": "London, England, United Kingdom Speechmatics London",
+  "url": "https://job-boards.eu.greenhouse.io/speechmatics/jobs/4673941101",
   "comp": "",
   "evidence": "",
-  "posted": "2026-02-27"
- },
- {
-  "company": "skyscanner",
-  "source": "Greenhouse",
-  "title": "Principal  Product Manager, Loyalty",
-  "category": "PM",
-  "tag": "London",
-  "location": "Edinburgh Barcelona Edinburgh Glasgow London",
-  "url": "http://www.skyscanner.net/jobs/job/7660535?gh_jid=7660535",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-02-27"
- },
- {
-  "company": "truelayer",
-  "source": "Greenhouse",
-  "title": "Product Manager [Consumer Payments]",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, United Kingdom United Kingdom",
-  "url": "https://job-boards.eu.greenhouse.io/truelayer/jobs/4924731101",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-07-10"
+  "posted": "2025-09-16"
  },
  {
   "company": "zwift",
@@ -2448,6 +2484,18 @@
   "posted": "2026-08-07"
  },
  {
+  "company": "nium",
+  "source": "Lever",
+  "title": "Staff Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London | London",
+  "url": "https://jobs.lever.co/nium/e8109d11-d686-476a-b170-3cd59abff187",
+  "comp": "",
+  "evidence": "",
+  "posted": "2026-08-21"
+ },
+ {
   "company": "toptal",
   "source": "Lever",
   "title": "Senior Product Manager",
@@ -2458,17 +2506,5 @@
   "comp": "",
   "evidence": "",
   "posted": "2021-10-13"
- },
- {
-  "company": "kroo",
-  "source": "Workable",
-  "title": "Senior Product Manager (Financial Crime and Operations)",
-  "category": "PM",
-  "tag": "London",
-  "location": "London England United Kingdom",
-  "url": "https://apply.workable.com/j/0210A36127",
-  "comp": "",
-  "evidence": "",
-  "posted": "2026-03-06"
  }
 ]

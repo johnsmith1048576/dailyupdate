@@ -7,7 +7,7 @@
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
   --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700;
   --lon:#2F53C6; --dismiss:#C0473B;
-  --cpm:#1BAF7A; --chelp:#EDA100; --cexp-pm:#7FC7AE; --cexp-help:#F2C877; --cgrid:#E4E6EC; --caxis:#B9BCC8;
+  --cpm:#1BAF7A; --cexp-pm:#7FC7AE; --cgrid:#E4E6EC; --caxis:#B9BCC8;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
   --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -21,7 +21,7 @@
     --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
     --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388;
     --lon:#8CA2F5; --dismiss:#E77A6E;
-    --cpm:#199E70; --chelp:#C98500; --cexp-pm:#63B89A; --cexp-help:#CC9A50; --cgrid:#242832; --caxis:#3A3F4C;
+    --cpm:#199E70; --cexp-pm:#63B89A; --cgrid:#242832; --caxis:#3A3F4C;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
   }
 }
@@ -31,7 +31,7 @@
   --accent:#2F53C6; --accent-soft:#E7ECFB;
   --pm:#0E7C63; --pm-soft:#DCEFE9; --pm-ink:#0A5A48;
   --help:#9A5B00; --help-soft:#F6E9D4; --help-ink:#7A4700; --lon:#2F53C6; --dismiss:#C0473B;
-  --cpm:#1BAF7A; --chelp:#EDA100; --cexp-pm:#7FC7AE; --cexp-help:#F2C877; --cgrid:#E4E6EC; --caxis:#B9BCC8;
+  --cpm:#1BAF7A; --cexp-pm:#7FC7AE; --cgrid:#E4E6EC; --caxis:#B9BCC8;
   --shadow:0 1px 2px rgba(20,22,34,.05),0 4px 14px rgba(20,22,34,.05);
 }
 :root[data-theme="dark"]{
@@ -40,7 +40,7 @@
   --accent:#8CA2F5; --accent-soft:#20273D;
   --pm:#4FD1B0; --pm-soft:#122A26; --pm-ink:#7FE3CB;
   --help:#E0A65A; --help-soft:#2E2413; --help-ink:#F0C388; --lon:#8CA2F5; --dismiss:#E77A6E;
-  --cpm:#199E70; --chelp:#C98500; --cexp-pm:#63B89A; --cexp-help:#CC9A50; --cgrid:#242832; --caxis:#3A3F4C;
+  --cpm:#199E70; --cexp-pm:#63B89A; --cgrid:#242832; --caxis:#3A3F4C;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
@@ -122,8 +122,6 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
   transition:background .12s,color .12s,border-color .12s;}
 .chip:hover{border-color:var(--ink-3)}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.chip.pm[aria-pressed="true"]{background:var(--pm);border-color:var(--pm);color:#fff}
-.chip.help[aria-pressed="true"]{background:var(--help);border-color:var(--help);color:#fff}
 .chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 /* company groups */
 .company{margin-top:26px}
@@ -135,13 +133,12 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
   border:1px solid var(--line-strong);border-radius:5px;padding:2px 7px;}
 .ccount{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
 /* role rows */
-.role{display:grid;grid-template-columns:88px 1fr auto;gap:14px;align-items:start;
+.role{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;
   padding:13px 4px;border-bottom:1px solid var(--line);}
 .role:last-child{border-bottom:none}
 .tag{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
   padding:4px 8px;border-radius:6px;text-align:center;white-space:nowrap;align-self:start;margin-top:1px}
 .tag.PM{background:var(--pm-soft);color:var(--pm-ink)}
-.tag.helpful{background:var(--help-soft);color:var(--help-ink)}
 .rmain{min-width:0}
 .rtitle{font-size:15px;font-weight:550;letter-spacing:-.005em;line-height:1.3}
 .rtitle a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .12s}
@@ -167,9 +164,6 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .freshness .dot::before{content:"";width:7px;height:7px;border-radius:50%}
 .freshness .fresh::before{background:var(--pm)} .freshness .aging::before{background:var(--help)}
 .freshness .stale::before{background:#C0473B}
-.ev{font-size:12.5px;color:var(--ink-2);font-style:italic;margin-top:7px;line-height:1.45;
-  border-left:2px solid var(--help);padding-left:10px;max-width:70ch}
-.ev b{font-style:normal;font-weight:600;color:var(--help-ink)}
 .rside{display:flex;flex-direction:column;align-items:flex-end;gap:8px;align-self:center}
 .save{font-family:var(--sans);font-size:16px;line-height:1;color:var(--ink-3);background:transparent;
   border:1px solid var(--line-strong);border-radius:8px;width:30px;height:30px;cursor:pointer;
@@ -216,19 +210,18 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
 .foot b{color:var(--ink-2)}
 @media (max-width:640px){
   .stats{grid-template-columns:repeat(2,1fr)}
-  .role{grid-template-columns:auto 1fr;gap:8px 12px}
-  .tag{justify-self:start}
-  .rside{flex-direction:row;align-self:start;grid-column:1 / -1;justify-content:flex-start;gap:14px}
+  .role{grid-template-columns:1fr;gap:8px}
+  .rside{flex-direction:row;align-self:start;justify-content:flex-start;gap:14px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <p class="eyebrow">Hiring intelligence · London</p>
-  <h1>Product roles where PM experience counts</h1>
-  <p class="dek">Every London-based (or London-remote) role across public job-board APIs that is
-    either a Product Management position or a non-PM role whose posting explicitly asks for
-    product judgment. Swept live from Ashby, Greenhouse, Lever and Workable.</p>
+  <h1>London product management roles</h1>
+  <p class="dek">Every London-based (or London-remote) Product Management role across public
+    job-board APIs — matched on the job title itself. Swept live from Ashby, Greenhouse,
+    Lever and Workable.</p>
   <div class="meta">
     <span><b>Swept</b> __SWEPT__</span>
     <span><b>__BOARDS__</b> live company boards scanned</span>
@@ -241,13 +234,9 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
   <div class="legend">
     <div class="item">
       <span class="tag PM">PM role</span>
-      <span class="txt"><b>Product Management position.</b> The job title itself is a PM role —
-        Product Manager, Head/Director of Product, Product Owner and the like.</span>
-    </div>
-    <div class="item">
-      <span class="tag helpful">PM helpful</span>
-      <span class="txt"><b>Not a PM job, but PM experience is an asset.</b> The posting explicitly
-        asks for product sense / judgment / instinct — quoted under each role.</span>
+      <span class="txt"><b>Product Management titles only.</b> Product Manager, Head/Director of
+        Product, Product Owner, VP Product and the like — product marketing, design and analyst
+        roles are excluded.</span>
     </div>
     <div class="item">
       <span class="tag" style="background:var(--line);color:var(--ink-2)">date</span>
@@ -255,7 +244,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
         Aging (15–120d), Stale (120d+) — pick any combination. <b>Star (★)</b> to save,
         <b>tick (✓)</b> to mark applied, <b>dismiss (✕)</b> to hide from every view. Each has its
         own filter, and <b>Sort</b> can flatten the list by publish date. Your marks persist in this
-        browser across weekly refreshes.</span>
+        browser across refreshes.</span>
     </div>
   </div>
 
@@ -268,9 +257,7 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
     <div class="cad-body">
       <div class="cad-legend">
         <span class="item"><span class="swatch" style="background:var(--cpm)"></span>PM role</span>
-        <span class="item"><span class="swatch" style="background:var(--chelp)"></span>PM helpful</span>
-        <span class="item cad-expsep"><span class="swatch" style="background:var(--cexp-pm)"></span>Expired PM</span>
-        <span class="item"><span class="swatch" style="background:var(--cexp-help)"></span>Expired helpful</span>
+        <span class="item cad-expsep"><span class="swatch" style="background:var(--cexp-pm)"></span>Expired</span>
       </div>
       <div class="cad-chartbox">
         <svg id="cadchart" role="img" aria-label="Stacked bar chart of roles by month"></svg>
@@ -286,11 +273,6 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.4vw,50px);lin
       <span class="count" id="count"></span>
     </div>
     <div class="filters">
-      <div class="fgroup"><span class="lab">Type</span>
-        <button class="chip cat" data-cat="all" aria-pressed="true">All</button>
-        <button class="chip pm cat" data-cat="PM" aria-pressed="false">PM roles</button>
-        <button class="chip help cat" data-cat="helpful" aria-pressed="false">PM helpful</button>
-      </div>
       <div class="fgroup"><span class="lab">Location</span>
         <button class="chip loc" data-loc="all" aria-pressed="true">All</button>
         <button class="chip loc" data-loc="London" aria-pressed="false">London</button>
@@ -355,15 +337,11 @@ function isApplied(u){ return applied.has(u); }
 function persistApplied(){ try{ localStorage.setItem(AKEY, JSON.stringify([...applied])); }catch(e){} }
 function updateAppliedN(){ const n=document.getElementById('appliedN'); if(n) n.textContent='('+applied.size+')'; }
 document.getElementById('stats').innerHTML=[
-  ['companies','Companies hiring'],['total','Roles total'],
-  ['pm','PM roles','pm'],['helpful','PM-helpful roles','help']
+  ['companies','Companies hiring'],['total','PM roles','pm'],
+  ['london','London-based'],['remote','Remote · EMEA','help']
 ].map(([k,l,c])=>`<div class="stat ${c||''}"><div class="n">${S[k]}</div><div class="l">${l}</div></div>`).join('');
 
-const TAGLABEL={PM:'PM role',helpful:'PM helpful'};
 function esc(s){return (s||'').replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));}
-function evHTML(t){ // bold the product-* phrase
-  return esc(t).replace(/(product (?:sense|judgment|judgement|instinct|instincts|intuition|management experience|mindset|min[a-z]*))/i,'<b>$1</b>');
-}
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function ageInfo(iso){
   if(!iso) return {html:'<span class="age none">date n/a</span>', days:99999, cls:'none'};
@@ -375,19 +353,15 @@ function ageInfo(iso){
   return {html:`<span class="age ${cls}" title="posted ${iso}">Posted ${nice} · ${lbl}</span>`, days, cls};
 }
 function roleHTML(r){
-  const cls=r.category==='PM'?'PM':'helpful';
   const comp=r.comp?`<span class="comp">${esc(r.comp)}</span>`:'';
-  const ev=r.category!=='PM'&&r.evidence?`<div class="ev">${evHTML(r.evidence)}</div>`:'';
   const ai=ageInfo(r.posted);
   const on=isSaved(r.url);
   const dis=isDismissed(r.url);
   const app=isApplied(r.url);
-  return `<div class="role${dis?' dismissed':''}${app?' applied-on':''}" data-cat="${r.category}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-posted="${esc(r.posted||'')}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
-    <span class="tag ${cls}">${TAGLABEL[r.category]}</span>
+  return `<div class="role${dis?' dismissed':''}${app?' applied-on':''}" data-loc="${r.tag}" data-fresh="${ai.cls}" data-posted="${esc(r.posted||'')}" data-url="${esc(r.url)}" data-s="${esc((r.title+' '+r.companyName).toLowerCase())}">
     <div class="rmain">
       <div class="rtitle"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></div>
       <div class="rmeta"><span class="rco">${esc(r.companyName)}</span><span class="loc ${r.tag}">${esc(r.tag)}</span>${comp}${ai.html}<span class="applied-badge">✓ Applied</span></div>
-      ${ev}
     </div>
     <div class="rside">
       <div class="ract">
@@ -404,7 +378,7 @@ function companyHTML(c){
     <div class="chead">
       <span class="cname">${esc(c.name)}</span>
       <span class="cbadges">
-        <span class="ccount">${c.pm} PM · ${c.helpful} helpful</span>
+        <span class="ccount">${c.total} role${c.total===1?'':'s'}</span>
         <span class="src">${esc(c.source)}</span>
       </span>
     </div>
@@ -430,9 +404,9 @@ document.getElementById('list').innerHTML=DATA.companies.map(companyHTML).join('
 })();
 document.getElementById('foot').innerHTML=
   `<p><b>Method.</b> Probed __PROBED__ tech companies against four public ATS job-board APIs; __BOARDS__ resolved to live boards.
-   Each London-eligible posting is classified by title (PM role) or by a strict scan of its description for
-   candidate-facing product-judgment language (PM helpful), with negations excluded. “Remote·EMEA” = fully remote
-   roles open to UK/Europe. Language-variant and multi-location duplicates collapsed.</p>
+   Every London-eligible posting whose title is a Product Management role is kept; product marketing, design,
+   support and analyst titles are excluded. “Remote·EMEA” = fully remote roles open to UK/Europe.
+   Language-variant and multi-location duplicates collapsed.</p>
    <p><b>Caveats.</b> A snapshot in time — listings change daily. Lever/SmartRecruiters/Workday coverage is limited by
    network policy and by Workable slugs not being name-guessable. Not every employer using these ATSs was tested.
    Always confirm details on the employer’s own posting.</p>`;
@@ -440,10 +414,11 @@ document.getElementById('foot').innerHTML=
 // ---- posting-cadence chart (data injected by build.py; expired = archived roles no longer live) ----
 (function(){
   const months=CHART.months||[], cm=CHART.meta||{};
-  months.forEach(d=>d.total=(d.pm||0)+(d.help||0)+(d.exp_pm||0)+(d.exp_help||0));
+  months.forEach(d=>d.total=(d.pm||0)+(d.expired||0));
   const svg=document.getElementById('cadchart'), tip=document.getElementById('cadtip');
   if(!svg||!months.length) return;
   const NS='http://www.w3.org/2000/svg';
+  const ord=n=>n+(n%100>=11&&n%100<=13?'th':(['th','st','nd','rd'][n%10]||'th'));
   const el=(t,a,x)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;};
   const topRound=(x,yt,w,h,r)=>{r=Math.max(0,Math.min(r,h,w/2));
     return `M${x},${yt+h} L${x},${yt+r} Q${x},${yt} ${x+r},${yt} L${x+w-r},${yt} Q${x+w},${yt} ${x+w},${yt+r} L${x+w},${yt+h} Z`;};
@@ -464,9 +439,7 @@ document.getElementById('foot').innerHTML=
   const box=svg.parentElement;
   function showTip(d){
     tip.innerHTML=`<div style="font-family:var(--mono);font-weight:600;margin-bottom:4px">${FULL[d.m]} ${CHART.year}${d.partial?' · to '+cm.throughDay+'th':''}</div>`+
-      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp-help)"></span>Expired helpful</span><b>${d.exp_help||0}</b></div>`+
-      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp-pm)"></span>Expired PM</span><b>${d.exp_pm||0}</b></div>`+
-      `<div class="row"><span class="k"><span class="dot" style="background:var(--chelp)"></span>PM helpful</span><b>${d.help||0}</b></div>`+
+      `<div class="row"><span class="k"><span class="dot" style="background:var(--cexp-pm)"></span>Expired</span><b>${d.expired||0}</b></div>`+
       `<div class="row"><span class="k"><span class="dot" style="background:var(--cpm)"></span>PM role</span><b>${d.pm||0}</b></div>`+
       `<div class="row" style="margin-top:3px;border-top:1px solid rgba(255,255,255,.18);padding-top:3px"><span class="k">Total ever</span><b>${d.total}</b></div>`;
     const r=box.getBoundingClientRect();
@@ -479,9 +452,9 @@ document.getElementById('foot').innerHTML=
   months.forEach((d,i)=>{
     d._i=i; d.partial=(i===months.length-1);
     const bx=padL+i*band+(band-bw)/2;
-    const g=el('g',{class:'cad-barg',tabindex:'0','aria-label':`${FULL[d.m]}: ${d.total} roles — ${d.pm||0} live PM, ${d.help||0} live PM-helpful, ${d.exp_pm||0} expired PM, ${d.exp_help||0} expired PM-helpful`});
-    // stack bottom->top: live PM, live helpful, expired PM, expired helpful; 2px surface gap between fills
-    let cursor=yBase; const segs=[['pm','--cpm'],['help','--chelp'],['exp_pm','--cexp-pm'],['exp_help','--cexp-help']];
+    const g=el('g',{class:'cad-barg',tabindex:'0','aria-label':`${FULL[d.m]}: ${d.total} roles — ${d.pm||0} live, ${d.expired||0} expired`});
+    // stack bottom->top: live, expired; 2px surface gap between fills
+    let cursor=yBase; const segs=[['pm','--cpm'],['expired','--cexp-pm']];
     const present=segs.filter(([k])=>(d[k]||0)>0);
     present.forEach(([k,varname],si)=>{
       const h=(d[k]/yMax)*plotH, top=cursor-h, isTop=(si===present.length-1);
@@ -498,21 +471,20 @@ document.getElementById('foot').innerHTML=
     ['mouseleave','blur'].forEach(ev=>g.addEventListener(ev,hideTip));
     svg.appendChild(g);
   });
-  const liveY=months.reduce((a,d)=>a+(d.pm||0)+(d.help||0),0);
-  const expY=months.reduce((a,d)=>a+(d.exp_pm||0)+(d.exp_help||0),0);
+  const liveY=months.reduce((a,d)=>a+(d.pm||0),0);
+  const expY=months.reduce((a,d)=>a+(d.expired||0),0);
   const last=months[months.length-1];
   document.getElementById('cad-sub').textContent=`${CHART.year} · ${liveY} live + ${expY} expired by month`;
   document.getElementById('cad-note').innerHTML=
-    `<b>Live</b> roles are split into PM (green) and PM-helpful (amber); <b>expired</b> roles — seen in an
-     earlier sweep but no longer posted — echo that split in lighter tints (pale green = expired PM,
-     pale orange = expired PM-helpful). Bars are bucketed by each role's posting month for
+    `<b>Live</b> PM roles are green; <b>expired</b> ones — seen in an earlier sweep but no longer
+     posted — are the paler green. Bars are bucketed by each role's posting month for
      ${CHART.year}, so the height is every role <em>ever seen</em> that month. <b>${FULL[last.m]} is partial</b>
-     (through the ${cm.throughDay}${cm.throughDay==1?'st':cm.throughDay==2?'nd':cm.throughDay==3?'rd':'th'}, dashed cap).
+     (through the ${ord(cm.throughDay)}, dashed cap).
      Archive: ${cm.archive} roles tracked, ${cm.expired} currently expired. Pre-${CHART.year} postings are omitted here.`;
 })();
 
 // filtering
-let cat='all', loc='all', q='', savedOnly=false, appliedOnly=false, dismissedView=false;
+let loc='all', q='', savedOnly=false, appliedOnly=false, dismissedView=false;
 const freshSet=new Set();           // empty = no freshness restriction ("All")
 let sortMode='grouped';             // 'grouped' | 'date-desc' | 'date-asc'
 const rolesEls=[...document.querySelectorAll('.role')];
@@ -529,8 +501,7 @@ function apply(){
     const dis=dismissed.has(el.dataset.url);
     // Dismissed roles are hidden everywhere except the dedicated "Dismissed" view,
     // which shows only them (so other filters stay free of that noise).
-    const base=(cat==='all'||el.dataset.cat===cat)&&
-             (loc==='all'||el.dataset.loc===loc)&&
+    const base=(loc==='all'||el.dataset.loc===loc)&&
              (freshSet.size===0||freshSet.has(el.dataset.fresh))&&
              (!savedOnly||saved.has(el.dataset.url))&&
              (!appliedOnly||applied.has(el.dataset.url))&&
@@ -573,7 +544,6 @@ function wire(sel,attr,set){
     b.setAttribute('aria-pressed','true'); set(b.dataset[attr]); apply();
   }));
 }
-wire('.chip.cat','cat',v=>cat=v);
 wire('.chip.loc','loc',v=>loc=v);
 
 // freshness is multi-select: toggle each level; "All" clears the set

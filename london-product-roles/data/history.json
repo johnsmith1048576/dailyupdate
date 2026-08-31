@@ -1,13 +1,4 @@
 {
-"https://jobs.ashbyhq.com/openai/980bc2ea-2c35-4546-bb48-5496a4e6847f": {
-"posted": "2026-05-07",
-"category": "PM-helpful",
-"company": "OpenAI",
-"title": "AI Deployment Engineer - Startups",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/airwallex/4881afe3-7f7a-4d2c-8452-15e1106bf384": {
 "posted": "2025-11-05",
 "category": "PM",
@@ -15,15 +6,6 @@
 "title": "Staff Product Manager, Embedded Finance",
 "tag": "London",
 "last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/airwallex/497c12f9-51b3-4d93-86bd-c49f42bab25e": {
-"posted": "2025-07-07",
-"category": "PM-helpful",
-"company": "Airwallex",
-"title": "Engineering Director, Global Treasury and Payment Network (Relocate to Singapore)",
-"tag": "London",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/airwallex/0dcbcd66-80b8-41a3-be15-24bb158adbc1": {
@@ -40,15 +22,6 @@
 "category": "PM",
 "company": "Airwallex",
 "title": "Head of Product, Global Payments Network Infrastructure (Relocate to Singapore)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/airwallex/6a05f3f0-7302-49a2-8d17-d6f652a36f1a": {
-"posted": "2026-06-08",
-"category": "PM-helpful",
-"company": "Airwallex",
-"title": "Staff Software Engineer, New Products",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
@@ -143,15 +116,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/deliveroo/7973857a-96fa-4eeb-80db-33c4a37ecdd7": {
-"posted": "2026-07-20",
-"category": "PM-helpful",
-"company": "Deliveroo",
-"title": "Senior Software Engineer, Android SDUI",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/deliveroo/d87ad7aa-5cfb-4742-8494-8fc637322adf": {
 "posted": "2026-07-07",
 "category": "PM",
@@ -242,47 +206,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/cohere/f722247c-291b-44ee-af67-5159b8d5d9b9": {
-"posted": "2026-06-16",
-"category": "PM-helpful",
-"company": "Cohere",
-"title": "Software Engineer, North for Finance",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/cohere/87e9fd4e-49ac-4242-97be-7da6f718020d": {
 "posted": "2026-06-16",
 "category": "PM",
 "company": "Cohere",
 "title": "Product Manager, Integrations",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/cohere/4a3c3eb2-ae2e-4a86-a677-7bdecbc7d76e": {
-"posted": "2026-06-15",
-"category": "PM-helpful",
-"company": "Cohere",
-"title": "Software Engineer, Agents & Automations",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/cohere/732c05f5-a9ec-43a3-9ae4-3ec7f7630fff": {
-"posted": "2026-06-19",
-"category": "PM-helpful",
-"company": "Cohere",
-"title": "Software Engineer, Adoption",
-"tag": "London",
-"last_live": "2026-08-27",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/cursor/b6d90b7f-7586-46e8-bab6-8d87b881906c": {
-"posted": "2026-05-28",
-"category": "PM-helpful",
-"company": "Cursor",
-"title": "Solutions Architect - Western Europe",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
@@ -296,47 +224,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/decagon/12d4dcc2-0a5a-48ef-9c47-cc45eb9bc0dd": {
-"posted": "2025-10-29",
-"category": "PM-helpful",
-"company": "Decagon",
-"title": "Strategic Account Director",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/decagon/d53738b5-ca10-4283-be5a-3937aa9e7c59": {
 "posted": "2026-05-11",
 "category": "PM",
 "company": "Decagon",
 "title": "Senior Agent Product Manager - German Speaking",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/decagon/b0ef58e4-c1aa-49f2-a803-a1c8d92fe0fc": {
-"posted": "2026-05-13",
-"category": "PM-helpful",
-"company": "Decagon",
-"title": "Agent Deployment Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/decagon/2059c9be-8da0-49a5-9849-e45f6f6a14d8": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "Decagon",
-"title": "Agent Deployment Engineer - German Speaking",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/decagon/3b52f574-3cc3-4db9-ac2e-2c78389a1377": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "Decagon",
-"title": "Agent Deployment Engineer - French Speaking",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
@@ -368,66 +260,12 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/wayve/ebb3bb4a-24db-4831-b736-462e678aabe2": {
-"posted": "2026-05-27",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Staff Data Platform Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/wayve/362d94e3-6ed9-45a9-9d9a-060268ac40c0": {
-"posted": "2026-06-11",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Director of Platform Management for Simulation, Evaluation & Validation",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/wayve/41cca9f0-29c5-46fe-97fe-f392e13b3773": {
-"posted": "2026-06-24",
-"category": "PM-helpful",
-"company": "wayve",
-"title": "Technical Program Manager, Data Operations",
-"tag": "London",
-"last_live": "2026-08-06",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/wayve/a5806de1-800a-4931-a69f-0c044e278c8a": {
-"posted": "2026-06-30",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Senior Software Engineer (Product,  AI Portal)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/alan/77bc1c9d-338b-45c5-92b9-8b269c6361a2": {
-"posted": "2026-07-22",
-"category": "PM-helpful",
-"company": "Alan",
-"title": "Fullstack Software Engineer (x/f/m) - Occupational Health",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/alan/7059bd81-4363-41fd-b7e0-601917195421": {
 "posted": "2026-06-26",
 "category": "PM",
 "company": "Alan",
 "title": "Product Lead - Growth",
 "tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/cognition/818e3c35-d25b-4aec-a9e1-23cc8328d19c": {
-"posted": "2025-09-23",
-"category": "PM-helpful",
-"company": "Cognition",
-"title": "Deployed Engineer - Europe",
-"tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
@@ -467,51 +305,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/lovable/7fe39289-1f7f-47d4-8002-d3aeeaaaabc6": {
-"posted": "2026-06-22",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Forward Deployed Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/581951b9-537e-49d5-89fb-dd74cdf3256c": {
-"posted": "2026-04-10",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Software Engineer, Growth",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/f685ca32-fc29-43b1-8855-e634ccfd8ab9": {
-"posted": "2026-05-20",
-"category": "PM-helpful",
-"company": "lovable",
-"title": "Staff / Principal Design Engineer",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/aa38496f-0747-4761-bfb3-8b6127d9c81f": {
-"posted": "2026-04-29",
-"category": "PM-helpful",
-"company": "lovable",
-"title": "Software Engineer, Enterprise",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/45db5790-4305-4fad-b96b-1fbdf42b88f2": {
-"posted": "2026-05-14",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Staff / Principal Software Engineer, Product",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/lovable/f1c3bdd3-683b-409f-b0a1-5a39f9c7dd72": {
 "posted": "2026-06-12",
 "category": "PM",
@@ -519,24 +312,6 @@
 "title": "Product Manager (Partnerships)",
 "tag": "London",
 "last_live": "2026-08-06",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/722d4ea3-9aa7-460f-802e-ae1ec31170f4": {
-"posted": "2026-07-31",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Software Engineer, Platform (Enterprise)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lovable/6971bf2b-5873-4817-b886-ad6d63358a71": {
-"posted": "2026-08-03",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Staff Software Engineer, Platform (Enterprise)",
-"tag": "London",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/lendable/461b6fda-d86a-49b4-b4be-1e916e94ab1f": {
@@ -575,15 +350,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/lendable/731c9247-b0e5-4678-b2f7-2979d40f681f": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "Lendable",
-"title": "Analytics Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/constructor/e8fa6194-ef2e-47d3-ab45-a9112d87da24": {
 "posted": "2026-06-23",
 "category": "PM",
@@ -609,24 +375,6 @@
 "title": "Senior Product Manager: Recall",
 "tag": "Remote-EMEA",
 "last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/deepl/4921cca4-576c-4d90-8742-8a90bbc0a6ea": {
-"posted": "2026-08-19",
-"category": "PM-helpful",
-"company": "Deepl",
-"title": "Senior Data Platform Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/pleo/faf9b3ab-99a3-463a-8fca-32bfcc97f000": {
-"posted": "2026-06-29",
-"category": "PM-helpful",
-"company": "Pleo",
-"title": "Staff Applied AI Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/cube/b314e561-599f-4043-9e6d-64c67ba14ba5": {
@@ -656,42 +404,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/metaview/218bf790-a707-46e5-b47a-23fb77479cb9": {
-"posted": "2026-01-20",
-"category": "PM-helpful",
-"company": "Metaview",
-"title": "Growth Marketing Manager",
-"tag": "London",
-"last_live": "2026-08-25",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/metaview/c2fbb41a-9853-4226-a152-5cab0c1afca0": {
-"posted": "2026-06-24",
-"category": "PM-helpful",
-"company": "Metaview",
-"title": "Member of Product Staff, Engineer (London)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/metaview/196fa91b-b547-45e8-ab3f-d42a4aa02337": {
-"posted": "2026-06-24",
-"category": "PM-helpful",
-"company": "Metaview",
-"title": "Member of Product Staff, Designer/Design Engineer (London)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/metaview/fce3d355-138a-4a8b-90eb-cc92d52feb6a": {
-"posted": "2026-07-09",
-"category": "PM-helpful",
-"company": "Metaview",
-"title": "Growth Marketing Manager: Self-Serve",
-"tag": "London",
-"last_live": "2026-08-25",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/moss/d9326162-4255-4bd3-9047-8dda11eab716": {
 "posted": "2026-07-03",
 "category": "PM",
@@ -708,15 +420,6 @@
 "title": "Senior Product Manager (m/f/d)",
 "tag": "London",
 "last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/elliptic/c0c6c96d-5611-4a27-9298-b55474f6a1f9": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "elliptic",
-"title": "Lead DevOps Engineer",
-"tag": "London",
-"last_live": "2026-08-03",
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/redis/d52fa366-9a5b-41ca-adfc-aeb4e7125cfc": {
@@ -737,15 +440,6 @@
 "last_live": "2026-08-06",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/sanity/31338f44-3030-4340-8199-1e67bd39adb8": {
-"posted": "2026-07-01",
-"category": "PM-helpful",
-"company": "Sanity",
-"title": "Software Engineering Manager, Web",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/hyperexponential/d8e379a5-f284-437d-a7a1-226ecf4c2de8": {
 "posted": "2026-04-15",
 "category": "PM",
@@ -764,33 +458,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/linear/1d652292-04d9-405c-8101-578efd020e94": {
-"posted": "2026-04-24",
-"category": "PM-helpful",
-"company": "Linear",
-"title": "Developer Relations",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/linear/b3346acf-44be-4565-b1c0-10d482d3ad4e": {
-"posted": "2026-07-01",
-"category": "PM-helpful",
-"company": "Linear",
-"title": "Product Marketing Manager",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/oyster/efce487a-e7c2-461d-9447-3480721eee6e": {
-"posted": "2026-08-03",
-"category": "PM-helpful",
-"company": "Oyster",
-"title": "Strategic People Partner",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/oyster/20b0c812-255e-433b-99bb-2d1f399f0c7a": {
 "posted": "2026-07-17",
 "category": "PM",
@@ -800,69 +467,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://jobs.ashbyhq.com/granola/0897636e-e415-493e-b501-7c610ea72eff": {
-"posted": "2026-07-22",
-"category": "PM-helpful",
-"company": "Granola",
-"title": "Product Designer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/poolside/df54a608-9fd9-4c09-aad1-7de71a0d487e": {
-"posted": "2026-04-17",
-"category": "PM-helpful",
-"company": "Poolside",
-"title": "Member of Engineering (Evaluations / Engineering)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/poolside/7fb2ceb5-6ace-497f-9c8b-124a9317f789": {
-"posted": "2026-05-04",
-"category": "PM-helpful",
-"company": "Poolside",
-"title": "Member of Engineering (Design Engineer, Product)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/poolside/9a4d844a-f251-4ae1-af4b-dbce126c542a": {
-"posted": "2026-08-10",
-"category": "PM-helpful",
-"company": "Poolside",
-"title": "Member of Engineering (Interfaces - Full Stack)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/lunar/fdd74ea1-6511-42b8-a654-13c7e26d05cd": {
-"posted": "2025-05-01",
-"category": "PM-helpful",
-"company": "Lunar",
-"title": "Staff Software Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/resend/61dbb0e7-95a6-4cd9-ab2d-1a5471fe0dd8": {
-"posted": "2026-06-03",
-"category": "PM-helpful",
-"company": "Resend",
-"title": "Product Engineer",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://jobs.ashbyhq.com/kustomer/3529bd5f-ddcf-41fb-b4a5-e877628db054": {
-"posted": "2026-07-09",
-"category": "PM-helpful",
-"company": "Kustomer",
-"title": "Customer Success Manager (UK- London)",
-"tag": "UK",
-"last_live": "2026-08-25",
-"first_seen": "2026-08-03"
-},
 "https://jobs.ashbyhq.com/zego/211aec3a-78d0-4651-878f-20e07222b611": {
 "posted": "2026-07-30",
 "category": "PM",
@@ -870,15 +474,6 @@
 "title": "Lead AI Product Manager",
 "tag": "London",
 "last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://stripe.com/jobs/search?gh_jid=7954118": {
-"posted": "2026-05-28",
-"category": "PM-helpful",
-"company": "Stripe",
-"title": "Product Designer, Risk",
-"tag": "UK",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
 "https://stripe.com/jobs/search?gh_jid=8027435": {
@@ -917,29 +512,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://stripe.com/jobs/search?gh_jid=8008405": {
-"posted": "2026-06-30",
-"category": "PM-helpful",
-"company": "Stripe",
-"title": "Staff Product Designer, Risk",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://stripe.com/jobs/search?gh_jid=8043083": {
 "posted": "2026-07-10",
 "category": "PM",
 "company": "Stripe",
 "title": "Staff Product Manager, Issuing",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://careers.datadoghq.com/detail/8007598/?gh_jid=8007598": {
-"posted": "2026-06-15",
-"category": "PM-helpful",
-"company": "Datadog",
-"title": "Staff Software Engineer - Security Agent",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
@@ -971,15 +548,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://job-boards.greenhouse.io/adyen/jobs/7342860": {
-"posted": "2026-01-15",
-"category": "PM-helpful",
-"company": "Adyen",
-"title": "Enterprise Account Manager, Adyen for Platforms",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://job-boards.greenhouse.io/gitlab/jobs/8568868002": {
 "posted": "2026-06-02",
 "category": "PM",
@@ -987,33 +555,6 @@
 "title": "Senior Product Manager, AI Platform Management",
 "tag": "UK",
 "last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/affirm/jobs/7799329003": {
-"posted": "2026-07-17",
-"category": "PM-helpful",
-"company": "Affirm",
-"title": "Analytics Lead, Full Stack",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://careers.airbnb.com/positions/7532824?gh_jid=7532824": {
-"posted": "2026-01-23",
-"category": "PM-helpful",
-"company": "Airbnb",
-"title": "Engineering Manager, Guest & Host",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://boards.greenhouse.io/figma/jobs/6122399004?gh_jid=6122399004": {
-"posted": "2026-07-23",
-"category": "PM-helpful",
-"company": "Figma",
-"title": "Designer Advocate (London, United Kingdom)",
-"tag": "London",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
 "https://job-boards.greenhouse.io/clickhouse/jobs/5693829004": {
@@ -1034,74 +575,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://job-boards.greenhouse.io/intercom/jobs/7749323": {
-"posted": "2026-03-26",
-"category": "PM-helpful",
-"company": "Intercom",
-"title": "Senior Data Scientist",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/intercom/jobs/7314809": {
-"posted": "2025-10-10",
-"category": "PM-helpful",
-"company": "Intercom",
-"title": "Senior Data Scientist - AI Tooling",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/intercom/jobs/8096347": {
-"posted": "2026-07-30",
-"category": "PM-helpful",
-"company": "Intercom",
-"title": "Senior Engineering Manager, Customer Agent",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://job-boards.greenhouse.io/intercom/jobs/5916272": {
 "posted": "2024-04-18",
 "category": "PM",
 "company": "Intercom",
 "title": "Senior Product Manager, Messenger",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/intercom/jobs/7920710": {
-"posted": "2026-05-13",
-"category": "PM-helpful",
-"company": "intercom",
-"title": "Staff AI Designer",
-"tag": "London",
-"last_live": "2026-08-06",
-"first_seen": "2026-08-03"
-},
-"https://wayve.firststage.co/jobs?gh_jid=8564314002": {
-"posted": "2026-05-27",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Senior Platform Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://wayve.firststage.co/jobs?gh_jid=8638825002": {
-"posted": "2026-07-17",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Technical Program Manager",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://wayve.firststage.co/jobs?gh_jid=8602889002": {
-"posted": "2026-07-24",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Technical Program Manager, Evaluation & Validation",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
@@ -1115,84 +593,12 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
-"https://boards.greenhouse.io/justworks/jobs/7797374?gh_jid=7797374": {
-"posted": "2026-05-21",
-"category": "PM-helpful",
-"company": "Justworks",
-"title": "Senior Software Engineer, Applied AI (Toronto)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://job-boards.greenhouse.io/bloomreach/jobs/7893321": {
 "posted": "2026-07-31",
 "category": "PM",
 "company": "Bloomreach",
 "title": "Senior Product Manager",
 "tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/bloomreach/jobs/7954706": {
-"posted": "2026-05-22",
-"category": "PM-helpful",
-"company": "bloomreach",
-"title": "Technical Product Marketing Manager",
-"tag": "UK",
-"last_live": "2026-08-06",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/6635595": {
-"posted": "2025-02-17",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Backend Engineer III",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/7694525": {
-"posted": "2026-04-13",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Data Director, Workforce Systems & Service Performance",
-"tag": "London",
-"last_live": "2026-08-25",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8050756": {
-"posted": "2026-07-08",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Lead Machine Learning Scientist, FinCrime",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8041029": {
-"posted": "2026-07-08",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Lead Machine Learning Scientist, Search",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8043988": {
-"posted": "2026-07-03",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Machine Learning, Tech Lead",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/6635837": {
-"posted": "2025-02-14",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Senior Backend Engineer",
-"tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-03"
 },
@@ -1212,33 +618,6 @@
 "title": "Senior Product Manager, FinCrime",
 "tag": "London",
 "last_live": "2026-08-06",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/6636147": {
-"posted": "2025-02-14",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Staff Backend Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://www.fireblocks.com/careers/4695814006?gh_jid=4695814006": {
-"posted": "2026-07-09",
-"category": "PM-helpful",
-"company": "fireblocks",
-"title": "Full Stack Engineer, Blockchain",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://www.fireblocks.com/careers/4682157006?gh_jid=4682157006": {
-"posted": "2026-05-19",
-"category": "PM-helpful",
-"company": "fireblocks",
-"title": "Senior QA Engineer (Financial Apps)",
-"tag": "UK",
-"last_live": "2026-08-03",
 "first_seen": "2026-08-03"
 },
 "https://www.thunes.com/jobs/7797425003?gh_jid=7797425003": {
@@ -1268,56 +647,11 @@
 "last_live": "2026-08-06",
 "first_seen": "2026-08-03"
 },
-"https://job-boards.greenhouse.io/forter/jobs/8486825002": {
-"posted": "2026-04-09",
-"category": "PM-helpful",
-"company": "Forter",
-"title": "Senior Applied AI Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/blockchain/jobs/8045355": {
-"posted": "2026-07-03",
-"category": "PM-helpful",
-"company": "Blockchain.com",
-"title": "Business Analyst",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/blockchain/jobs/8045350": {
-"posted": "2026-07-03",
-"category": "PM-helpful",
-"company": "Blockchain.com",
-"title": "Business Lead",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.greenhouse.io/blockchain/jobs/8045347": {
-"posted": "2026-07-03",
-"category": "PM-helpful",
-"company": "Blockchain.com",
-"title": "Lending & Savings Lead",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-03"
-},
 "https://job-boards.eu.greenhouse.io/prolific/jobs/4850329101": {
 "posted": "2026-04-24",
 "category": "PM",
 "company": "prolific",
 "title": "Product Manager",
-"tag": "UK",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.eu.greenhouse.io/prolific/jobs/4390860101": {
-"posted": "2024-09-13",
-"category": "PM-helpful",
-"company": "prolific",
-"title": "Senior Product Engineer",
 "tag": "UK",
 "last_live": "2026-08-03",
 "first_seen": "2026-08-03"
@@ -1336,15 +670,6 @@
 "category": "PM",
 "company": "commercetools",
 "title": "Head of Product \u2013 Agentic Offerings (Platform & Payments)",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://job-boards.eu.greenhouse.io/polyai/jobs/4869448101": {
-"posted": "2026-05-19",
-"category": "PM-helpful",
-"company": "polyai",
-"title": "Head of Product Design",
 "tag": "London",
 "last_live": "2026-08-03",
 "first_seen": "2026-08-03"
@@ -1412,29 +737,11 @@
 "last_live": "2026-08-06",
 "first_seen": "2026-08-03"
 },
-"https://apply.workable.com/j/B7F4F790F3": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "yapily",
-"title": "Head of Policy",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
 "https://apply.workable.com/j/F26F8B9006": {
 "posted": "2026-07-20",
 "category": "PM",
 "company": "yapily",
 "title": "Product Manager - Core Platform & Data",
-"tag": "London",
-"last_live": "2026-08-03",
-"first_seen": "2026-08-03"
-},
-"https://apply.workable.com/j/1D534124A0": {
-"posted": "2026-07-06",
-"category": "PM-helpful",
-"company": "yapily",
-"title": "Senior Backend Developer",
 "tag": "London",
 "last_live": "2026-08-03",
 "first_seen": "2026-08-03"
@@ -1446,15 +753,6 @@
 "title": "Product Manager, Double Order",
 "tag": "London",
 "last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://jobs.ashbyhq.com/synthesia/d5737204-2356-480a-9593-4a5a00d7eea1": {
-"posted": "2026-08-05",
-"category": "PM-helpful",
-"company": "synthesia",
-"title": "Software Engineer, Front End Leaning, Agents",
-"tag": "UK",
-"last_live": "2026-08-06",
 "first_seen": "2026-08-06"
 },
 "https://jobs.ashbyhq.com/lendable/6981baa3-56a6-4e6c-8cc1-30603e2a1555": {
@@ -1493,15 +791,6 @@
 "last_live": "2026-08-06",
 "first_seen": "2026-08-06"
 },
-"https://jobs.ashbyhq.com/deepl/fd837484-2f16-4ffd-b2f1-6920f0f906c5": {
-"posted": "2026-08-06",
-"category": "PM-helpful",
-"company": "Deepl",
-"title": "Senior Site Reliability Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
 "https://jobs.ashbyhq.com/hopper/0482ca59-d815-42cb-850d-2d229cb9d9a0": {
 "posted": "2026-03-20",
 "category": "PM",
@@ -1520,29 +809,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-06"
 },
-"https://jobs.ashbyhq.com/attio/98e8228d-661f-4795-8c6b-a4caedb03c2c": {
-"posted": "2026-08-04",
-"category": "PM-helpful",
-"company": "Attio",
-"title": "Senior Design Engineer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-06"
-},
 "https://jobs.ashbyhq.com/thought-machine/f42784b4-3b76-4ee8-91b7-b674ca90c437": {
 "posted": "2026-03-10",
 "category": "PM",
 "company": "Thought-machine",
 "title": "Senior Technical Product Manager - Vault Core",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://jobs.ashbyhq.com/9fin/a0cd267f-321d-431a-9cc7-2cd98fe0a7a0": {
-"posted": "2026-07-21",
-"category": "PM-helpful",
-"company": "9fin",
-"title": "Senior Product Engineer",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-06"
@@ -1563,15 +834,6 @@
 "title": "Senior Product Manager (APIs & Data Sharing)",
 "tag": "London",
 "last_live": "2026-08-06",
-"first_seen": "2026-08-06"
-},
-"https://jobs.ashbyhq.com/elliptic/3986b0ab-73de-4ef8-9567-0f6c96d5c3a6": {
-"posted": "2026-08-05",
-"category": "PM-helpful",
-"company": "Elliptic",
-"title": "Lead DevOps Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-06"
 },
 "https://jobs.ashbyhq.com/elliptic/2785c937-6cbd-45f4-b210-48c6a650b249": {
@@ -1608,15 +870,6 @@
 "title": "Director of Product - Cards",
 "tag": "London",
 "last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://jobs.ashbyhq.com/zilch/e23957e0-b62e-4fbd-9479-8a54b3ba640c": {
-"posted": "2026-05-18",
-"category": "PM-helpful",
-"company": "zilch",
-"title": "Senior Product Analyst",
-"tag": "UK",
-"last_live": "2026-08-06",
 "first_seen": "2026-08-06"
 },
 "https://jobs.ashbyhq.com/pencil/e4bbf9ae-0be6-455f-8b24-f960be4c6f2c": {
@@ -1673,15 +926,6 @@
 "last_live": "2026-08-06",
 "first_seen": "2026-08-06"
 },
-"https://careers.datadoghq.com/detail/8007606/?gh_jid=8007606": {
-"posted": "2026-06-15",
-"category": "PM-helpful",
-"company": "Datadog",
-"title": "Staff Software Engineer - Security Agent",
-"tag": "London",
-"last_live": "2026-08-25",
-"first_seen": "2026-08-06"
-},
 "https://job-boards.greenhouse.io/scaleai/jobs/4702890005": {
 "posted": "2026-06-19",
 "category": "PM",
@@ -1709,69 +953,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-06"
 },
-"https://job-boards.greenhouse.io/scaleai/jobs/4711995005": {
-"posted": "2026-07-07",
-"category": "PM-helpful",
-"company": "Scaleai",
-"title": "Technical Program Manager, Platform",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://boards.greenhouse.io/justworks/jobs/7797379?gh_jid=7797379": {
-"posted": "2026-05-21",
-"category": "PM-helpful",
-"company": "Justworks",
-"title": "Senior Software Engineer, Applied AI  (Spain)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://boards.greenhouse.io/justworks/jobs/7797377?gh_jid=7797377": {
-"posted": "2026-05-21",
-"category": "PM-helpful",
-"company": "Justworks",
-"title": "Senior Software Engineer, Applied AI  (Netherlands)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://boards.greenhouse.io/justworks/jobs/7797380?gh_jid=7797380": {
-"posted": "2026-05-21",
-"category": "PM-helpful",
-"company": "Justworks",
-"title": "Senior Software Engineer, Applied AI  (United Kingdom)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8103509": {
-"posted": "2026-08-03",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Lead Machine Learning Scientist, Customer Operations",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://www.fireblocks.com/careers/position?gh_jid=4695814006": {
-"posted": "2026-07-09",
-"category": "PM-helpful",
-"company": "Fireblocks",
-"title": "Full Stack Engineer, Blockchain",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://www.fireblocks.com/careers/position?gh_jid=4682157006": {
-"posted": "2026-05-19",
-"category": "PM-helpful",
-"company": "Fireblocks",
-"title": "Senior QA Engineer (Financial Apps)",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
 "https://job-boards.greenhouse.io/pingidentity/jobs/8582850002": {
 "posted": "2026-06-14",
 "category": "PM",
@@ -1788,24 +969,6 @@
 "title": "Senior Product Manager",
 "tag": "UK",
 "last_live": "2026-08-06",
-"first_seen": "2026-08-06"
-},
-"https://job-boards.greenhouse.io/blockchain/jobs/8103386": {
-"posted": "2026-08-03",
-"category": "PM-helpful",
-"company": "Blockchain.com",
-"title": "Technical Lead, Lending & Savings",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-06"
-},
-"https://job-boards.eu.greenhouse.io/prolific/jobs/4944169101": {
-"posted": "2026-08-04",
-"category": "PM-helpful",
-"company": "Prolific",
-"title": "Senior Software Engineer",
-"tag": "UK",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-06"
 },
 "https://job-boards.greenhouse.io/commercetools/jobs/7774530003": {
@@ -1844,24 +1007,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-06"
 },
-"https://jobs.ashbyhq.com/snowflake/6fcc88e3-6dc2-4671-830d-27cbc640367c": {
-"posted": "2026-08-11",
-"category": "PM-helpful",
-"company": "Snowflake",
-"title": "Lead Developer Advocate, SQL & Analytics Workloads",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://jobs.ashbyhq.com/elevenlabs/71992118-5b37-4a4a-a862-99e82e02916f": {
-"posted": "2026-07-30",
-"category": "PM-helpful",
-"company": "ElevenLabs",
-"title": "Website Growth Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
 "https://jobs.ashbyhq.com/deliveroo/770aa01d-0ab5-4a15-b362-1a0b4d285ff3": {
 "posted": "2026-08-10",
 "category": "PM",
@@ -1871,47 +1016,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-14"
 },
-"https://jobs.ashbyhq.com/perplexity/9ca67ae3-8507-40b9-9d7f-d81b249c1041": {
-"posted": "2026-08-06",
-"category": "PM-helpful",
-"company": "Perplexity",
-"title": "Member of Technical Staff (Software Engineer, Backend API)",
-"tag": "London",
-"last_live": "2026-08-27",
-"first_seen": "2026-08-14"
-},
 "https://jobs.ashbyhq.com/lendable/50004e7b-3de1-4268-9359-3786db51d43f": {
 "posted": "2026-08-12",
 "category": "PM",
 "company": "Lendable",
 "title": "Technical Product Manager (Superapp)",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://jobs.ashbyhq.com/docker/9c8d86d4-b90e-4429-bb87-6ecdfd4abd43": {
-"posted": "2026-08-14",
-"category": "PM-helpful",
-"company": "Docker",
-"title": "Senior Software Engineer, Secure Build",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://jobs.ashbyhq.com/docker/f7beef23-87b7-4bfa-8946-93e9dc02d805": {
-"posted": "2026-08-14",
-"category": "PM-helpful",
-"company": "Docker",
-"title": "Staff Software Engineer, Developer Experience",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://jobs.ashbyhq.com/docker/aa9dac2f-ad93-4aa8-ab07-851685725806": {
-"posted": "2026-08-12",
-"category": "PM-helpful",
-"company": "Docker",
-"title": "Senior Software Engineer, Sandboxes (London or East Coast Preferred)",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-14"
@@ -1943,57 +1052,12 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-14"
 },
-"https://jobs.ashbyhq.com/encord/e8289feb-d6f6-46c4-a890-de8ebc3b7bc9": {
-"posted": "2026-08-10",
-"category": "PM-helpful",
-"company": "Encord",
-"title": "Principal Engineer - Backend",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://careers.datadoghq.com/detail/8007589/?gh_jid=8007589": {
-"posted": "2026-06-15",
-"category": "PM-helpful",
-"company": "Datadog",
-"title": "Staff Software Engineer - Security Agent",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-14"
-},
-"https://job-boards.greenhouse.io/intercom/jobs/7917235": {
-"posted": "2026-05-13",
-"category": "PM-helpful",
-"company": "Intercom",
-"title": "Staff AI Designer",
-"tag": "London",
-"last_live": "2026-08-16",
-"first_seen": "2026-08-14"
-},
-"https://boards.greenhouse.io/justworks/jobs/7797376?gh_jid=7797376": {
-"posted": "2026-05-22",
-"category": "PM-helpful",
-"company": "Justworks",
-"title": "Senior Software Engineer, Applied AI (Mexico City)",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
 "https://job-boards.greenhouse.io/tide/jobs/7863571003": {
 "posted": "2026-08-13",
 "category": "PM",
 "company": "Tide",
 "title": "Senior Product Manager, Ongoing Monitoring",
 "tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-14"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8121191": {
-"posted": "2026-08-11",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Lead Machine Learning Scientist, Business Banking",
-"tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-14"
 },
@@ -2022,15 +1086,6 @@
 "title": "Senior Product Manager, Subscriptions",
 "tag": "London",
 "last_live": "2026-08-16",
-"first_seen": "2026-08-14"
-},
-"https://job-boards.greenhouse.io/pendo/jobs/8670913002": {
-"posted": "2026-08-13",
-"category": "PM-helpful",
-"company": "Pendo",
-"title": "Sr. Software Engineer",
-"tag": "UK",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-14"
 },
 "https://job-boards.eu.greenhouse.io/prolific/jobs/4952774101": {
@@ -2077,24 +1132,6 @@
 "tag": "London",
 "last_live": "2026-08-16",
 "first_seen": "2026-08-14"
-},
-"https://jobs.ashbyhq.com/legora/92db5fb3-581b-4dcd-b6c1-84c8ba39bb9e": {
-"posted": "2026-08-20",
-"category": "PM-helpful",
-"company": "Legora",
-"title": "Staff Product Designer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://jobs.ashbyhq.com/wayve/416f25d2-3c7e-4e46-94d1-3eb377ea93f8": {
-"posted": "2026-08-25",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Senior Software Engineer, Data",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
 },
 "https://jobs.ashbyhq.com/supabase/23c9ce7e-6b7b-4316-8f00-8f318e902441": {
 "posted": "2026-07-24",
@@ -2150,15 +1187,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
 },
-"https://jobs.ashbyhq.com/attio/22a3d38e-69f1-44a8-a7b5-10f109820518": {
-"posted": "2026-08-04",
-"category": "PM-helpful",
-"company": "Attio",
-"title": "Senior Design Engineer",
-"tag": "Remote-EMEA",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
 "https://jobs.ashbyhq.com/9fin/3ee82e36-2e5f-4437-b2e4-4cb74f33385a": {
 "posted": "2026-08-18",
 "category": "PM",
@@ -2168,47 +1196,11 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
 },
-"https://jobs.ashbyhq.com/pleo/728ae224-f443-46b9-86d5-61772503c254": {
-"posted": "2026-08-14",
-"category": "PM-helpful",
-"company": "Pleo",
-"title": "Senior Applied AI Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://jobs.ashbyhq.com/pleo/3f30df79-b7b7-4dd2-8ebd-4c1f2bba15e2": {
-"posted": "2026-08-18",
-"category": "PM-helpful",
-"company": "Pleo",
-"title": "Staff Applied AI Engineer",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
 "https://jobs.ashbyhq.com/hopper/8e179874-df96-4fd0-aa72-8e38586db6aa": {
 "posted": "2026-08-14",
 "category": "PM",
 "company": "Hopper",
 "title": "Principal Product Manager- Conversational AI",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://jobs.ashbyhq.com/encord/70ff84bd-9cb5-47a9-856f-5110f5b25d61": {
-"posted": "2026-08-21",
-"category": "PM-helpful",
-"company": "Encord",
-"title": "Senior Software Engineer - Backend",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://jobs.ashbyhq.com/hyperexponential/decb04ff-754c-40b3-ab8c-d5dfbf605b2d": {
-"posted": "2026-08-21",
-"category": "PM-helpful",
-"company": "Hyperexponential",
-"title": "People & Talent Product Engineer",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
@@ -2258,24 +1250,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
 },
-"https://boards.greenhouse.io/cloudflare/jobs/8152825?gh_jid=8152825": {
-"posted": "2026-08-24",
-"category": "PM-helpful",
-"company": "Cloudflare",
-"title": "Senior Director of Engineering, Billing Platform",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://boards.greenhouse.io/cloudflare/jobs/8114069?gh_jid=8114069": {
-"posted": "2026-08-10",
-"category": "PM-helpful",
-"company": "Cloudflare",
-"title": "VoidZero Engineer",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
 "https://jobs.elastic.co/jobs?gh_jid=8070011&gh_jid=8070011": {
 "posted": "2026-07-16",
 "category": "PM",
@@ -2303,24 +1277,6 @@
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
 },
-"https://job-boards.greenhouse.io/gitlab/jobs/8682860002": {
-"posted": "2026-08-12",
-"category": "PM-helpful",
-"company": "GitLab",
-"title": "Senior Backend Engineer (Ruby), Plan: Spec-Driven Development",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://job-boards.greenhouse.io/gitlab/jobs/8490477002": {
-"posted": "2026-04-07",
-"category": "PM-helpful",
-"company": "GitLab",
-"title": "Staff Backend Engineer, Developer Experience",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
 "https://wayve.firststage.co/jobs?gh_jid=8735092002": {
 "posted": "2026-08-21",
 "category": "PM",
@@ -2328,15 +1284,6 @@
 "title": "Technical Product Manager - Development Vehicles",
 "tag": "London",
 "last_live": "2026-08-25",
-"first_seen": "2026-08-25"
-},
-"https://wayve.firststage.co/jobs?gh_jid=8739398002": {
-"posted": "2026-08-21",
-"category": "PM-helpful",
-"company": "Wayve",
-"title": "Technical Program Manager",
-"tag": "London",
-"last_live": "2026-08-31",
 "first_seen": "2026-08-25"
 },
 "https://job-boards.greenhouse.io/bloomreach/jobs/7893318": {
@@ -2348,38 +1295,11 @@
 "last_live": "2026-08-25",
 "first_seen": "2026-08-25"
 },
-"https://job-boards.greenhouse.io/bloomreach/jobs/8154483": {
-"posted": "2026-08-24",
-"category": "PM-helpful",
-"company": "Bloomreach",
-"title": "Technical Product Marketing Manager",
-"tag": "UK",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
-"https://job-boards.greenhouse.io/monzo/jobs/8152756": {
-"posted": "2026-08-25",
-"category": "PM-helpful",
-"company": "Monzo",
-"title": "Senior Pricing Analyst, Savings",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-25"
-},
 "https://www.thunes.com/jobs/7825866003?gh_jid=7825866003": {
 "posted": "2026-08-04",
 "category": "PM",
 "company": "Thunes",
 "title": "Product Manager (Global Accounts)",
-"tag": "London",
-"last_live": "2026-08-27",
-"first_seen": "2026-08-25"
-},
-"https://job-boards.greenhouse.io/forter/jobs/8729463002": {
-"posted": "2026-08-19",
-"category": "PM-helpful",
-"company": "Forter",
-"title": "Senior Applied AI Engineer",
 "tag": "London",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-25"
@@ -2408,24 +1328,6 @@
 "company": "Wayve",
 "title": "Technical Product Manager - Development Vehicles",
 "tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-27"
-},
-"https://jobs.ashbyhq.com/lovable/c5bc3891-8482-4276-816e-fe38302b1a3c": {
-"posted": "2026-08-06",
-"category": "PM-helpful",
-"company": "Lovable",
-"title": "Data Scientist, Product",
-"tag": "London",
-"last_live": "2026-08-31",
-"first_seen": "2026-08-27"
-},
-"https://jobs.ashbyhq.com/docker/f73a7001-4c94-439f-907e-fd29e1105f1c": {
-"posted": "2026-08-26",
-"category": "PM-helpful",
-"company": "Docker",
-"title": "Manager, Engineering, Secure Build and SCS Services (East Coast Preferred)",
-"tag": "UK",
 "last_live": "2026-08-31",
 "first_seen": "2026-08-27"
 },
@@ -2485,6 +1387,15 @@
 },
 "https://job-boards.greenhouse.io/intercom/jobs/7377200": {
 "posted": "2025-11-20",
+"category": "PM",
+"company": "Intercom",
+"title": "Staff AI Product Manager",
+"tag": "London",
+"last_live": "2026-08-31",
+"first_seen": "2026-08-31"
+},
+"https://job-boards.greenhouse.io/intercom/jobs/7464291": {
+"posted": "2025-12-12",
 "category": "PM",
 "company": "Intercom",
 "title": "Staff AI Product Manager",

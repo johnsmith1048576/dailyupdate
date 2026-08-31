@@ -1,11 +1,13 @@
 # London Product Roles — ATS scanner
 
 A small, reproducible pipeline that finds **London (or London-remote) product-management
-roles** — and non-PM roles where product experience is explicitly valued — across four
-public ATS job-board APIs, then renders them as a filterable, self-contained web page.
+roles** across four public ATS job-board APIs, then renders them as a filterable,
+self-contained web page.
 
-Every role is tagged **PM role** or **PM helpful**, and dated so you can see how stale a
-posting is at a glance.
+Only roles whose **job title** is Product Management are kept (Product Manager, Head/Director
+of Product, Product Owner, VP Product …); product marketing, design, support and analyst
+titles are excluded. Descriptions are never fetched or scanned. Every role is dated so you
+can see how stale a posting is at a glance.
 
 The most recent rendered snapshot lives at [`output/index.html`](output/index.html);
 publish it as an Artifact or open it in any browser.
@@ -17,20 +19,15 @@ Three stages, each a plain Python script (stdlib + `curl` only):
 | Stage | Script | Reads | Writes |
 |------|--------|-------|--------|
 | 1. Discover | `scan/probe.py` | `companies.txt` | `data/ats_hits.json` |
-| 2. Sweep & classify | `scan/sweep.py` | `data/ats_hits.json` | `data/roles.json` |
+| 2. Sweep | `scan/sweep.py` | `data/ats_hits.json` | `data/roles.json` |
 | 3. Render | `scan/build.py` | `data/roles.json` + `scan/template.html` | `output/index.html` (+ `data/history.json`) |
 
 - **Discover** turns each name in `companies.txt` into candidate slugs and tries them
   against all four ATS APIs, keeping any board that returns live jobs. Slugs found on
   earlier runs are retained, so coverage only grows.
-- **Sweep** pulls current postings from every live board, keeps London-eligible ones, and
-  classifies each:
-  - **PM role** — the title itself is Product Management (Product Manager, Head/Director of
-    Product, Product Owner, …).
-  - **PM helpful** — not a PM title, but the description asks for *product sense / judgment /
-    instinct* (candidate-facing phrasing; simple negations like "does not require product
-    management experience" are excluded). The matching sentence is quoted on the page.
-  - Location tags: **London**, **UK**, **Remote-EMEA** (fully remote, open to UK/Europe).
+- **Sweep** pulls current postings from every live board and keeps the London-eligible ones
+  whose title is a PM role. Location tags: **London**, **UK**, **Remote-EMEA** (fully remote,
+  open to UK/Europe).
 - **Render** dedupes, groups by company, sorts newest-first, and injects the data into the
   HTML template. It also maintains **`data/history.json`** — a durable archive of every role URL
   ever seen — and computes the **posting-cadence** chart from it (see below), so the chart is
@@ -39,9 +36,9 @@ Three stages, each a plain Python script (stdlib + `curl` only):
 ### Posting-cadence chart
 
 The page has an expandable **Posting cadence** panel: a stacked bar chart of roles by the month
-their posting went up, for the current year. Each bar is split into live **PM** (green) and
-**PM-helpful** (amber) roles, plus **expired** roles in grey — URLs that appeared in an earlier
-sweep but are no longer live. `build.py` derives this from `data/history.json`:
+their posting went up, for the current year. Each bar splits **live** PM roles (green) from
+**expired** ones (pale green) — URLs that appeared in an earlier sweep but are no longer live.
+`build.py` derives this from `data/history.json`:
 
 - every currently-live role is upserted into the archive (keyed by URL) on each run;
 - any archived URL not in the current sweep counts as *expired*;
@@ -55,9 +52,25 @@ month's bar is partial (through today) and marked with a dashed cap.
 
 ```bash
 cd london-product-roles
-./run.sh            # all three stages (~a few minutes; discovery is the slow part)
-./run.sh sweep      # skip discovery, reuse the known board list (fast refresh)
+./run.sh            # auto: sweep + render; discovery only if the board list is stale (>7d)
+./run.sh all        # force a full discovery pass first
+./run.sh sweep      # never discover; reuse the known board list (fastest)
 ```
+
+`auto` is the efficient default: discovery is ~3,000 requests but the set of companies using
+these ATSs barely moves, so it re-runs only when `data/ats_hits.json` is older than
+`DISCOVERY_MAX_AGE_DAYS` (default 7).
+
+## Automated daily refresh (no Claude required)
+
+`.github/workflows/refresh-roles.yml` runs the whole pipeline on GitHub's runners at **06:00 UTC
+daily** and commits any changed `data/` + `output/index.html` back to the repo. The pipeline is
+plain Python 3 (stdlib) + `curl`, so this costs nothing beyond Actions minutes. You can also run
+it on demand from the Actions tab (**Run workflow**), optionally forcing full discovery. Each run
+also uploads the rendered page as a downloadable artifact.
+
+> Scheduled workflows only fire from the repository's **default branch** — which this branch
+> currently is.
 
 Or stage by stage:
 
@@ -82,12 +95,12 @@ Each role row carries three one-click markers, plus matching filters:
 - **Star (★)** — save a role; the **★ Saved** filter shows only your marks.
 - **Tick (✓)** — mark a role as *applied*; the row shows an "Applied" badge and the **✓ Applied**
   filter narrows to those.
-- **Dismiss (✕)** — hide a role from every view, so the type / location / freshness filters stay
+- **Dismiss (✕)** — hide a role from every view, so the location / freshness filters stay
   free of roles you've already ruled out. The **✕ Dismissed** filter lists what you've hidden so
   you can restore any of them (the button flips to ↺).
 
 All three live in the browser's `localStorage` (keyed by posting URL), so they persist across
-weekly refreshes in that browser. Stars can additionally be made durable via `data/saved.csv`
+refreshes in that browser. Stars can additionally be made durable via `data/saved.csv`
 (below); applied/dismissed marks are browser-only for now.
 
 **Filtering & sorting.** Freshness is **multi-select** — pick any combination of Fresh / Aging /
@@ -102,7 +115,7 @@ browsing data.
 
 For a **permanent** shortlist, the source of truth is [`data/saved.csv`](data/saved.csv),
 committed to the repo. `build.py` bakes it into every render, so saved roles show up
-**pre-starred on every weekly refresh** regardless of browser state. Three ways to write
+**pre-starred on every refresh** regardless of browser state. Three ways to write
 to it:
 
 ```bash
@@ -120,21 +133,16 @@ Round-trip from the page: click **Export CSV** to download your current stars, t
 > A published Artifact is a static page with no backend, so it can't write files itself —
 > `data/saved.csv` is the durable store, written from the CLI or via Export → import.
 
-## Scheduling (for later)
+## Keeping it fresh
 
-The pipeline is stateless and idempotent — just run `./run.sh` on a timer.
+The daily GitHub Actions workflow above does this for you. To run it elsewhere, the pipeline is
+stateless and idempotent — just run `./run.sh` on a timer (e.g. `0 6 * * * cd /path/to/london-product-roles && ./run.sh >> run.log 2>&1`).
 
-- **cron** (weekly, Mondays 07:00):
-  ```cron
-  0 7 * * 1  cd /path/to/london-product-roles && ./run.sh >> run.log 2>&1
-  ```
-- **GitHub Actions**: a `schedule:` workflow that runs `./run.sh` and commits
-  `output/index.html` + `data/*.json` back to the repo.
-- **Claude Code Routine**: a scheduled trigger that re-runs the sweep and republishes the
-  Artifact to the same URL.
-
-A full discovery pass is only worth running occasionally (to catch companies newly adopting
-these ATSs). For routine freshness, `./run.sh sweep` is enough and much faster.
+**Publishing to a Claude Artifact** is the one step a scheduler can't do: an Artifact is written
+by the Artifact tool from a Claude session, and a published page can't fetch job boards itself
+(its sandbox blocks outbound requests), so it can't self-refresh from a button. Options: open
+`output/index.html` from the repo after a workflow run, or have a scheduled Claude session
+republish the page to the same Artifact URL.
 
 ## Extending
 

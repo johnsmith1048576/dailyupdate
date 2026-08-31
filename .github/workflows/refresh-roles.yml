@@ -1,0 +1,49 @@
+name: Refresh London PM roles
+
+# Runs the whole pipeline on GitHub's runners and commits the result.
+# No Claude usage: the pipeline is plain Python 3 (stdlib) + curl.
+on:
+  schedule:
+    - cron: "0 6 * * *"      # 06:00 UTC daily
+  workflow_dispatch:
+    inputs:
+      full_discovery:
+        description: "Force a full company-discovery pass (slower)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-roles
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run pipeline
+        working-directory: london-product-roles
+        run: ./run.sh "${{ inputs.full_discovery && 'all' || 'auto' }}"
+
+      - name: Commit refreshed data and page
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add london-product-roles/data london-product-roles/output
+          if git diff --staged --quiet; then
+            echo "No changes — nothing to commit."
+          else
+            git commit -m "Refresh PM roles ($(date -u +'%d %b %Y'))"
+            git push
+          fi
+
+      # Downloadable copy of the page from the run's summary page.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: london-pm-roles-page
+          path: london-product-roles/output/index.html
+          retention-days: 30

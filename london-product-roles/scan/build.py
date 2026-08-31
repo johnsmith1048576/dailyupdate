@@ -9,7 +9,7 @@ The page is Artifact-ready: publish output/index.html with the Artifact tool
 """
 import json, os, csv
 from datetime import date
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -27,8 +27,8 @@ def build_chart(roles):
 
     Every currently-live role is upserted into data/history.json (keyed by URL).
     Any archived URL that is no longer live counts as *expired*. The chart buckets
-    live PM / live PM-helpful / expired roles by the month of their posting date,
-    for the current year, through today.
+    live and expired PM roles by the month of their posting date, for the current
+    year, through today.
     """
     today = date.today()
     year = str(today.year)
@@ -38,28 +38,30 @@ def build_chart(roles):
             archive = json.load(open(HISTORY))
         except Exception:
             archive = {}
+    # PM-only board: forget any non-PM roles previously archived
+    archive = {u: m for u, m in archive.items() if m.get("category") == "PM"}
     live_urls = set(r["url"] for r in roles)
     tstr = today.isoformat()
     for r in roles:
         prev = archive.get(r["url"], {})
         archive[r["url"]] = {
-            "posted": r.get("posted") or "", "category": r.get("category", "helpful"),
+            "posted": r.get("posted") or "", "category": "PM",
             "company": r.get("companyName") or r.get("company", ""), "title": r.get("title", ""),
             "tag": r.get("tag", ""), "last_live": tstr,
             "first_seen": prev.get("first_seen", tstr),
         }
     json.dump(archive, open(HISTORY, "w"), indent=0)
 
-    buckets = {m: {"pm": 0, "help": 0, "exp_pm": 0, "exp_help": 0} for m in range(1, 13)}
+    buckets = {m: {"pm": 0, "expired": 0} for m in range(1, 13)}
     for r in roles:
         p = r.get("posted") or ""
         if p[:4] == year and len(p) >= 7:
-            buckets[int(p[5:7])]["pm" if r.get("category") == "PM" else "help"] += 1
+            buckets[int(p[5:7])]["pm"] += 1
     expired = [m for u, m in archive.items() if u not in live_urls]
     for e in expired:
         p = e.get("posted") or ""
         if p[:4] == year and len(p) >= 7:
-            buckets[int(p[5:7])]["exp_pm" if e.get("category") == "PM" else "exp_help"] += 1
+            buckets[int(p[5:7])]["expired"] += 1
 
     months = [dict(m=MON[i - 1], **buckets[i]) for i in range(1, today.month + 1)]
     return {
@@ -124,20 +126,17 @@ def main():
     for r in roles:
         groups[r["companyName"]].append(r)
 
-    def pm_ct(rs):
-        return sum(1 for x in rs if x["category"] == "PM")
-
     comps = []
     for name, rs in groups.items():
         rs.sort(key=lambda x: (x.get("posted") or "0000-00-00"), reverse=True)  # newest first
-        comps.append({"name": name, "source": rs[0]["source"], "roles": rs,
-                      "pm": pm_ct(rs), "helpful": len(rs) - pm_ct(rs), "total": len(rs)})
-    comps.sort(key=lambda c: (-c["pm"], -c["total"], c["name"]))
+        comps.append({"name": name, "source": rs[0]["source"], "roles": rs, "total": len(rs)})
+    comps.sort(key=lambda c: (-c["total"], c["name"]))
 
     total = len(roles)
-    pm = sum(c["pm"] for c in comps)
+    tagc = Counter(r["tag"] for r in roles)
     data = {"companies": comps,
-            "stats": {"companies": len(comps), "total": total, "pm": pm, "helpful": total - pm},
+            "stats": {"companies": len(comps), "total": total,
+                      "london": tagc.get("London", 0), "remote": tagc.get("Remote-EMEA", 0)},
             "saved": load_saved_urls()}
 
     chart = build_chart(roles)   # updates data/history.json + returns by-month payload
@@ -158,7 +157,7 @@ def main():
     open(OUT, "w").write(html)
     live_saved = sum(1 for c in comps for r in c["roles"] if r["url"] in set(data["saved"]))
     ch = chart["meta"]
-    print(f"wrote {OUT} — {total} roles ({pm} PM / {total - pm} helpful), {len(comps)} companies; "
+    print(f"wrote {OUT} — {total} PM roles, {len(comps)} companies; "
           f"{len(data['saved'])} saved in CSV ({live_saved} still live); "
           f"chart: {ch['expired']} expired / {ch['archive']} archived")
 

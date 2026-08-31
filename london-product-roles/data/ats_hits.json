@@ -1,101 +1,105 @@
 {
  "meta": {
-  "generated": "2026-08-27",
+  "generated": "2026-08-31",
   "probed": 748,
-  "boards": 416
+  "boards": 410
  },
  "hits": {
   "ashby": [
    [
     "openai",
-    744
+    753
    ],
    [
     "airwallex",
-    605
+    607
    ],
    [
     "snowflake",
-    388
+    390
    ],
    [
     "harvey",
-    351
+    350
    ],
    [
     "applied",
-    297
+    301
    ],
    [
     "legora",
-    275
+    282
    ],
    [
     "elevenlabs",
     248
    ],
    [
-    "saronic",
-    201
-   ],
-   [
     "sierra",
     200
    ],
    [
+    "saronic",
+    199
+   ],
+   [
     "deliveroo",
-    191
+    188
    ],
    [
     "clickhouse",
-    187
+    177
    ],
    [
     "whoop",
-    165
+    164
    ],
    [
     "cohere",
-    145
-   ],
-   [
-    "pennylane",
-    140
+    146
    ],
    [
     "wayve",
-    137
+    146
    ],
    [
-    "decagon",
-    136
+    "pennylane",
+    139
    ],
    [
     "ramp",
-    136
+    139
+   ],
+   [
+    "decagon",
+    137
    ],
    [
     "notion",
-    135
-   ],
-   [
-    "zip",
-    131
+    132
    ],
    [
     "skydio",
-    128
+    125
+   ],
+   [
+    "zip",
+    122
    ],
    [
     "cursor",
-    119
+    121
    ],
    [
     "nubank",
-    118
+    120
    ],
    [
     "cerebras",
+    109
+   ],
+   [
+    "vanta",
     109
    ],
    [
@@ -103,16 +107,8 @@
     108
    ],
    [
-    "vanta",
-    108
-   ],
-   [
     "langchain",
-    106
-   ],
-   [
-    "perplexity",
-    101
+    107
    ],
    [
     "plaid",
@@ -120,98 +116,98 @@
    ],
    [
     "alan",
-    94
+    99
+   ],
+   [
+    "perplexity",
+    97
    ],
    [
     "deepgram",
     93
    ],
    [
+    "mercor",
+    92
+   ],
+   [
     "cognition",
     89
    ],
    [
-    "mercor",
-    88
-   ],
-   [
     "baseten",
-    79
+    81
    ],
    [
     "lovable",
-    78
+    79
    ],
    [
     "lambda",
-    77
+    76
+   ],
+   [
+    "faculty",
+    73
    ],
    [
     "replit",
     71
    ],
    [
-    "faculty",
-    70
+    "deepl",
+    68
+   ],
+   [
+    "ashby",
+    67
+   ],
+   [
+    "fireworks",
+    67
    ],
    [
     "lendable",
     66
    ],
    [
-    "ashby",
-    64
-   ],
-   [
-    "fireworks",
-    64
-   ],
-   [
-    "deepl",
-    63
-   ],
-   [
-    "handshake",
+    "docker",
     62
    ],
    [
-    "synthesia",
+    "suno",
+    62
+   ],
+   [
+    "handshake",
     61
    ],
    [
-    "suno",
+    "synthesia",
     60
    ],
    [
-    "docker",
+    "supabase",
     59
    ],
    [
-    "supabase",
-    56
-   ],
-   [
     "benchling",
-    55
+    58
    ],
    [
     "temporal",
-    53
+    57
    ],
    [
     "writer",
-    50
-   ],
-   [
-    "abridge",
-    47
-   ],
-   [
-    "attio",
-    47
+    51
    ],
    [
     "drata",
+    48
+   ],
+   [
+    "attio",
     47
    ],
    [
@@ -224,82 +220,86 @@
    ],
    [
     "thought-machine",
+    43
+   ],
+   [
+    "abridge",
     42
    ],
    [
     "sentry",
-    41
-   ],
-   [
-    "miro",
-    40
+    42
    ],
    [
     "amplitude",
-    39
+    40
    ],
    [
     "reducto",
     39
    ],
    [
-    "9fin",
-    38
+    "miro",
+    37
    ],
    [
     "pleo",
-    38
-   ],
-   [
-    "qonto",
-    35
+    37
    ],
    [
     "sardine",
-    35
+    37
    ],
    [
-    "trainline",
-    35
+    "9fin",
+    36
+   ],
+   [
+    "qonto",
+    36
    ],
    [
     "vapi",
+    35
+   ],
+   [
+    "encord",
     34
    ],
    [
-    "watershed",
+    "render",
     33
+   ],
+   [
+    "cartesia",
+    32
    ],
    [
     "metaview",
     32
    ],
    [
-    "render",
+    "watershed",
     32
-   ],
-   [
-    "cartesia",
-    31
-   ],
-   [
-    "elliptic",
-    31
-   ],
-   [
-    "encord",
-    31
    ],
    [
     "modal",
     31
    ],
    [
+    "trainline",
+    31
+   ],
+   [
+    "elliptic",
+    30
+   ],
+   [
     "moss",
     30
    ],
    [
-    "surveymonkey",
+    "quantexa",
     30
    ],
    [
@@ -307,31 +307,23 @@
     29
    ],
    [
-    "oyster",
-    29
-   ],
-   [
     "roboflow",
     29
-   ],
-   [
-    "strava",
-    29
-   ],
-   [
-    "cube",
-    28
    ],
    [
     "hex",
     28
    ],
    [
-    "quantexa",
+    "oyster",
     28
    ],
    [
-    "sanity",
+    "strava",
+    28
+   ],
+   [
+    "surveymonkey",
     28
    ],
    [
@@ -339,23 +331,23 @@
     28
    ],
    [
-    "confluent",
+    "sanity",
     27
    ],
    [
-    "multiverse",
+    "cube",
     26
    ],
    [
-    "astronomer",
-    24
+    "pencil",
+    26
    ],
    [
-    "braintrust",
-    24
+    "multiverse",
+    25
    ],
    [
-    "iterable",
+    "runpod",
     24
    ],
    [
@@ -363,7 +355,23 @@
     24
    ],
    [
+    "braintrust",
+    23
+   ],
+   [
+    "confluent",
+    23
+   ],
+   [
     "dust",
+    23
+   ],
+   [
+    "hyperexponential",
+    23
+   ],
+   [
+    "iterable",
     23
    ],
    [
@@ -371,31 +379,27 @@
     23
    ],
    [
-    "pencil",
-    23
-   ],
-   [
-    "runpod",
-    23
-   ],
-   [
     "alchemy",
     22
    ],
    [
-    "hyperexponential",
+    "primer",
     22
+   ],
+   [
+    "astronomer",
+    21
    ],
    [
     "column",
     21
    ],
    [
-    "mintlify",
-    21
+    "anyscale",
+    20
    ],
    [
-    "anyscale",
+    "mintlify",
     20
    ],
    [
@@ -407,28 +411,20 @@
     20
    ],
    [
-    "redis",
+    "bland",
     19
    ],
    [
-    "bland",
-    18
-   ],
-   [
-    "persona",
-    18
-   ],
-   [
-    "primer",
-    18
-   ],
-   [
     "warp",
-    18
+    19
    ],
    [
     "andela",
-    17
+    18
+   ],
+   [
+    "redis",
+    18
    ],
    [
     "granola",
@@ -436,6 +432,10 @@
    ],
    [
     "nabla",
+    16
+   ],
+   [
+    "persona",
     16
    ],
    [
@@ -451,6 +451,10 @@
     15
    ],
    [
+    "motorway",
+    15
+   ],
+   [
     "photoroom",
     15
    ],
@@ -459,19 +463,11 @@
     15
    ],
    [
-    "forto",
+    "goodlord",
     14
    ],
    [
     "lunar",
-    14
-   ],
-   [
-    "motorway",
-    14
-   ],
-   [
-    "posthog",
     14
    ],
    [
@@ -483,27 +479,27 @@
     14
    ],
    [
+    "zilch",
+    14
+   ],
+   [
     "character",
     13
    ],
    [
-    "resend",
+    "posthog",
     13
    ],
    [
-    "semgrep",
-    13
-   ],
-   [
-    "zilch",
-    13
-   ],
-   [
-    "goodlord",
+    "forto",
     12
    ],
    [
     "pylon",
+    12
+   ],
+   [
+    "resend",
     12
    ],
    [
@@ -519,11 +515,19 @@
     11
    ],
    [
+    "choco",
+    10
+   ],
+   [
     "clearbank",
     10
    ],
    [
     "extend",
+    10
+   ],
+   [
+    "freetrade",
     10
    ],
    [
@@ -543,35 +547,27 @@
     10
    ],
    [
-    "sift",
+    "propel",
     10
    ],
    [
-    "choco",
-    9
+    "semgrep",
+    10
    ],
    [
-    "propel",
-    9
+    "sift",
+    10
    ],
    [
     "tempo",
     9
    ],
    [
-    "zapier",
-    9
-   ],
-   [
-    "beamery",
+    "circle",
     8
    ],
    [
     "fin",
-    8
-   ],
-   [
-    "freetrade",
     8
    ],
    [
@@ -595,6 +591,10 @@
     8
    ],
    [
+    "prefect",
+    8
+   ],
+   [
     "railway",
     8
    ],
@@ -611,7 +611,7 @@
     7
    ],
    [
-    "circle",
+    "beamery",
     7
    ],
    [
@@ -623,15 +623,15 @@
     7
    ],
    [
-    "prefect",
-    7
-   ],
-   [
     "sweep",
     7
    ],
    [
     "twelve",
+    7
+   ],
+   [
+    "zapier",
     7
    ],
    [
@@ -652,6 +652,10 @@
    ],
    [
     "neon",
+    6
+   ],
+   [
+    "recraft",
     6
    ],
    [
@@ -699,7 +703,7 @@
     4
    ],
    [
-    "kit",
+    "griffin",
     4
    ],
    [
@@ -712,10 +716,6 @@
    ],
    [
     "materialize",
-    4
-   ],
-   [
-    "recraft",
     4
    ],
    [
@@ -767,11 +767,7 @@
     2
    ],
    [
-    "griffin",
-    2
-   ],
-   [
-    "hyperscience",
+    "kit",
     2
    ],
    [
@@ -791,10 +787,6 @@
     2
    ],
    [
-    "amp",
-    1
-   ],
-   [
     "cleric",
     1
    ],
@@ -812,6 +804,10 @@
    ],
    [
     "hightouch",
+    1
+   ],
+   [
+    "hyperscience",
     1
    ],
    [
@@ -842,23 +838,23 @@
   "greenhouse": [
    [
     "databricks",
-    839
-   ],
-   [
-    "stripe",
-    578
+    856
    ],
    [
     "anthropic",
-    562
+    570
+   ],
+   [
+    "stripe",
+    569
    ],
    [
     "datadog",
-    450
+    452
    ],
    [
     "mongodb",
-    408
+    409
    ],
    [
     "sumup",
@@ -866,43 +862,43 @@
    ],
    [
     "waymo",
-    353
+    349
    ],
    [
     "okta",
-    347
+    346
    ],
    [
     "elastic",
-    315
+    344
    ],
    [
     "cloudflare",
-    309
+    306
    ],
    [
     "brex",
-    289
-   ],
-   [
-    "braze",
-    286
+    294
    ],
    [
     "agoda",
-    279
+    293
    ],
    [
     "verkada",
     278
    ],
    [
+    "braze",
+    276
+   ],
+   [
     "coreweave",
-    273
+    270
    ],
    [
     "samsara",
-    259
+    247
    ],
    [
     "wolt",
@@ -910,94 +906,98 @@
    ],
    [
     "fivetran",
-    241
+    242
    ],
    [
     "adyen",
-    227
-   ],
-   [
-    "scaleai",
-    219
+    231
    ],
    [
     "gitlab",
-    218
+    221
+   ],
+   [
+    "scaleai",
+    217
    ],
    [
     "affirm",
-    202
+    210
    ],
    [
     "graphcore",
-    197
+    195
    ],
    [
     "block",
-    187
-   ],
-   [
-    "airbnb",
-    185
+    193
    ],
    [
     "coinbase",
-    182
+    189
    ],
    [
     "clickhouse",
-    178
-   ],
-   [
-    "lyft",
-    166
+    177
    ],
    [
     "vast",
-    161
+    170
+   ],
+   [
+    "lyft",
+    169
+   ],
+   [
+    "airbnb",
+    165
    ],
    [
     "flexport",
-    160
+    165
    ],
    [
     "figma",
-    159
-   ],
-   [
-    "klaviyo",
-    149
-   ],
-   [
-    "helsing",
-    145
-   ],
-   [
-    "tenstorrent",
-    142
-   ],
-   [
-    "twilio",
-    141
+    163
    ],
    [
     "wayve",
-    139
+    150
    ],
    [
-    "robinhood",
-    130
+    "klaviyo",
+    143
+   ],
+   [
+    "twilio",
+    143
+   ],
+   [
+    "helsing",
+    142
+   ],
+   [
+    "tenstorrent",
+    140
    ],
    [
     "ripple",
     129
    ],
    [
-    "asana",
-    125
+    "robinhood",
+    128
+   ],
+   [
+    "intercom",
+    124
    ],
    [
     "instacart",
+    123
+   ],
+   [
+    "asana",
     121
    ],
    [
@@ -1005,31 +1005,23 @@
     121
    ],
    [
-    "intercom",
-    119
-   ],
-   [
     "clara",
-    114
-   ],
-   [
-    "oura",
-    104
-   ],
-   [
-    "nuro",
-    100
+    118
    ],
    [
     "justworks",
-    99
+    102
+   ],
+   [
+    "nuro",
+    101
+   ],
+   [
+    "oura",
+    101
    ],
    [
     "cresta",
-    95
-   ],
-   [
-    "mixpanel",
     94
    ],
    [
@@ -1038,15 +1030,19 @@
    ],
    [
     "gusto",
-    89
+    91
    ],
    [
     "vercel",
-    88
+    91
+   ],
+   [
+    "mixpanel",
+    90
    ],
    [
     "chainguard",
-    87
+    86
    ],
    [
     "duolingo",
@@ -1054,11 +1050,11 @@
    ],
    [
     "tide",
-    81
+    82
    ],
    [
     "hightouch",
-    75
+    80
    ],
    [
     "fireblocks",
@@ -1066,58 +1062,58 @@
    ],
    [
     "pingidentity",
+    70
+   ],
+   [
+    "bloomreach",
     67
    ],
    [
     "monzo",
+    67
+   ],
+   [
+    "faire",
     66
-   ],
-   [
-    "postman",
-    66
-   ],
-   [
-    "bloomreach",
-    65
-   ],
-   [
-    "cribl",
-    64
-   ],
-   [
-    "n26",
-    64
    ],
    [
     "chime",
     63
    ],
    [
-    "faire",
+    "n26",
     63
+   ],
+   [
+    "postman",
+    63
+   ],
+   [
+    "cribl",
+    62
    ],
    [
     "lovable",
     61
    ],
    [
-    "mercury",
-    54
+    "instawork",
+    57
    ],
    [
-    "instawork",
-    53
+    "mercury",
+    54
    ],
    [
     "launchdarkly",
     51
    ],
    [
-    "parloa",
-    51
+    "thunes",
+    50
    ],
    [
-    "thunes",
+    "parloa",
     49
    ],
    [
@@ -1126,18 +1122,18 @@
    ],
    [
     "peloton",
-    46
+    44
+   ],
+   [
+    "dropbox",
+    41
    ],
    [
     "gemini",
     40
    ],
    [
-    "attentive",
-    39
-   ],
-   [
-    "feedzai",
+    "forter",
     39
    ],
    [
@@ -1145,15 +1141,11 @@
     39
    ],
    [
-    "dropbox",
+    "feedzai",
     38
    ],
    [
-    "tamara",
-    38
-   ],
-   [
-    "forter",
+    "amplitude",
     37
    ],
    [
@@ -1161,7 +1153,11 @@
     37
    ],
    [
-    "amplitude",
+    "attentive",
+    36
+   ],
+   [
+    "tamara",
     36
    ],
    [
@@ -1169,27 +1165,23 @@
     33
    ],
    [
+    "project44",
+    32
+   ],
+   [
     "customerio",
     31
    ],
    [
     "otter",
-    30
-   ],
-   [
-    "pendo",
-    29
-   ],
-   [
-    "project44",
-    29
-   ],
-   [
-    "riskified",
     28
    ],
    [
-    "turing",
+    "pendo",
+    28
+   ],
+   [
+    "bitpanda",
     27
    ],
    [
@@ -1197,23 +1189,15 @@
     27
    ],
    [
-    "bitpanda",
+    "riskified",
     26
    ],
    [
     "dataiku",
-    26
+    25
    ],
    [
     "gocardless",
-    26
-   ],
-   [
-    "netradyne",
-    26
-   ],
-   [
-    "commercetools",
     25
    ],
    [
@@ -1221,31 +1205,39 @@
     25
    ],
    [
-    "alloy",
-    24
+    "turing",
+    25
    ],
    [
     "complyadvantage",
     24
    ],
    [
-    "coursera",
-    23
+    "netradyne",
+    24
+   ],
+   [
+    "nucleus",
+    24
+   ],
+   [
+    "alloy",
+    22
+   ],
+   [
+    "fingerprint",
+    22
    ],
    [
     "iterable",
-    23
+    22
    ],
    [
     "melio",
     22
    ],
    [
-    "nucleus",
-    22
-   ],
-   [
-    "careem",
+    "commercetools",
     21
    ],
    [
@@ -1253,20 +1245,24 @@
     21
    ],
    [
+    "wise",
+    21
+   ],
+   [
+    "careem",
+    20
+   ],
+   [
+    "coursera",
+    20
+   ],
+   [
     "extend",
     20
    ],
    [
-    "wise",
-    20
-   ],
-   [
-    "fingerprint",
-    18
-   ],
-   [
     "greenhouse",
-    18
+    17
    ],
    [
     "honeycomb",
@@ -1285,6 +1281,10 @@
     16
    ],
    [
+    "assemblyai",
+    15
+   ],
+   [
     "fourkites",
     15
    ],
@@ -1293,7 +1293,11 @@
     15
    ],
    [
-    "calendly",
+    "immersive",
+    14
+   ],
+   [
+    "storyblok",
     14
    ],
    [
@@ -1305,27 +1309,11 @@
     13
    ],
    [
-    "storyblok",
-    13
-   ],
-   [
     "typeface",
     13
    ],
    [
-    "assemblyai",
-    12
-   ],
-   [
-    "galileo",
-    12
-   ],
-   [
-    "immersive",
-    12
-   ],
-   [
-    "suki",
+    "calendly",
     12
    ],
    [
@@ -1333,7 +1321,11 @@
     12
    ],
    [
-    "sendbird",
+    "galileo",
+    11
+   ],
+   [
+    "lattice",
     11
    ],
    [
@@ -1341,7 +1333,19 @@
     10
    ],
    [
+    "labelbox",
+    10
+   ],
+   [
     "planetscale",
+    10
+   ],
+   [
+    "sendbird",
+    10
+   ],
+   [
+    "suki",
     10
    ],
    [
@@ -1349,16 +1353,8 @@
     9
    ],
    [
-    "labelbox",
+    "mirakl",
     9
-   ],
-   [
-    "lattice",
-    9
-   ],
-   [
-    "cybereason",
-    8
    ],
    [
     "descript",
@@ -1366,10 +1362,6 @@
    ],
    [
     "form3",
-    8
-   ],
-   [
-    "mirakl",
     8
    ],
    [
@@ -1385,7 +1377,15 @@
     8
    ],
    [
+    "cybereason",
+    7
+   ],
+   [
     "smartling",
+    7
+   ],
+   [
+    "tempo",
     7
    ],
    [
@@ -1397,23 +1397,11 @@
     6
    ],
    [
-    "imply",
-    6
-   ],
-   [
-    "lithic",
-    6
-   ],
-   [
     "motive",
     6
    ],
    [
     "postscript",
-    6
-   ],
-   [
-    "tempo",
     6
    ],
    [
@@ -1425,15 +1413,15 @@
     5
    ],
    [
-    "degreed",
-    5
-   ],
-   [
     "ghost",
     5
    ],
    [
-    "skyscanner",
+    "imply",
+    5
+   ],
+   [
+    "lithic",
     5
    ],
    [
@@ -1453,16 +1441,16 @@
     4
    ],
    [
-    "builder",
-    4
-   ],
-   [
     "cleo",
     4
    ],
    [
     "guild",
     4
+   ],
+   [
+    "builder",
+    3
    ],
    [
     "comet",
@@ -1473,20 +1461,20 @@
     3
    ],
    [
+    "degreed",
+    3
+   ],
+   [
     "highnote",
+    3
+   ],
+   [
+    "skyscanner",
     3
    ],
    [
     "startree",
     3
-   ],
-   [
-    "vectara",
-    3
-   ],
-   [
-    "calm",
-    2
    ],
    [
     "knock",
@@ -1510,6 +1498,10 @@
    ],
    [
     "bold",
+    1
+   ],
+   [
+    "calm",
     1
    ],
    [
@@ -1552,27 +1544,27 @@
    ],
    [
     "palantir",
-    307
+    308
    ],
    [
     "zoox",
-    245
+    246
    ],
    [
     "pigment",
-    103
+    110
    ],
    [
     "waabi",
-    81
+    82
    ],
    [
     "hermeus",
-    75
+    76
    ],
    [
     "ro",
-    49
+    50
    ],
    [
     "nium",
@@ -1580,7 +1572,7 @@
    ],
    [
     "qonto",
-    35
+    39
    ],
    [
     "outreach",
@@ -1592,15 +1584,15 @@
    ],
    [
     "zopa",
-    29
+    30
    ],
    [
     "toptal",
-    20
+    18
    ],
    [
     "arcadia",
-    19
+    17
    ],
    [
     "secureframe",
@@ -1612,11 +1604,11 @@
    ],
    [
     "neon",
-    12
+    13
    ],
    [
     "sysdig",
-    12
+    11
    ],
    [
     "bloom",
@@ -1624,19 +1616,19 @@
    ],
    [
     "kavak",
-    9
+    10
+   ],
+   [
+    "alloy",
+    7
    ],
    [
     "gauntlet",
-    8
+    7
    ],
    [
     "prismic",
     7
-   ],
-   [
-    "alloy",
-    5
    ],
    [
     "brilliant",
@@ -1651,10 +1643,6 @@
     1
    ],
    [
-    "anyscale",
-    1
-   ],
-   [
     "kapwing",
     1
    ],
@@ -1663,24 +1651,12 @@
     1
    ]
   ],
-  "workable": [
-   [
-    "zego",
-    36
-   ],
-   [
-    "kroo",
-    12
-   ],
-   [
-    "huggingface",
-    7
-   ]
-  ]
+  "workable": []
  },
  "empty": {
   "ashby": [
    "airtable",
+   "amp",
    "bolt",
    "clerk",
    "count",
@@ -1700,7 +1676,6 @@
    "project44",
    "snyk",
    "spendesk",
-   "superhuman",
    "synctera",
    "truelayer",
    "turing",
@@ -1734,116 +1709,7 @@
    "wonolo"
   ],
   "workable": [
-   "airbase",
-   "airbyte",
-   "algolia",
-   "anchorage",
-   "assembly",
-   "atlas",
-   "attest",
-   "banked",
-   "bitpanda",
-   "bugsnag",
-   "bulb",
-   "bumper",
-   "calm",
-   "cera",
-   "clay",
-   "cleo",
-   "cloudsmith",
-   "coda",
-   "coinbase",
-   "convertkit",
-   "convoy",
-   "cortex",
-   "coursera",
-   "cruise",
-   "dbt",
-   "decodable",
-   "deel",
-   "deepgram",
-   "deliveroo",
-   "elsevier",
-   "emergent",
-   "figma",
-   "fin",
-   "fingerprint",
-   "fireblocks",
-   "five",
-   "flashbots",
-   "flink",
-   "forter",
-   "freetrade",
-   "galileo",
-   "gem",
-   "goodlord",
-   "gopuff",
-   "grab",
-   "headspace",
-   "hex",
-   "heygen",
-   "hirevue",
-   "hopper",
-   "hydrosat",
-   "impulse",
-   "insomnia",
-   "instawork",
-   "intuition",
-   "june",
-   "katoo",
-   "kforce",
-   "knock",
-   "kount",
-   "ledger",
-   "lendable",
-   "magic",
-   "mercor",
-   "meta",
-   "monzo",
-   "motive",
-   "multiverse",
-   "nested",
-   "nium",
-   "notion",
-   "nucleus",
-   "oxa",
-   "pachama",
-   "papaya",
-   "peakon",
-   "perplexity",
-   "polyai",
-   "prolific",
-   "qonto",
-   "rappi",
-   "ravelin",
-   "rebuy",
-   "recursion",
-   "render",
-   "ro",
-   "sanity",
-   "shield",
-   "shopify",
-   "spring",
-   "square",
-   "stori",
-   "stripe",
-   "suki",
-   "surveymonkey",
-   "swell",
-   "synthesia",
-   "tabby",
-   "tesla",
-   "twilio",
-   "udacity",
-   "unit",
-   "velocity",
-   "voyage",
-   "watershed",
-   "wonolo",
-   "zapier",
-   "zapp",
-   "zava",
-   "zopa"
+   "ada"
   ]
  }
 }

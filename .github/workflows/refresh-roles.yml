@@ -50,15 +50,6 @@ jobs:
           path: london-product-roles/output/index.html
           retention-days: 30
 
-      # Package output/ (just index.html) as the Pages site.
-      # enablement:true turns Pages on the first time, so there's no manual toggle.
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: london-product-roles/output
-
   # Publishes the page at https://<owner>.github.io/<repo>/
   # Requires the repository to be public (Pages on a private repo needs a paid plan).
   deploy-pages:
@@ -68,5 +59,16 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # ref: the branch head, so we package the commit the refresh job just
+      # pushed rather than the SHA that triggered the run (which is older).
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      # Pages must already be enabled: Settings -> Pages -> Source: GitHub Actions.
+      # The workflow token may deploy to Pages but not create the site itself.
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: london-product-roles/output
       - id: deployment
         uses: actions/deploy-pages@v4

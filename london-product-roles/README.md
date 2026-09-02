@@ -74,8 +74,11 @@ also uploads the rendered page as a downloadable artifact.
 
 The same workflow then publishes the page to **GitHub Pages** at
 `https://johnsmith1048576.github.io/dailyupdate/`, so there is a permanent URL that refreshes
-itself daily with no Claude session involved. Pages is free only on a **public** repository
-(`actions/configure-pages` enables Pages automatically on the first run).
+itself daily with no Claude session involved. Pages is free only on a **public** repository.
+
+**One-time setup:** enable Pages at *Settings → Pages → Build and deployment → Source:
+**GitHub Actions***. The workflow token is allowed to deploy to Pages but not to create the
+Pages site, so this switch cannot be flipped from the workflow.
 
 > **What is public:** the whole repo — code, `companies.txt`, `data/*.json` and the rendered page.
 > Your ★ saved, ✓ applied and ✕ dismissed marks are **not** — they live only in your browser's

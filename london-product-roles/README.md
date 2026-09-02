@@ -63,8 +63,8 @@ these ATSs barely moves, so it re-runs only when `data/ats_hits.json` is older t
 
 ## Automated daily refresh (no Claude required)
 
-`.github/workflows/refresh-roles.yml` runs the whole pipeline on GitHub's runners at **06:00 UTC
-daily** and commits any changed `data/` + `output/index.html` back to the repo. The pipeline is
+`.github/workflows/refresh-roles.yml` runs the whole pipeline on GitHub's runners **twice daily,
+at 05:00 and 17:00 UTC**, and commits any changed `data/` + `output/index.html` back to the repo. The pipeline is
 plain Python 3 (stdlib) + `curl`, so this costs nothing beyond Actions minutes. You can also run
 it on demand from the Actions tab (**Run workflow**), optionally forcing full discovery. Each run
 also uploads the rendered page as a downloadable artifact.
@@ -74,7 +74,7 @@ also uploads the rendered page as a downloadable artifact.
 
 The same workflow then publishes the page to **GitHub Pages** at
 `https://johnsmith1048576.github.io/dailyupdate/`, so there is a permanent URL that refreshes
-itself daily with no Claude session involved. Pages is free only on a **public** repository.
+itself twice a day with no Claude session involved. Pages is free only on a **public** repository.
 
 **One-time setup:** enable Pages at *Settings → Pages → Build and deployment → Source:
 **GitHub Actions***. The workflow token is allowed to deploy to Pages but not to create the

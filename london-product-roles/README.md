@@ -72,6 +72,17 @@ also uploads the rendered page as a downloadable artifact.
 > Scheduled workflows only fire from the repository's **default branch** — which this branch
 > currently is.
 
+The same workflow then publishes the page to **GitHub Pages** at
+`https://johnsmith1048576.github.io/dailyupdate/`, so there is a permanent URL that refreshes
+itself daily with no Claude session involved. Pages is free only on a **public** repository
+(`actions/configure-pages` enables Pages automatically on the first run).
+
+> **What is public:** the whole repo — code, `companies.txt`, `data/*.json` and the rendered page.
+> Your ★ saved, ✓ applied and ✕ dismissed marks are **not** — they live only in your browser's
+> `localStorage`. The one exception is the durable shortlist `data/saved.csv`, which *is* compiled
+> into the page; it is empty by default, so keep it that way if you would rather your shortlist
+> stayed private.
+
 Or stage by stage:
 
 ```bash

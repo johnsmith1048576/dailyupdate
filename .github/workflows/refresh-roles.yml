@@ -13,7 +13,9 @@ on:
         default: false
 
 permissions:
-  contents: write
+  contents: write   # commit the refreshed data/page
+  pages: write      # publish to GitHub Pages
+  id-token: write   # required by deploy-pages
 
 concurrency:
   group: refresh-roles
@@ -47,3 +49,24 @@ jobs:
           name: london-pm-roles-page
           path: london-product-roles/output/index.html
           retention-days: 30
+
+      # Package output/ (just index.html) as the Pages site.
+      # enablement:true turns Pages on the first time, so there's no manual toggle.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: london-product-roles/output
+
+  # Publishes the page at https://<owner>.github.io/<repo>/
+  # Requires the repository to be public (Pages on a private repo needs a paid plan).
+  deploy-pages:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

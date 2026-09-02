@@ -13,17 +13,6 @@
  {
   "company": "airwallex",
   "source": "Ashby",
-  "title": "Head of Product, Global Payments Network Infrastructure (Relocate to Singapore)",
-  "category": "PM",
-  "tag": "London",
-  "location": "UK - London",
-  "url": "https://jobs.ashbyhq.com/airwallex/182e6368-ee0b-4c55-a135-6e25148189e7",
-  "comp": "",
-  "posted": "2026-06-02"
- },
- {
-  "company": "airwallex",
-  "source": "Ashby",
   "title": "Product Lead, Agentic Payments Platform",
   "category": "PM",
   "tag": "London",
@@ -209,6 +198,17 @@
   "posted": "2026-08-05"
  },
  {
+  "company": "deliveroo",
+  "source": "Ashby",
+  "title": "Senior Product Manager, Trust & Safety, Integrity and Fraud",
+  "category": "PM",
+  "tag": "London",
+  "location": "London - The River Building HQ",
+  "url": "https://jobs.ashbyhq.com/deliveroo/cbf27db0-5a18-43cb-912b-0ba698d8830a",
+  "comp": "",
+  "posted": "2026-09-01"
+ },
+ {
   "company": "cohere",
   "source": "Ashby",
   "title": "Product Manager, Agent Harness & Modelling",
@@ -216,7 +216,7 @@
   "tag": "London",
   "location": "Toronto | London | New York | Montreal",
   "url": "https://jobs.ashbyhq.com/cohere/1d1b300d-254b-48c4-958f-99c6b907f295",
-  "comp": "",
+  "comp": "$160K \u2013 $320K \u2022 Offers Equity \u2022 Multiple Ranges",
   "posted": "2026-03-18"
  },
  {
@@ -227,7 +227,7 @@
   "tag": "London",
   "location": "Toronto | London | New York | Montreal",
   "url": "https://jobs.ashbyhq.com/cohere/87e9fd4e-49ac-4242-97be-7da6f718020d",
-  "comp": "",
+  "comp": "$160K \u2013 $285K \u2022 Offers Equity \u2022 Multiple Ranges",
   "posted": "2026-06-16"
  },
  {
@@ -306,17 +306,6 @@
   "url": "https://jobs.ashbyhq.com/alan/7059bd81-4363-41fd-b7e0-601917195421",
   "comp": "",
   "posted": "2026-06-26"
- },
- {
-  "company": "faculty",
-  "source": "Ashby",
-  "title": "Principal Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "UK - London",
-  "url": "https://jobs.ashbyhq.com/faculty/72faa106-47e1-4e0f-8f9b-d5af33a5a6d5",
-  "comp": "",
-  "posted": "2026-07-21"
  },
  {
   "company": "deepl",
@@ -682,17 +671,6 @@
   "posted": "2026-08-21"
  },
  {
-  "company": "anthropic",
-  "source": "Greenhouse",
-  "title": "Product Manager, Business Technology",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, UK",
-  "url": "https://job-boards.greenhouse.io/anthropic/jobs/5397741008",
-  "comp": "",
-  "posted": "2026-08-21"
- },
- {
   "company": "stripe",
   "source": "Greenhouse",
   "title": "Product Manager, Global Marketplaces",
@@ -814,28 +792,6 @@
   "posted": "2026-07-14"
  },
  {
-  "company": "clickhouse",
-  "source": "Greenhouse",
-  "title": "Principal Product Manager - ClickHouse Cloud",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom (remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/5693829004",
-  "comp": "",
-  "posted": "2025-10-30"
- },
- {
-  "company": "clickhouse",
-  "source": "Greenhouse",
-  "title": "Principal  Product Manager, Security",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom (remote)",
-  "url": "https://job-boards.greenhouse.io/clickhouse/jobs/5664427004",
-  "comp": "",
-  "posted": "2025-10-01"
- },
- {
   "company": "figma",
   "source": "Greenhouse",
   "title": "Manager, Product Management - Roundtripping (London, United Kingdom)",
@@ -955,17 +911,6 @@
   "url": "https://www.thunes.com/jobs/7825866003?gh_jid=7825866003",
   "comp": "",
   "posted": "2026-08-04"
- },
- {
-  "company": "dataiku",
-  "source": "Greenhouse",
-  "title": "Sr Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "Europe, Middle East, and Africa; France, Paris; France, Remote; Germany, Berlin ",
-  "url": "https://job-boards.greenhouse.io/dataiku/jobs/5812604004",
-  "comp": "",
-  "posted": "2026-03-25"
  },
  {
   "company": "gocardless",

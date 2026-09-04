@@ -765,12 +765,12 @@
 "first_seen": "2026-08-06"
 },
 "https://jobs.ashbyhq.com/lendable/d9effa9b-07c2-4075-a350-2f84fc580e8d": {
-"posted": "2026-08-19",
+"posted": "2026-09-04",
 "category": "PM",
 "company": "Lendable",
 "title": "Associate Product Manager",
 "tag": "London",
-"last_live": "2026-08-31",
+"last_live": "2026-09-04",
 "first_seen": "2026-08-06"
 },
 "https://jobs.ashbyhq.com/trainline/c252f025-e4bb-410e-9b94-a1f5e16e9edd": {
@@ -1445,6 +1445,15 @@
 "company": "9fin",
 "title": "Senior Product Manager (Data APIs)",
 "tag": "London",
+"last_live": "2026-09-04",
+"first_seen": "2026-09-04"
+},
+"https://jobs.ashbyhq.com/oyster/7835b377-7646-43a1-b917-b63f1e579869": {
+"posted": "2026-06-05",
+"category": "PM",
+"company": "Oyster",
+"title": "Senior Director of Product",
+"tag": "UK",
 "last_live": "2026-09-04",
 "first_seen": "2026-09-04"
 }

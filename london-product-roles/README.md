@@ -158,6 +158,27 @@ by the Artifact tool from a Claude session, and a published page can't fetch job
 `output/index.html` from the repo after a workflow run, or have a scheduled Claude session
 republish the page to the same Artifact URL.
 
+## The Lenny 100 list
+
+`companies.txt` should cover every company on [the Lenny 100](https://www.lennysjobs.com/lenny100).
+`scan/lenny.py` keeps it in sync and runs automatically as part of the **weekly company scan**
+(the discovery pass inside `run.sh`), recording the roster in `data/lenny100.json` so additions
+and removals show up in git history. Names are only ever added — a company dropping off the list
+stays in `companies.txt`.
+
+**The page is behind Cloudflare bot protection**, so an automated fetch receives a "Just a
+moment..." challenge rather than the list. The fetch is kept as a best-effort and simply logs a
+reminder when it is blocked; nothing is written. To refresh the list, copy the company names from
+the page and import them:
+
+```bash
+python3 scan/lenny.py --from-file lenny100.txt   # one name per line (numbering is stripped)
+python3 scan/lenny.py --dump                     # diagnostics; writes nothing
+```
+
+The importer de-duplicates against existing entries (by name and by slug), so re-importing the
+whole list each time is safe and only genuinely new companies are added.
+
 ## Extending
 
 - **More companies**: add names to `companies.txt` (one per line). They're slugified and

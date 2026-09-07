@@ -32,6 +32,12 @@ should_discover() {
 }
 
 if should_discover; then
+  # Weekly company scan: refresh the Lenny 100 roster first, so any new names on
+  # that list are probed in the same pass. Non-fatal — the page is behind bot
+  # protection, so this usually just logs a reminder to re-import it by hand.
+  echo "==> weekly company scan: Lenny 100"
+  python3 scan/lenny.py || true
+
   echo "==> discovery"
   python3 scan/probe.py
 fi

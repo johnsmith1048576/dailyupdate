@@ -10,8 +10,14 @@ the pipeline (coverage only grows). If the page can't be fetched or the parse
 looks implausible, it prints a warning, changes nothing and exits 0, so a layout
 change upstream can never break the nightly run or corrupt the company list.
 
-  python3 scan/lenny.py            # sync
-  python3 scan/lenny.py --dump     # diagnostics only, writes nothing
+  python3 scan/lenny.py                  # try to fetch + sync
+  python3 scan/lenny.py --dump           # diagnostics only, writes nothing
+  python3 scan/lenny.py --from-file X    # import a pasted/exported list instead
+
+NOTE: lennysjobs.com sits behind Cloudflare bot protection — an automated fetch
+gets the "Just a moment..." interstitial, not the list. The fetch is kept as a
+best-effort (it will start working if that ever changes) and otherwise prints a
+reminder to refresh the list by hand with --from-file.
 """
 import json, os, re, subprocess, sys, html
 from datetime import date
@@ -104,6 +110,14 @@ def strategy_headings(doc):
     return [re.sub(r"<[^>]+>", " ", m.group(1)) for m in
             re.finditer(r"<h[2-5]\b[^>]*>(.*?)</h[2-5]>", doc, re.S)]
 
+CHALLENGE = re.compile(
+    r"just a moment|checking your browser|cf-browser-verification|challenge-platform|"
+    r"enable javascript and cookies|attention required", re.I)
+
+def is_challenged(doc):
+    """True when we got a bot-protection interstitial rather than the real page."""
+    return bool(CHALLENGE.search(doc[:6000])) or len(doc) < 8000
+
 def extract(doc):
     """Return (names, strategy_name) for the first strategy that looks sane."""
     for label, fn in (("embedded-json", strategy_embedded_json),
@@ -128,14 +142,35 @@ def load_companies():
 def slug(n):
     return re.sub(r"[^a-z0-9]", "", n.lower())
 
+def read_list_file(path):
+    """Parse a pasted list: one company per line, or comma-separated."""
+    raw = open(path).read()
+    parts = re.split(r"[\n,;\t]+", raw) if "," in raw and "\n" not in raw.strip() else raw.splitlines()
+    out, seen = [], set()
+    for part in parts:
+        n = clean(part)
+        if n and plausible(n) and n.lower() not in seen:
+            seen.add(n.lower()); out.append(n)
+    return out
+
 def main():
     dump = "--dump" in sys.argv
+    if "--from-file" in sys.argv:
+        path = sys.argv[sys.argv.index("--from-file") + 1]
+        names = read_list_file(path)
+        if not names:
+            print(f"lenny: no usable company names in {path}")
+            return 1
+        print(f"lenny: read {len(names)} companies from {path}")
+        return sync(names, "manual-import")
+
     doc = fetch(URL)
     if not doc:
         print("lenny: could not fetch the Lenny 100 page — leaving companies.txt untouched")
         return 0
     print(f"lenny: fetched {len(doc)} bytes", file=sys.stderr)
-    names, how = extract(doc)
+    challenged = is_challenged(doc)
+    names, how = ([], None) if challenged else extract(doc)
 
     if dump:
         t = re.search(r"<title>(.*?)</title>", doc, re.S)
@@ -145,11 +180,21 @@ def main():
         print("SAMPLE:", ", ".join(names[:40]) or "(none)")
         return 0
 
+    if challenged:
+        print("lenny: the Lenny 100 page is behind bot protection, so it can't be read "
+              "automatically (got a challenge page, not the list).")
+        print("       companies.txt left untouched. To refresh it by hand, copy the list "
+              "from the page and run:  python3 scan/lenny.py --from-file <file>")
+        return 0
+
     if not names:
         print("lenny: no plausible company list found (page layout may have changed) — "
               "companies.txt left untouched")
         return 0
 
+    return sync(names, how)
+
+def sync(names, how):
     header, existing = load_companies()
     have = {n.lower() for n in existing} | {slug(n) for n in existing}
     added = []

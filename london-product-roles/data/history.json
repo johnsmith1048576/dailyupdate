@@ -1456,5 +1456,41 @@
 "tag": "UK",
 "last_live": "2026-09-07",
 "first_seen": "2026-09-04"
+},
+"https://jobs.ashbyhq.com/deliveroo/47c95453-0fe7-4408-a10f-ef587986d537": {
+"posted": "2026-09-07",
+"category": "PM",
+"company": "Deliveroo",
+"title": "Senior Product Manager, Core People Technology",
+"tag": "London",
+"last_live": "2026-09-07",
+"first_seen": "2026-09-07"
+},
+"https://jobs.ashbyhq.com/n8n/bcf96878-d41a-479d-b506-7753356077c4": {
+"posted": "2026-08-31",
+"category": "PM",
+"company": "n8n",
+"title": "Senior Product Manager (Enterprise)",
+"tag": "UK",
+"last_live": "2026-09-07",
+"first_seen": "2026-09-07"
+},
+"https://jobs.ashbyhq.com/n8n/d418f8fb-b2f2-405e-8f22-db73dcf4e8b4": {
+"posted": "2026-08-03",
+"category": "PM",
+"company": "n8n",
+"title": "Senior Product Manager - Core Platform (Engine, Scale & Reliability)",
+"tag": "UK",
+"last_live": "2026-09-07",
+"first_seen": "2026-09-07"
+},
+"https://jobs.ashbyhq.com/n8n/98d8bc2f-ee58-4732-8977-61a761aac8b0": {
+"posted": "2026-09-01",
+"category": "PM",
+"company": "n8n",
+"title": "Senior Product Manager - Core Experience",
+"tag": "UK",
+"last_live": "2026-09-07",
+"first_seen": "2026-09-07"
 }
 }

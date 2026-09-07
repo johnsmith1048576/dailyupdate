@@ -1,0 +1,43 @@
+name: Check Lenny 100 list
+
+# Manual utility: inspect what scan/lenny.py extracts from the Lenny 100 page.
+# The weekly sync itself happens inside the main refresh workflow (run.sh runs
+# scan/lenny.py whenever it does a company-discovery pass).
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Also write new companies into companies.txt and commit"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inspect the Lenny 100 page (writes nothing)
+        working-directory: london-product-roles
+        run: python3 scan/lenny.py --dump
+
+      - name: Sync into companies.txt
+        if: ${{ inputs.apply }}
+        working-directory: london-product-roles
+        run: python3 scan/lenny.py
+
+      - name: Commit any additions
+        if: ${{ inputs.apply }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add london-product-roles/companies.txt london-product-roles/data/lenny100.json
+          if git diff --staged --quiet; then
+            echo "No new companies."
+          else
+            git commit -m "Sync Lenny 100 companies into companies.txt"
+            git push
+          fi

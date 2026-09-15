@@ -1035,12 +1035,12 @@
 "first_seen": "2026-08-14"
 },
 "https://jobs.ashbyhq.com/trainline/d7c691e6-819c-4134-b915-1a3ac65959f6": {
-"posted": "2026-08-14",
+"posted": "2026-09-15",
 "category": "PM",
 "company": "Trainline",
 "title": "Senior Product Manager",
 "tag": "London",
-"last_live": "2026-08-16",
+"last_live": "2026-09-15",
 "first_seen": "2026-08-14"
 },
 "https://jobs.ashbyhq.com/9fin/0771e99e-f1a5-4d8d-a940-154341152da1": {
@@ -1519,5 +1519,14 @@
 "tag": "London",
 "last_live": "2026-09-15",
 "first_seen": "2026-09-14"
+},
+"https://jobs.ashbyhq.com/clickhouse/e608cde7-ebe3-4fd0-83d3-74da3e20663e": {
+"posted": "2026-09-15",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Principal Product Manager, Partner Integrations",
+"tag": "UK",
+"last_live": "2026-09-15",
+"first_seen": "2026-09-15"
 }
 }

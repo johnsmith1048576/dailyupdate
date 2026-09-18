@@ -33,105 +33,6 @@
   "posted": "2026-07-13"
  },
  {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Senior Product Manager, Retail",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/974aab39-1e20-4da9-94fb-cc8ff758b554",
-  "comp": "",
-  "posted": "2026-07-10"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Senior Product Manager, New Verticals",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/30ade7cd-6c11-4fd4-a232-9533d0ce4970",
-  "comp": "",
-  "posted": "2026-03-25"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/5de06074-1b51-45b6-9a01-49da1a97bdaa",
-  "comp": "",
-  "posted": "2026-03-05"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Group Product Manager, Regulatory Finance",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/05f9d362-1718-4109-80cc-eff5eea038f8",
-  "comp": "",
-  "posted": "2026-06-22"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Staff Product Manager, People Product",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/deliveroo/d87ad7aa-5cfb-4742-8494-8fc637322adf",
-  "comp": "",
-  "posted": "2026-07-07"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Head of International Product / Group Product Manager - Customer Experience",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom - Home Office",
-  "url": "https://jobs.ashbyhq.com/deliveroo/770aa01d-0ab5-4a15-b362-1a0b4d285ff3",
-  "comp": "",
-  "posted": "2026-08-10"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Product Manager, Double Order",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/add052e9-4b9c-475a-bae9-dde8fe9407ca",
-  "comp": "",
-  "posted": "2026-08-05"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Senior Product Manager, Core People Technology",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/47c95453-0fe7-4408-a10f-ef587986d537",
-  "comp": "",
-  "posted": "2026-09-07"
- },
- {
-  "company": "deliveroo",
-  "source": "Ashby",
-  "title": "Senior Product Manager, Trust & Safety, Integrity and Fraud",
-  "category": "PM",
-  "tag": "London",
-  "location": "London - The River Building HQ",
-  "url": "https://jobs.ashbyhq.com/deliveroo/cbf27db0-5a18-43cb-912b-0ba698d8830a",
-  "comp": "",
-  "posted": "2026-09-01"
- },
- {
   "company": "sierra",
   "source": "Ashby",
   "title": "Product Manager, Agent Development (German speaking)",
@@ -440,6 +341,17 @@
   "posted": "2026-07-28"
  },
  {
+  "company": "constructor",
+  "source": "Ashby",
+  "title": "Staff Product Manager: Agentic Discovery",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "Remote - EMEA",
+  "url": "https://jobs.ashbyhq.com/constructor/ddbdef9d-c31d-4dc8-9d0d-ea83c3a8b0ac",
+  "comp": "",
+  "posted": "2026-09-16"
+ },
+ {
   "company": "n8n",
   "source": "Ashby",
   "title": "Senior Product Manager (Enterprise)",
@@ -616,6 +528,17 @@
   "posted": "2026-08-26"
  },
  {
+  "company": "pencil",
+  "source": "Ashby",
+  "title": "Senior Product Manager - EMEA - Remote",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "EMEA",
+  "url": "https://jobs.ashbyhq.com/pencil/10c5c27d-510e-4e40-8b50-e3380043d884",
+  "comp": "",
+  "posted": "2026-09-18"
+ },
+ {
   "company": "oyster",
   "source": "Ashby",
   "title": "Lead Product Manager",
@@ -739,17 +662,6 @@
  {
   "company": "scaleai",
   "source": "Greenhouse",
-  "title": "Director of Product Management, Forward Deployed & Strategy",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, UK",
-  "url": "https://job-boards.greenhouse.io/scaleai/jobs/4702890005",
-  "comp": "",
-  "posted": "2026-06-19"
- },
- {
-  "company": "scaleai",
-  "source": "Greenhouse",
   "title": "Forward Deployed Product Manager, Enterprise",
   "category": "PM",
   "tag": "London",
@@ -757,6 +669,17 @@
   "url": "https://job-boards.greenhouse.io/scaleai/jobs/4644742005",
   "comp": "",
   "posted": "2026-01-19"
+ },
+ {
+  "company": "scaleai",
+  "source": "Greenhouse",
+  "title": "Head of Product Management, Forward Deployed & Strategy",
+  "category": "PM",
+  "tag": "London",
+  "location": "London, UK",
+  "url": "https://job-boards.greenhouse.io/scaleai/jobs/4702890005",
+  "comp": "",
+  "posted": "2026-06-19"
  },
  {
   "company": "scaleai",
@@ -834,6 +757,17 @@
   "url": "https://job-boards.greenhouse.io/cresta/jobs/5068157008",
   "comp": "",
   "posted": "2026-01-13"
+ },
+ {
+  "company": "tide",
+  "source": "Greenhouse",
+  "title": "Head of Product and Identity Security",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United Kingdom",
+  "url": "https://job-boards.greenhouse.io/tide/jobs/7998049003",
+  "comp": "",
+  "posted": "2026-09-18"
  },
  {
   "company": "tide",

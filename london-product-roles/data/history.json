@@ -279,12 +279,12 @@
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/synthesia/c2ba6d4d-f991-4432-a9c8-1514a93b08bb": {
-"posted": "2026-08-05",
+"posted": "2026-09-28",
 "category": "PM",
 "company": "Synthesia",
-"title": "Product Manager, New Product Bet (Staff/Principal)",
+"title": "Product Manager, New Product Bet (Principal-level)",
 "tag": "London",
-"last_live": "2026-08-25",
+"last_live": "2026-09-28",
 "first_seen": "2026-08-03"
 },
 "https://jobs.ashbyhq.com/synthesia/31e1dca3-74fd-4f74-8f40-5bb19f4034bb": {
@@ -1600,5 +1600,14 @@
 "tag": "London",
 "last_live": "2026-09-28",
 "first_seen": "2026-09-27"
+},
+"https://jobs.ashbyhq.com/beamery/9367c5b7-733f-4e72-883c-91f23da90487": {
+"posted": "2026-09-28",
+"category": "PM",
+"company": "Beamery",
+"title": "Senior Product Manager, Data Foundry",
+"tag": "London",
+"last_live": "2026-09-28",
+"first_seen": "2026-09-28"
 }
 }

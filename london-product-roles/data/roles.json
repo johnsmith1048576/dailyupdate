@@ -231,28 +231,6 @@
   "posted": "2026-08-12"
  },
  {
-  "company": "lendable",
-  "source": "Ashby",
-  "title": "Associate Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/lendable/a0a33af2-2571-4fcb-8905-52582894a7ef",
-  "comp": "",
-  "posted": "2026-09-25"
- },
- {
-  "company": "deepl",
-  "source": "Ashby",
-  "title": "Head of Product Growth",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://jobs.ashbyhq.com/deepl/236d8651-c4c9-4bb8-a9ea-57d535cb76fb",
-  "comp": "",
-  "posted": "2026-08-14"
- },
- {
   "company": "supabase",
   "source": "Ashby",
   "title": "Product Manager - Marketplace",
@@ -471,6 +449,17 @@
   "url": "https://jobs.ashbyhq.com/moss/4f998822-03f1-4b31-ac48-928b5e2122a7",
   "comp": "",
   "posted": "2026-09-11"
+ },
+ {
+  "company": "elliptic",
+  "source": "Ashby",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/elliptic/2785c937-6cbd-45f4-b210-48c6a650b249",
+  "comp": "",
+  "posted": "2026-09-28"
  },
  {
   "company": "linear",

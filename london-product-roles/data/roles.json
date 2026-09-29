@@ -211,17 +211,6 @@
  {
   "company": "lendable",
   "source": "Ashby",
-  "title": "Product Manager (UK Loans)",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, United Kingdom",
-  "url": "https://jobs.ashbyhq.com/lendable/6981baa3-56a6-4e6c-8cc1-30603e2a1555",
-  "comp": "",
-  "posted": "2026-08-04"
- },
- {
-  "company": "lendable",
-  "source": "Ashby",
   "title": "Technical Product Manager (Superapp)",
   "category": "PM",
   "tag": "London",
@@ -229,6 +218,17 @@
   "url": "https://jobs.ashbyhq.com/lendable/50004e7b-3de1-4268-9359-3786db51d43f",
   "comp": "",
   "posted": "2026-08-12"
+ },
+ {
+  "company": "lendable",
+  "source": "Ashby",
+  "title": "Product Manager (UK Loans)",
+  "category": "PM",
+  "tag": "London",
+  "location": "London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/lendable/ede7a45c-71e6-48d9-a7c0-d1079131a5e6",
+  "comp": "",
+  "posted": "2026-09-29"
  },
  {
   "company": "supabase",
@@ -438,6 +438,17 @@
   "url": "https://jobs.ashbyhq.com/encord/b8cfae81-6e9f-4f3e-a03a-2d03e7d115f3",
   "comp": "",
   "posted": "2026-06-01"
+ },
+ {
+  "company": "encord",
+  "source": "Ashby",
+  "title": "Product Lead",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/encord/833dc2c6-4ea9-48a1-81c9-c62ba2c7002d",
+  "comp": "",
+  "posted": "2026-09-29"
  },
  {
   "company": "moss",
@@ -812,17 +823,6 @@
   "url": "https://job-boards.eu.greenhouse.io/prolific/jobs/4948331101",
   "comp": "",
   "posted": "2026-08-07"
- },
- {
-  "company": "gocardless",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London, UK",
-  "url": "https://job-boards.greenhouse.io/gocardless/jobs/8064518",
-  "comp": "",
-  "posted": "2026-07-20"
  },
  {
   "company": "zwift",

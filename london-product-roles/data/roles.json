@@ -112,6 +112,39 @@
  {
   "company": "clickhouse",
   "source": "Ashby",
+  "title": "Principal Product Manager, Security",
+  "category": "PM",
+  "tag": "UK",
+  "location": "The Netherlands | United Kingdom | Spain",
+  "url": "https://jobs.ashbyhq.com/clickhouse/e294a839-0c55-4fc1-8208-0c1df496fd00",
+  "comp": "$210K \u2013 $310K \u2022 Offers Equity \u2022 Multiple Ranges",
+  "posted": "2026-09-30"
+ },
+ {
+  "company": "clickhouse",
+  "source": "Ashby",
+  "title": "Principal Product Manager - ClickHouse Cloud",
+  "category": "PM",
+  "tag": "UK",
+  "location": "The Netherlands | United Kingdom | Spain",
+  "url": "https://jobs.ashbyhq.com/clickhouse/b8abb814-8505-435a-9c08-f2b5593ae134",
+  "comp": "",
+  "posted": "2025-10-30"
+ },
+ {
+  "company": "clickhouse",
+  "source": "Ashby",
+  "title": "Director of Product Management, Security",
+  "category": "PM",
+  "tag": "UK",
+  "location": "The Netherlands | United Kingdom | Spain",
+  "url": "https://jobs.ashbyhq.com/clickhouse/92e03020-45c8-4585-b308-2b9a856b91a2",
+  "comp": "$210K \u2013 $310K \u2022 Offers Equity \u2022 Multiple Ranges",
+  "posted": "2026-09-30"
+ },
+ {
+  "company": "clickhouse",
+  "source": "Ashby",
   "title": "Principal Product Manager, Partner Integrations",
   "category": "PM",
   "tag": "UK",
@@ -658,6 +691,17 @@
   "url": "https://job-boards.greenhouse.io/wolt/jobs/8141710",
   "comp": "",
   "posted": "2026-08-25"
+ },
+ {
+  "company": "gitlab",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager, Billing Engine & Platforms Monetization",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Remote, United Kingdom",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845483002",
+  "comp": "",
+  "posted": "2026-09-30"
  },
  {
   "company": "scaleai",

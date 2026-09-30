@@ -1627,5 +1627,41 @@
 "tag": "London",
 "last_live": "2026-09-30",
 "first_seen": "2026-09-29"
+},
+"https://jobs.ashbyhq.com/clickhouse/e294a839-0c55-4fc1-8208-0c1df496fd00": {
+"posted": "2026-09-30",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Principal Product Manager, Security",
+"tag": "UK",
+"last_live": "2026-09-30",
+"first_seen": "2026-09-30"
+},
+"https://jobs.ashbyhq.com/clickhouse/b8abb814-8505-435a-9c08-f2b5593ae134": {
+"posted": "2025-10-30",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Principal Product Manager - ClickHouse Cloud",
+"tag": "UK",
+"last_live": "2026-09-30",
+"first_seen": "2026-09-30"
+},
+"https://jobs.ashbyhq.com/clickhouse/92e03020-45c8-4585-b308-2b9a856b91a2": {
+"posted": "2026-09-30",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Director of Product Management, Security",
+"tag": "UK",
+"last_live": "2026-09-30",
+"first_seen": "2026-09-30"
+},
+"https://job-boards.greenhouse.io/gitlab/jobs/8845483002": {
+"posted": "2026-09-30",
+"category": "PM",
+"company": "GitLab",
+"title": "Senior Product Manager, Billing Engine & Platforms Monetization",
+"tag": "UK",
+"last_live": "2026-09-30",
+"first_seen": "2026-09-30"
 }
 }

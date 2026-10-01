@@ -126,7 +126,7 @@
   "title": "Principal Product Manager - ClickHouse Cloud",
   "category": "PM",
   "tag": "UK",
-  "location": "The Netherlands | United Kingdom | Spain",
+  "location": "The Netherlands | Portugal | United Kingdom | Spain",
   "url": "https://jobs.ashbyhq.com/clickhouse/b8abb814-8505-435a-9c08-f2b5593ae134",
   "comp": "",
   "posted": "2025-10-30"
@@ -594,6 +594,17 @@
   "posted": "2026-06-05"
  },
  {
+  "company": "multiverse",
+  "source": "Ashby",
+  "title": "Lead Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/multiverse/2ef9e1f0-0070-4e92-803a-235be41ac635",
+  "comp": "",
+  "posted": "2026-10-01"
+ },
+ {
   "company": "paddle",
   "source": "Ashby",
   "title": "Staff Product Manager",
@@ -889,6 +900,28 @@
   "url": "https://jobs.lever.co/zopa/e6dce041-cb95-40b0-9331-6ccaeb2dd93d",
   "comp": "",
   "posted": "2026-08-05"
+ },
+ {
+  "company": "zopa",
+  "source": "Lever",
+  "title": "Senior Product Manager - Auto",
+  "category": "PM",
+  "tag": "London",
+  "location": "London | London",
+  "url": "https://jobs.lever.co/zopa/60b996f2-14f4-4f78-b072-ef5019d8b26a",
+  "comp": "",
+  "posted": "2026-09-30"
+ },
+ {
+  "company": "zopa",
+  "source": "Lever",
+  "title": "Senior Product Manager - Cards",
+  "category": "PM",
+  "tag": "London",
+  "location": "London | London",
+  "url": "https://jobs.lever.co/zopa/45d11d52-6de8-4464-9ac0-c179ff44853d",
+  "comp": "",
+  "posted": "2026-09-30"
  },
  {
   "company": "toptal",

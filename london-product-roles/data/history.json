@@ -1449,10 +1449,10 @@
 "first_seen": "2026-09-04"
 },
 "https://jobs.ashbyhq.com/oyster/7835b377-7646-43a1-b917-b63f1e579869": {
-"posted": "2026-06-05",
+"posted": "2026-10-02",
 "category": "PM",
 "company": "Oyster",
-"title": "Senior Director of Product",
+"title": "Senior Director, Product (Employer of Record)",
 "tag": "UK",
 "last_live": "2026-10-02",
 "first_seen": "2026-09-04"
@@ -1699,5 +1699,32 @@
 "tag": "UK",
 "last_live": "2026-10-02",
 "first_seen": "2026-10-01"
+},
+"https://jobs.ashbyhq.com/lendable/18168f59-1ebe-497d-a4ac-5cffa51911df": {
+"posted": "2026-10-02",
+"category": "PM",
+"company": "Lendable",
+"title": "Product Manager (US Cards)",
+"tag": "London",
+"last_live": "2026-10-02",
+"first_seen": "2026-10-02"
+},
+"https://jobs.ashbyhq.com/lendable/3eca44e8-1221-431b-bb88-6eb654e1876d": {
+"posted": "2026-10-02",
+"category": "PM",
+"company": "Lendable",
+"title": "Associate Product Manager (US Cards)",
+"tag": "London",
+"last_live": "2026-10-02",
+"first_seen": "2026-10-02"
+},
+"https://jobs.lever.co/zopa/5e422360-db37-45f8-af32-02e757d27020": {
+"posted": "2026-09-30",
+"category": "PM",
+"company": "Zopa",
+"title": "Product Manager - UPL",
+"tag": "London",
+"last_live": "2026-10-02",
+"first_seen": "2026-10-02"
 }
 }

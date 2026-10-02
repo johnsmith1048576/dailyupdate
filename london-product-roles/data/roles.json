@@ -244,6 +244,17 @@
  {
   "company": "lendable",
   "source": "Ashby",
+  "title": "Product Manager (US Cards)",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/lendable/18168f59-1ebe-497d-a4ac-5cffa51911df",
+  "comp": "",
+  "posted": "2026-10-02"
+ },
+ {
+  "company": "lendable",
+  "source": "Ashby",
   "title": "Product Manager (UK Loans)",
   "category": "PM",
   "tag": "London",
@@ -251,6 +262,17 @@
   "url": "https://jobs.ashbyhq.com/lendable/ede7a45c-71e6-48d9-a7c0-d1079131a5e6",
   "comp": "",
   "posted": "2026-09-29"
+ },
+ {
+  "company": "lendable",
+  "source": "Ashby",
+  "title": "Associate Product Manager (US Cards)",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/lendable/3eca44e8-1221-431b-bb88-6eb654e1876d",
+  "comp": "",
+  "posted": "2026-10-02"
  },
  {
   "company": "supabase",
@@ -552,13 +574,13 @@
  {
   "company": "oyster",
   "source": "Ashby",
-  "title": "Senior Director of Product",
+  "title": "Senior Director, Product (Employer of Record)",
   "category": "PM",
   "tag": "UK",
-  "location": "EMEA | Portugal | United Kingdom | Spain | The Americas",
+  "location": "EMEA | Toronto | Ireland | Portugal | United Kingdom | Spain",
   "url": "https://jobs.ashbyhq.com/oyster/7835b377-7646-43a1-b917-b63f1e579869",
   "comp": "",
-  "posted": "2026-06-05"
+  "posted": "2026-10-02"
  },
  {
   "company": "multiverse",
@@ -665,7 +687,7 @@
   "title": "Senior Product Manager, Billing Engine & Platforms Monetization",
   "category": "PM",
   "tag": "UK",
-  "location": "Remote, United Kingdom",
+  "location": "Remote, United Kingdom; Remote, United States",
   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8845483002",
   "comp": "",
   "posted": "2026-09-30"
@@ -856,6 +878,17 @@
   "url": "https://jobs.lever.co/zopa/e6dce041-cb95-40b0-9331-6ccaeb2dd93d",
   "comp": "",
   "posted": "2026-08-05"
+ },
+ {
+  "company": "zopa",
+  "source": "Lever",
+  "title": "Product Manager - UPL",
+  "category": "PM",
+  "tag": "London",
+  "location": "London | London",
+  "url": "https://jobs.lever.co/zopa/5e422360-db37-45f8-af32-02e757d27020",
+  "comp": "",
+  "posted": "2026-09-30"
  },
  {
   "company": "zopa",

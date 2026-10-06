@@ -165,6 +165,17 @@
   "posted": "2026-10-05"
  },
  {
+  "company": "wayve",
+  "source": "Ashby",
+  "title": "Product Manager, AI Driver",
+  "category": "PM",
+  "tag": "London",
+  "location": "Leonberg, Germany | London, United Kingdom",
+  "url": "https://jobs.ashbyhq.com/wayve/99ce7958-6dcb-480d-b9b7-192e81a7c4d6",
+  "comp": "",
+  "posted": "2026-10-06"
+ },
+ {
   "company": "pennylane",
   "source": "Ashby",
   "title": "Senior Product Manager \ud83c\uddeb\ud83c\uddf7",
@@ -530,6 +541,17 @@
  {
   "company": "oyster",
   "source": "Ashby",
+  "title": "Lead Product Manager",
+  "category": "PM",
+  "tag": "UK",
+  "location": "EMEA | Romania | Bulgaria | Portugal | Canada | United Kingdom | Spain | Poland",
+  "url": "https://jobs.ashbyhq.com/oyster/20b0c812-255e-433b-99bb-2d1f399f0c7a",
+  "comp": "",
+  "posted": "2026-10-06"
+ },
+ {
+  "company": "oyster",
+  "source": "Ashby",
   "title": "Senior Director, Product (Employer of Record)",
   "category": "PM",
   "tag": "UK",
@@ -805,17 +827,6 @@
  {
   "company": "zopa",
   "source": "Lever",
-  "title": "AI Product Manager",
-  "category": "PM",
-  "tag": "London",
-  "location": "London | London",
-  "url": "https://jobs.lever.co/zopa/56db643d-352e-40fe-bebe-c44e65f0ec2d",
-  "comp": "",
-  "posted": "2026-09-11"
- },
- {
-  "company": "zopa",
-  "source": "Lever",
   "title": "Head of Product Security",
   "category": "PM",
   "tag": "London",
@@ -856,16 +867,5 @@
   "url": "https://jobs.lever.co/zopa/45d11d52-6de8-4464-9ac0-c179ff44853d",
   "comp": "",
   "posted": "2026-09-30"
- },
- {
-  "company": "toptal",
-  "source": "Lever",
-  "title": "Senior Product Manager",
-  "category": "PM",
-  "tag": "Remote-EMEA",
-  "location": "Europe and Canada | Europe and Canada",
-  "url": "https://jobs.lever.co/toptal/1443ab31-b461-4de8-bb68-2e820dc9cf7a",
-  "comp": "",
-  "posted": "2021-10-13"
  }
 ]

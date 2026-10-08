@@ -1780,5 +1780,14 @@
 "tag": "Remote-EMEA",
 "last_live": "2026-10-08",
 "first_seen": "2026-10-08"
+},
+"https://jobs.ashbyhq.com/clickhouse/399ca6d5-9a30-40f7-ba58-7a712bb17831": {
+"posted": "2026-10-08",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Sr. Product Manager - ClickStack",
+"tag": "UK",
+"last_live": "2026-10-08",
+"first_seen": "2026-10-08"
 }
 }

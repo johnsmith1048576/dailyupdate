@@ -418,17 +418,6 @@
   "posted": "2026-07-28"
  },
  {
-  "company": "constructor",
-  "source": "Ashby",
-  "title": "Staff Product Manager: Agentic Discovery",
-  "category": "PM",
-  "tag": "Remote-EMEA",
-  "location": "Remote - EMEA",
-  "url": "https://jobs.ashbyhq.com/constructor/ddbdef9d-c31d-4dc8-9d0d-ea83c3a8b0ac",
-  "comp": "",
-  "posted": "2026-09-16"
- },
- {
   "company": "n8n",
   "source": "Ashby",
   "title": "Senior Product Manager (Enterprise)",
@@ -684,6 +673,17 @@
  {
   "company": "stripe",
   "source": "Greenhouse",
+  "title": "Senior Staff Product Manager, Financial Risk",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://stripe.com/jobs/search?gh_jid=8273741",
+  "comp": "",
+  "posted": "2026-10-12"
+ },
+ {
+  "company": "stripe",
+  "source": "Greenhouse",
   "title": "Staff Product Manager, Issuing",
   "category": "PM",
   "tag": "London",
@@ -776,9 +776,9 @@
   "category": "PM",
   "tag": "UK",
   "location": "Bristol, UK",
-  "url": "https://job-boards.greenhouse.io/graphcore/jobs/8545002002",
+  "url": "https://job-boards.greenhouse.io/graphcore/jobs/8883127002",
   "comp": "",
-  "posted": "2026-07-14"
+  "posted": "2026-10-12"
  },
  {
   "company": "figma",

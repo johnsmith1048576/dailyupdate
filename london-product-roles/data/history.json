@@ -1852,5 +1852,23 @@
 "tag": "London",
 "last_live": "2026-10-13",
 "first_seen": "2026-10-12"
+},
+"https://jobs.ashbyhq.com/clickhouse/d5643305-7532-4526-883d-f3285b6bf7a3": {
+"posted": "2026-10-13",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Principal Product Manager, Partner Integrations",
+"tag": "UK",
+"last_live": "2026-10-13",
+"first_seen": "2026-10-13"
+},
+"https://job-boards.greenhouse.io/affirm/jobs/8020318003": {
+"posted": "2026-10-13",
+"category": "PM",
+"company": "Affirm",
+"title": "Senior Product Manager",
+"tag": "UK",
+"last_live": "2026-10-13",
+"first_seen": "2026-10-13"
 }
 }

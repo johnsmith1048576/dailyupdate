@@ -55,6 +55,17 @@
   "posted": "2026-10-07"
  },
  {
+  "company": "elevenlabs",
+  "source": "Ashby",
+  "title": "Product Manager (ElevenCreative Self-Serve)",
+  "category": "PM",
+  "tag": "UK",
+  "location": "Remote | United States | Poland | United Kingdom | Netherlands",
+  "url": "https://jobs.ashbyhq.com/elevenlabs/7389c057-3e25-4e7a-8a03-5e80f40a15a0",
+  "comp": "",
+  "posted": "2026-10-15"
+ },
+ {
   "company": "sierra",
   "source": "Ashby",
   "title": "Product Manager, Agent Development (German speaking)",
@@ -500,7 +511,7 @@
   "title": "Senior Product Manager (m/f/d)",
   "category": "PM",
   "tag": "London",
-  "location": "Munich | Berlin | Remote - Europe | London",
+  "location": "Munich | Warsaw | Berlin | London | Tallinn",
   "url": "https://jobs.ashbyhq.com/moss/4f998822-03f1-4b31-ac48-928b5e2122a7",
   "comp": "",
   "posted": "2026-09-11"
@@ -515,28 +526,6 @@
   "url": "https://jobs.ashbyhq.com/elliptic/2785c937-6cbd-45f4-b210-48c6a650b249",
   "comp": "",
   "posted": "2026-09-28"
- },
- {
-  "company": "pleo",
-  "source": "Ashby",
-  "title": "Product Manager - Integrations",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom | Denmark | Portugal | Spain",
-  "url": "https://jobs.ashbyhq.com/pleo/8fe93b65-3b99-48a7-98cc-e3b11d3606b9",
-  "comp": "",
-  "posted": "2026-10-09"
- },
- {
-  "company": "pleo",
-  "source": "Ashby",
-  "title": "Product Manager - Integrations",
-  "category": "PM",
-  "tag": "London",
-  "location": "London | Lisbon | Copenhagen | Madrid",
-  "url": "https://jobs.ashbyhq.com/pleo/0b646bf2-ab23-458c-a449-513ee2888f7c",
-  "comp": "",
-  "posted": "2026-10-09"
  },
  {
   "company": "linear",
@@ -882,33 +871,11 @@
  {
   "company": "zopa",
   "source": "Lever",
-  "title": "Product Manager - Unsecured personal loans",
-  "category": "PM",
-  "tag": "London",
-  "location": "London | London",
-  "url": "https://jobs.lever.co/zopa/5e422360-db37-45f8-af32-02e757d27020",
-  "comp": "",
-  "posted": "2026-09-30"
- },
- {
-  "company": "zopa",
-  "source": "Lever",
   "title": "Senior Product Manager - Automotive",
   "category": "PM",
   "tag": "London",
   "location": "London | London",
   "url": "https://jobs.lever.co/zopa/60b996f2-14f4-4f78-b072-ef5019d8b26a",
-  "comp": "",
-  "posted": "2026-09-30"
- },
- {
-  "company": "zopa",
-  "source": "Lever",
-  "title": "Senior Product Manager - Cards",
-  "category": "PM",
-  "tag": "London",
-  "location": "London | London",
-  "url": "https://jobs.lever.co/zopa/45d11d52-6de8-4464-9ac0-c179ff44853d",
   "comp": "",
   "posted": "2026-09-30"
  }

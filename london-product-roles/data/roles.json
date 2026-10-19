@@ -561,6 +561,17 @@
   "posted": "2026-09-15"
  },
  {
+  "company": "trainline",
+  "source": "Ashby",
+  "title": "Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/trainline/b9b5ccfa-277a-48f4-8a63-16410a3938a5",
+  "comp": "\u00a370K \u2013 \u00a380K",
+  "posted": "2026-10-19"
+ },
+ {
   "company": "pencil",
   "source": "Ashby",
   "title": "Lead Product Manager - Editor - EMEA",
@@ -658,6 +669,17 @@
   "url": "https://jobs.ashbyhq.com/beamery/9367c5b7-733f-4e72-883c-91f23da90487",
   "comp": "",
   "posted": "2026-09-28"
+ },
+ {
+  "company": "dune",
+  "source": "Ashby",
+  "title": "Head of Product",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "East Coast US & Europe (Remote)",
+  "url": "https://jobs.ashbyhq.com/dune/b3fa8dd4-295d-4ddb-ae78-0936c48f3412",
+  "comp": "",
+  "posted": "2026-10-19"
  },
  {
   "company": "stripe",
@@ -922,5 +944,16 @@
   "url": "https://jobs.lever.co/zopa/60b996f2-14f4-4f78-b072-ef5019d8b26a",
   "comp": "",
   "posted": "2026-09-30"
+ },
+ {
+  "company": "zoopla",
+  "source": "Workable",
+  "title": "Senior Product Manager",
+  "category": "PM",
+  "tag": "London",
+  "location": "London England United Kingdom",
+  "url": "https://apply.workable.com/j/B8EBABFB68",
+  "comp": "",
+  "posted": "2026-10-19"
  }
 ]

@@ -1951,5 +1951,41 @@
 "tag": "London",
 "last_live": "2026-10-21",
 "first_seen": "2026-10-20"
+},
+"https://jobs.ashbyhq.com/clickhouse/adf52ecd-e075-4a65-89b9-d129960b67f5": {
+"posted": "2026-10-16",
+"category": "PM",
+"company": "Clickhouse",
+"title": "Langfuse - Product Manager",
+"tag": "Remote-EMEA",
+"last_live": "2026-10-21",
+"first_seen": "2026-10-21"
+},
+"https://jobs.ashbyhq.com/lendable/5e6c5b4d-11d8-4773-bc71-0b0a0b974ff9": {
+"posted": "2026-10-20",
+"category": "PM",
+"company": "Lendable",
+"title": "Senior Product Manager (US Cards)",
+"tag": "London",
+"last_live": "2026-10-21",
+"first_seen": "2026-10-21"
+},
+"https://jobs.elastic.co/jobs?gh_jid=8306248&gh_jid=8306248": {
+"posted": "2026-10-21",
+"category": "PM",
+"company": "Elastic",
+"title": "Principal Product Manager Agents and Context - Elasticsearch",
+"tag": "UK",
+"last_live": "2026-10-21",
+"first_seen": "2026-10-21"
+},
+"https://jobs.elastic.co/jobs?gh_jid=8306238&gh_jid=8306238": {
+"posted": "2026-10-21",
+"category": "PM",
+"company": "Elastic",
+"title": "Principal Product Manager II, AI/Vectors  Elasticsearch",
+"tag": "UK",
+"last_live": "2026-10-21",
+"first_seen": "2026-10-21"
 }
 }

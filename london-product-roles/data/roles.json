@@ -145,6 +145,17 @@
  {
   "company": "clickhouse",
   "source": "Ashby",
+  "title": "Langfuse - Product Manager",
+  "category": "PM",
+  "tag": "Remote-EMEA",
+  "location": "New York | Boston | Europe",
+  "url": "https://jobs.ashbyhq.com/clickhouse/adf52ecd-e075-4a65-89b9-d129960b67f5",
+  "comp": "",
+  "posted": "2026-10-16"
+ },
+ {
+  "company": "clickhouse",
+  "source": "Ashby",
   "title": "Director of Product Management, Security",
   "category": "PM",
   "tag": "UK",
@@ -321,6 +332,17 @@
  {
   "company": "lendable",
   "source": "Ashby",
+  "title": "Senior Product Manager (US Cards)",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/lendable/5e6c5b4d-11d8-4773-bc71-0b0a0b974ff9",
+  "comp": "",
+  "posted": "2026-10-20"
+ },
+ {
+  "company": "lendable",
+  "source": "Ashby",
   "title": "Senior Product Manager (CRM & Growth)",
   "category": "PM",
   "tag": "London",
@@ -383,17 +405,6 @@
   "url": "https://jobs.ashbyhq.com/synthesia/31e1dca3-74fd-4f74-8f40-5bb19f4034bb",
   "comp": "",
   "posted": "2026-08-05"
- },
- {
-  "company": "synthesia",
-  "source": "Ashby",
-  "title": "Product Manager, Growth (Staff/Principal-level)",
-  "category": "PM",
-  "tag": "London",
-  "location": "Europe | London",
-  "url": "https://jobs.ashbyhq.com/synthesia/85e7b0df-f603-416b-a7bd-3331b6576186",
-  "comp": "",
-  "posted": "2026-08-17"
  },
  {
   "company": "writer",
@@ -737,6 +748,28 @@
   "posted": "2026-09-27"
  },
  {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager Agents and Context - Elasticsearch",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United Kingdom",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=8306248&gh_jid=8306248",
+  "comp": "",
+  "posted": "2026-10-21"
+ },
+ {
+  "company": "elastic",
+  "source": "Greenhouse",
+  "title": "Principal Product Manager II, AI/Vectors  Elasticsearch",
+  "category": "PM",
+  "tag": "UK",
+  "location": "United Kingdom",
+  "url": "https://jobs.elastic.co/jobs?gh_jid=8306238&gh_jid=8306238",
+  "comp": "",
+  "posted": "2026-10-21"
+ },
+ {
   "company": "wolt",
   "source": "Greenhouse",
   "title": "Product Manager, Homepage",
@@ -933,17 +966,6 @@
   "url": "https://jobs.lever.co/zopa/e6dce041-cb95-40b0-9331-6ccaeb2dd93d",
   "comp": "",
   "posted": "2026-08-05"
- },
- {
-  "company": "zopa",
-  "source": "Lever",
-  "title": "Senior Product Manager - Automotive",
-  "category": "PM",
-  "tag": "London",
-  "location": "London | London",
-  "url": "https://jobs.lever.co/zopa/60b996f2-14f4-4f78-b072-ef5019d8b26a",
-  "comp": "",
-  "posted": "2026-09-30"
  },
  {
   "company": "zoopla",

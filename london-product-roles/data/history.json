@@ -1467,7 +1467,7 @@
 "first_seen": "2026-09-07"
 },
 "https://jobs.ashbyhq.com/n8n/bcf96878-d41a-479d-b506-7753356077c4": {
-"posted": "2026-10-05",
+"posted": "2026-10-22",
 "category": "PM",
 "company": "n8n",
 "title": "Senior Product Manager (Enterprise)",
@@ -1476,7 +1476,7 @@
 "first_seen": "2026-09-07"
 },
 "https://jobs.ashbyhq.com/n8n/d418f8fb-b2f2-405e-8f22-db73dcf4e8b4": {
-"posted": "2026-08-03",
+"posted": "2026-10-22",
 "category": "PM",
 "company": "n8n",
 "title": "Senior Product Manager - Core Platform (Engine, Scale & Reliability)",
@@ -1800,7 +1800,7 @@
 "first_seen": "2026-10-09"
 },
 "https://jobs.ashbyhq.com/n8n/163162f1-9873-45b4-932e-aff27beea78a": {
-"posted": "2026-10-09",
+"posted": "2026-10-22",
 "category": "PM",
 "company": "n8n",
 "title": "Senior Product Manager (Licensing & Billing)",
@@ -1994,6 +1994,24 @@
 "company": "Elastic",
 "title": "Director of Product Management, Observability",
 "tag": "UK",
+"last_live": "2026-10-22",
+"first_seen": "2026-10-22"
+},
+"https://jobs.ashbyhq.com/lendable/8047badb-60e6-46b3-bda1-0dfd6c294676": {
+"posted": "2026-10-22",
+"category": "PM",
+"company": "Lendable",
+"title": "Product Manager (UK Loans)",
+"tag": "London",
+"last_live": "2026-10-22",
+"first_seen": "2026-10-22"
+},
+"https://jobs.ashbyhq.com/synthesia/e934a7ac-b668-46c0-9953-eed4504658b7": {
+"posted": "2026-10-22",
+"category": "PM",
+"company": "Synthesia",
+"title": "Product Manager, Interactive Avatars (Staff/Principal-level)",
+"tag": "London",
 "last_live": "2026-10-22",
 "first_seen": "2026-10-22"
 }

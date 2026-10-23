@@ -539,17 +539,6 @@
   "posted": "2026-09-29"
  },
  {
-  "company": "moss",
-  "source": "Ashby",
-  "title": "Senior Product Manager (m/f/d)",
-  "category": "PM",
-  "tag": "London",
-  "location": "Munich | Warsaw | Berlin | London | Tallinn",
-  "url": "https://jobs.ashbyhq.com/moss/4f998822-03f1-4b31-ac48-928b5e2122a7",
-  "comp": "",
-  "posted": "2026-09-11"
- },
- {
   "company": "elliptic",
   "source": "Ashby",
   "title": "Senior Product Manager",
@@ -592,17 +581,6 @@
   "url": "https://jobs.ashbyhq.com/trainline/b9b5ccfa-277a-48f4-8a63-16410a3938a5",
   "comp": "\u00a370K \u2013 \u00a380K",
   "posted": "2026-10-19"
- },
- {
-  "company": "pencil",
-  "source": "Ashby",
-  "title": "Lead Product Manager - Editor - EMEA",
-  "category": "PM",
-  "tag": "Remote-EMEA",
-  "location": "EMEA",
-  "url": "https://jobs.ashbyhq.com/pencil/765370fa-a2b2-487f-af2e-73a53cd1bad6",
-  "comp": "",
-  "posted": "2026-08-21"
  },
  {
   "company": "pencil",
@@ -924,17 +902,6 @@
   "posted": "2026-10-15"
  },
  {
-  "company": "tide",
-  "source": "Greenhouse",
-  "title": "Senior Product Manager, Ongoing Monitoring",
-  "category": "PM",
-  "tag": "UK",
-  "location": "United Kingdom",
-  "url": "https://job-boards.greenhouse.io/tide/jobs/7863571003",
-  "comp": "",
-  "posted": "2026-08-13"
- },
- {
   "company": "bloomreach",
   "source": "Greenhouse",
   "title": "Senior Product Manager",
@@ -955,6 +922,17 @@
   "url": "https://job-boards.greenhouse.io/monzo/jobs/8156058",
   "comp": "",
   "posted": "2026-08-25"
+ },
+ {
+  "company": "monzo",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager, Growth",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://job-boards.greenhouse.io/monzo/jobs/8312078",
+  "comp": "",
+  "posted": "2026-10-23"
  },
  {
   "company": "prolific",

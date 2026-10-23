@@ -1026,12 +1026,12 @@
 "first_seen": "2026-08-14"
 },
 "https://jobs.ashbyhq.com/deepl/236d8651-c4c9-4bb8-a9ea-57d535cb76fb": {
-"posted": "2026-08-14",
+"posted": "2026-10-23",
 "category": "PM",
 "company": "Deepl",
 "title": "Head of Product Growth",
 "tag": "London",
-"last_live": "2026-09-27",
+"last_live": "2026-10-23",
 "first_seen": "2026-08-14"
 },
 "https://jobs.ashbyhq.com/trainline/d7c691e6-819c-4134-b915-1a3ac65959f6": {
@@ -2019,7 +2019,25 @@
 "posted": "2026-10-23",
 "category": "PM",
 "company": "Monzo",
-"title": "Senior Product Manager, Growth",
+"title": "Senior Product Manager, Web Growth",
+"tag": "London",
+"last_live": "2026-10-23",
+"first_seen": "2026-10-23"
+},
+"https://job-boards.greenhouse.io/monzo/jobs/8317753": {
+"posted": "2026-10-23",
+"category": "PM",
+"company": "Monzo",
+"title": "Lead Product Manager, Growth",
+"tag": "London",
+"last_live": "2026-10-23",
+"first_seen": "2026-10-23"
+},
+"https://job-boards.greenhouse.io/monzo/jobs/8212919": {
+"posted": "2026-10-23",
+"category": "PM",
+"company": "Monzo",
+"title": "Product Manager, Finance",
 "tag": "London",
 "last_live": "2026-10-23",
 "first_seen": "2026-10-23"

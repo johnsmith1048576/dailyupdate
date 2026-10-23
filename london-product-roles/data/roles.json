@@ -352,6 +352,17 @@
   "posted": "2026-10-22"
  },
  {
+  "company": "deepl",
+  "source": "Ashby",
+  "title": "Head of Product Growth",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://jobs.ashbyhq.com/deepl/236d8651-c4c9-4bb8-a9ea-57d535cb76fb",
+  "comp": "",
+  "posted": "2026-10-23"
+ },
+ {
   "company": "supabase",
   "source": "Ashby",
   "title": "Product Lead - Infrastructure",
@@ -715,17 +726,6 @@
   "posted": "2026-07-10"
  },
  {
-  "company": "stripe",
-  "source": "Greenhouse",
-  "title": "Staff Product Manager, Local Payment Methods Growth",
-  "category": "PM",
-  "tag": "London",
-  "location": "London",
-  "url": "https://stripe.com/jobs/search?gh_jid=8142649",
-  "comp": "",
-  "posted": "2026-08-19"
- },
- {
   "company": "sumup",
   "source": "Greenhouse",
   "title": "Senior Product Manager - Consumer Lifecycle",
@@ -915,18 +915,29 @@
  {
   "company": "monzo",
   "source": "Greenhouse",
-  "title": "Lead Product Manager, Payments",
+  "title": "Lead Product Manager, Growth",
   "category": "PM",
   "tag": "London",
   "location": "London",
-  "url": "https://job-boards.greenhouse.io/monzo/jobs/8156058",
+  "url": "https://job-boards.greenhouse.io/monzo/jobs/8317753",
   "comp": "",
-  "posted": "2026-08-25"
+  "posted": "2026-10-23"
  },
  {
   "company": "monzo",
   "source": "Greenhouse",
-  "title": "Senior Product Manager, Growth",
+  "title": "Product Manager, Finance",
+  "category": "PM",
+  "tag": "London",
+  "location": "London",
+  "url": "https://job-boards.greenhouse.io/monzo/jobs/8212919",
+  "comp": "",
+  "posted": "2026-10-23"
+ },
+ {
+  "company": "monzo",
+  "source": "Greenhouse",
+  "title": "Senior Product Manager, Web Growth",
   "category": "PM",
   "tag": "London",
   "location": "London",
